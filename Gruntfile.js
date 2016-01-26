@@ -6,14 +6,7 @@ module.exports = function(grunt) {
 
     concat: {
       dist: {
-        src: ['less/modules/base.less', 
-        'less/modules/head-green.less', 
-        'less/modules/home.less', 
-        'less/modules/full-slider.less', 
-        'less/modules/footer.less', 
-        'less/modules/about-us.less', 
-        'less/modules/office.less', 
-        'less/modules/team.less'],
+        src: ['less/modules/*.less'],
         dest: 'less/style.less',
       }
     },
