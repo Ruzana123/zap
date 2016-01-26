@@ -4,18 +4,135 @@ footer{
 	padding-top: 60px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	a{
+		transition: all 0.2s ease-in-out;
+	}
 	.footer-bloc{
 		text-align: left;
 	}
 	.footer-h4{
-		    width: 100%;
-		color: white;
+		width: 100%;
 		float: left;
 		font-size: 12px;
 		text-transform: uppercase;
 		padding-bottom: 30px;
+		color: #fff;
+		position: relative; 
+		&:after{ 
+			content: ''; 
+			width: 19px; 
+			height: 3px; 
+			background-color: @base-color-activ;
+			position: absolute; 
+			top: 23px; 
+			left: 0;; 
+			} 
 	}
 	.footer-menu{
 		display: inline-block;
+	}
+	.b1{
+		p{
+			color: #636363;
+			font-size: 12px;
+			line-height: 24px;
+			padding-bottom: 30px;
+		}
+	}
+	li{
+		a{
+			font-size: 13px;
+			line-height: 36px;
+			color: #636363;
+			text-transform: uppercase;
+			&:hover{
+				color: @base-color-activ;
+			}
+		}
+	}
+	.b3{
+		color: #636363;
+		font-size: 11px;
+		line-height: 18px;
+		p{
+			padding-bottom: 15px;
+			padding-top: 35px;
+		}
+		a{
+			color: #636363;
+			&:hover{
+				color: @base-color-activ;
+			}
+		}
+	}
+	.b4{
+		ul{
+			padding-left: 0;
+			li{
+				display: inline-block;
+				padding: 0 8px 8px 0;
+			}
+		}
+		.img-tab-f{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.f-img {
+			max-height: 98%;
+			display: block;
+			position: relative;
+			&:before{
+			    display: block;
+			    opacity: 0;
+			    transition: all .3s ease-in-out;
+			    content: '';
+			    width: 100%;
+			    height: 100%;
+			    background-color: @base-color-activ;
+			    position: absolute;
+			}
+			&:after{
+				opacity: 0;
+			    top: 50%;
+			    left:40%;
+			    transform: translateY(-50%);
+			    right: 0;
+			    content: '\f002';
+			    transition: all .4s ease-in-out;
+			    position: absolute;
+			    font-family: FontAwesome;
+	    		font-size: 16px;
+			}
+			&:hover{
+				color: #fff;
+			}
+			&:hover:after {
+			    opacity: 1;
+			}
+			&:hover:before {
+			    opacity: 1;
+			}
+		}
+	}
+	.copyright{
+		padding-top: 60px;
+		padding-bottom: 30px;
+		text-align: left;
+		color: #3a3a3a;
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+	.right-footer{
+		float: right;
+		ul{
+			padding: 0;
+			li{
+				display: inline-block;
+				padding: 0 15px;
+			}
+		}
+	}
+	.left-footer{
+		padding-top: 15px;
 	}
 }

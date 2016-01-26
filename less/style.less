@@ -151,19 +151,136 @@ footer{
 	padding-top: 60px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	a{
+		transition: all 0.2s ease-in-out;
+	}
 	.footer-bloc{
 		text-align: left;
 	}
 	.footer-h4{
-		    width: 100%;
-		color: white;
+		width: 100%;
 		float: left;
 		font-size: 12px;
 		text-transform: uppercase;
 		padding-bottom: 30px;
+		color: #fff;
+		position: relative; 
+		&:after{ 
+			content: ''; 
+			width: 19px; 
+			height: 3px; 
+			background-color: @base-color-activ;
+			position: absolute; 
+			top: 23px; 
+			left: 0;; 
+			} 
 	}
 	.footer-menu{
 		display: inline-block;
+	}
+	.b1{
+		p{
+			color: #636363;
+			font-size: 12px;
+			line-height: 24px;
+			padding-bottom: 30px;
+		}
+	}
+	li{
+		a{
+			font-size: 13px;
+			line-height: 36px;
+			color: #636363;
+			text-transform: uppercase;
+			&:hover{
+				color: @base-color-activ;
+			}
+		}
+	}
+	.b3{
+		color: #636363;
+		font-size: 11px;
+		line-height: 18px;
+		p{
+			padding-bottom: 15px;
+			padding-top: 35px;
+		}
+		a{
+			color: #636363;
+			&:hover{
+				color: @base-color-activ;
+			}
+		}
+	}
+	.b4{
+		ul{
+			padding-left: 0;
+			li{
+				display: inline-block;
+				padding: 0 8px 8px 0;
+			}
+		}
+		.img-tab-f{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.f-img {
+			max-height: 98%;
+			display: block;
+			position: relative;
+			&:before{
+			    display: block;
+			    opacity: 0;
+			    transition: all .3s ease-in-out;
+			    content: '';
+			    width: 100%;
+			    height: 100%;
+			    background-color: @base-color-activ;
+			    position: absolute;
+			}
+			&:after{
+				opacity: 0;
+			    top: 50%;
+			    left:40%;
+			    transform: translateY(-50%);
+			    right: 0;
+			    content: '\f002';
+			    transition: all .4s ease-in-out;
+			    position: absolute;
+			    font-family: FontAwesome;
+	    		font-size: 16px;
+			}
+			&:hover{
+				color: #fff;
+			}
+			&:hover:after {
+			    opacity: 1;
+			}
+			&:hover:before {
+			    opacity: 1;
+			}
+		}
+	}
+	.copyright{
+		padding-top: 60px;
+		padding-bottom: 30px;
+		text-align: left;
+		color: #3a3a3a;
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+	.right-footer{
+		float: right;
+		ul{
+			padding: 0;
+			li{
+				display: inline-block;
+				padding: 0 15px;
+			}
+		}
+	}
+	.left-footer{
+		padding-top: 15px;
 	}
 }
 .no-p{
@@ -176,7 +293,7 @@ footer{
     	width: 100%;
     	vertical-align: middle;
     }
-    .logo-img-big{
+    .logo-img-big{ 
     	float: left;
     }
     .shop-i{
@@ -196,6 +313,7 @@ footer{
 		a{
 			color: @base-color;
 			text-decoration: none;
+			transition: all 0.2s ease-in-out;
 			&:hover{
 				color: @base-color-activ;
 			}
@@ -220,27 +338,22 @@ footer{
 		padding: 0;
 		li{
 			a{
-				padding: 1px 31px;
+				padding: 0;
+    			margin: 0px 28px;
 				font-size: 14px;
 				font-weight: 400;
-				margin: 0;
 				color: @base-color;
 			    text-transform: uppercase;
-			    transition: all 0.2s;
+			    transition: all 0.2s ease-in-out;
 			    &:hover{
 			    	color: @base-color-activ;
-			    	padding-bottom: 25px;
-			    	border-bottom: 2px solid @base-color-activ;
 			    }
-
 			}
 			&:last-child a{
 				padding-right: 0;
 			}
 			.active{
 				color:@base-color-activ;
-				padding-bottom: 25px;
-			    border-bottom: 2px solid @base-color-activ;
 			}
 		}
 	}
@@ -254,6 +367,12 @@ footer{
 .big-img{
 	a{
 		display: block;
+	}
+	img{
+		transition: all 3s ease-in-out;
+		&:hover{
+		    transform: scale(1.1);
+		}
 	}
 	.big-img-f{
 		position: relative;
@@ -301,6 +420,12 @@ footer{
 		&:last-child{
 			padding-top: 30px;
 		}
+		img{
+			transition: all 3s ease-in-out;
+			&:hover{
+			    transform: scale(1.1);
+			}
+		}
 		.info-post{
 			position: absolute;
 		    text-align: center;
@@ -340,9 +465,10 @@ footer{
 			height: 80px;
 			border-radius: 100%;
 			line-height: 2.5;
-		}
-		&:hover{
-			color: @base-color-activ;
+			&:hover{
+				color: @base-color-activ;
+				border-color: @base-color-activ;
+			}
 		}
 	}	
 	.fai-info{
@@ -369,11 +495,8 @@ footer{
 	
 }
 
-
-
-.tab-product{
+.btn-in-tab{
 	text-align: center;
-	padding-bottom: 100px;
 	.big-button{
 		padding: 15px 60px;
 		color: @base-color;
@@ -381,13 +504,15 @@ footer{
 		font-weight: 700;
 		text-transform: uppercase;
 		border: 2px solid #ececec;
-		transition: all 0.2s ease-in-out;
 		text-decoration: none;
-		&:hover{
-			background-color: @base-color-activ;
-			border: 2px solid @base-color-activ;
-		}
+		display: initial;
 	}
+}
+
+
+.tab-product{
+	text-align: center;
+	padding-bottom: 100px;
 	.nav-tabs{
 		padding-top: 95px;
 		padding-bottom: 65px;
@@ -401,6 +526,7 @@ footer{
 			    background-color: #fff;
 			    border: none;
 			    text-transform: uppercase;
+
 			    &:hover{
 				    color: @base-color-activ;
 				    background-color: #fff;
@@ -471,14 +597,15 @@ footer{
 	}
 	.line-product{
 		.pr{
+			position: relative;
 			display: block;
 			&:before{
 				display: block;
 			    opacity: 0;
 			    transition: all 0.3s ease-in-out;
 			    content: '';
-			    width: 90%;
-			    height: 82%;
+			    width: 100%;
+			    height: 100%;
 			    background-color: #fafafa;
 			    position: absolute;
 			}
@@ -624,5 +751,10 @@ footer{
 		text-transform: uppercase;
 		border: 2px solid #e4e4e4;
 		padding: 15px 20px;
+		transition: all 0.2s ease-in-out;
+		&:hover{
+			background-color: @base-color-activ;
+			border: 2px solid @base-color-activ;
+		}
 	}
 }
