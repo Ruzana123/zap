@@ -524,26 +524,22 @@ footer .footer-bloc-4 .footer-button:hover {
   opacity: 0;
   transition: all 0.3s ease-in-out;
   content: '';
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 82%;
   background-color: #fafafa;
   position: absolute;
 }
 .tab-product .line-product .pr:hover:before {
   opacity: 1;
 }
-.tab-product .line-product .pr:hover:after {
-  opacity: 1;
-}
-.tab-product .line-product .pr:after {
-  opacity: 0;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
-  right: 0;
-  content: '';
-  transition: all 0.4s ease-in-out;
+.tab-product .new {
   position: absolute;
+  top: 8px;
+  left: 23px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 10px 8px;
+  border: 2px solid #141414;
 }
 #owl-demo .item img {
   display: block;
@@ -598,4 +594,51 @@ footer .footer-bloc-4 .footer-button:hover {
 }
 .line-vay .info-fashion {
   text-align: left;
+  padding-top: 20px;
+}
+.line-vay .info-fashion span {
+  font-size: 14px;
+}
+.line-vay .info-fashion span a {
+  color: #eeb013;
+}
+.line-vay .clickable {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 35%;
+}
+.line-vay .fash {
+  display: block;
+}
+.line-vay h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.line-vay .info-line {
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  margin: 15px 0;
+  padding: 5px 0;
+}
+.line-vay .info-line a {
+  color: #6f6f6f;
+  font-size: 12px;
+}
+.line-vay .info-line i {
+  color: #6f6f6f;
+  font-size: 12px;
+}
+.line-vay .date {
+  position: absolute;
+  background-color: #eeb013;
+}
+.line-vay .date a {
+  color: #fff;
+  font-family: CrimsonText;
+  font-size: 16px;
+  font-style: italic;
+  text-transform: uppercase;
+  padding: 17px 5px;
+  display: block;
 }
