@@ -730,6 +730,9 @@ footer .left-footer {
   color: #6f6f6f;
   font-size: 12px;
 }
+.line-vay .info-line a:hover {
+  text-decoration: none;
+}
 .line-vay .date {
   position: absolute;
   background-color: #eeb013;
