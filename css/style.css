@@ -183,7 +183,12 @@ footer li a {
 footer li a:hover {
   color: #eeb013;
 }
+footer .b2 {
+  border-left: 1px solid #2e2e2e;
+}
 footer .b3 {
+  border-left: 1px solid #2e2e2e;
+  border-right: 1px solid #2e2e2e;
   color: #636363;
   font-size: 11px;
   line-height: 18px;
@@ -349,6 +354,7 @@ footer .left-footer {
 }
 .big-img .big-img-f {
   position: relative;
+  overflow: hidden;
 }
 .big-img .big-img-f .info-post {
   position: absolute;
@@ -388,6 +394,7 @@ footer .left-footer {
 }
 .big-img .mini-bg {
   position: relative;
+  overflow: hidden;
 }
 .big-img .mini-bg:last-child {
   padding-top: 30px;
@@ -451,6 +458,10 @@ footer .left-footer {
 .new-arrival .fai-info a {
   padding: 0;
   margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.new-arrival .fai-info a:hover {
+  color: #eeb013;
 }
 .new-arrival .fai-info p {
   color: #6f6f6f;
@@ -539,6 +550,7 @@ footer .left-footer {
 .tab-product .info-pr a {
   color: #141414;
   display: block;
+  transition: all 0.2s ease-in-out;
 }
 .tab-product .info-pr a:hover {
   color: #eeb013;
@@ -604,6 +616,8 @@ footer .left-footer {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
+  border: 4px solid;
+  padding: 10px 40px;
 }
 .trend .tr-text {
   position: absolute;
