@@ -20,7 +20,6 @@
 			padding-top: 10px;
 			li{
 				display: inline-block;
-				margin-top: 8px;
 					&:first-child{
 					padding-right: 30px;
 				}
@@ -55,7 +54,7 @@
 		li{
 			a{
 				padding: 0;
-    			margin: 0px 60px;
+    			margin: 0px 76px;
 				font-size: 14px;
 				font-weight: 400;
 				color: @base-color;
@@ -63,7 +62,7 @@
 			    transition: all 0.2s ease-in-out;
 			    &:after{ 
 					content:''; 
-					width: 48px; 
+					width: 100%; 
 					height: 2px; 
 					opacity: 0;
 					background-color: @base-color-activ;
@@ -103,7 +102,7 @@
 		display: block;
 	}
 	img{
-		transition: all 3s ease-in-out;
+		transition: all 2s ease-in-out;
 		&:hover{
 		    transform: scale(1.3);
 		}
@@ -159,7 +158,7 @@
 			margin-top: 30px;
 		}
 		img{
-			transition: all 3s ease-in-out;
+			transition: all 2s ease-in-out;
 			&:hover{
 			    transform: scale(1.3);
 			}
@@ -203,6 +202,7 @@
 			height: 80px;
 			border-radius: 100%;
 			line-height: 2.5;
+			transition: all 0.2s ease-in-out;
 			&:hover{
 				color: @base-color-activ;
 				border-color: @base-color-activ;
@@ -302,6 +302,7 @@
 					height: 10px;
 					top: 50px;
 					position: absolute;
+					transition: all 0.3s ease-in-out;
 					bottom: 0;
 					left: 50%;
 					transform: translate(-50%) rotate(45deg);
@@ -312,54 +313,77 @@
 	.img{
 		display: block;
 	}
-	.info-pr{
-		text-align: left;
-		h4{
-			color: @base-color;
-			font-size: 12px;
-			font-weight: 400;
-			margin-bottom: 15px;
-			margin-top: 15px;
-			text-transform: uppercase;
-		}
-		a{
-			color: @base-color;
-			display: block;
-			transition: all 0.2s ease-in-out;
-			&:hover{
-				color: @base-color-activ;
-			}
-		}
-		span{
-		    font-family: CrimsonText;
-		    font-size: 18px;
-		    font-style: italic;
-		    color:  @base-color;
-		}
-		.x-text{
-			text-decoration: line-through;
-			color: #6f6f6f;
+}
+
+.owl-pagination{
+	display: none;
+}
+
+.owl-theme {
+	.owl-controls {
+		margin: 0;
+		top: 50%;
+		width: 100%;
+   		left: 0;
+		.owl-buttons {
+           .owl-prev{
+				float: left;
+           }
+           .owl-next{
+           		float: right;
+           }
 		}
 	}
-	.line-product{
-		.pr{
-			position: relative;
-			display: block;
-			&:before{
-				display: block;
-			    opacity: 0;
-			    transition: all 0.3s ease-in-out;
-			    content: '';
-			    width: 100%;
-			    height: 100%;
-			    background-color: #fafafa;
-			    position: absolute;
-			}
-			&:hover:before {
-			  	opacity: 1;
-			}
+}
+
+.pr{
+	position: relative;
+	display: block;
+	&:before{
+		display: block;
+	    opacity: 0;
+	    transition: all 0.3s ease-in-out;
+	    content: '';
+	    width: 100%;
+	    height: 100%;
+	    background-color: #fafafa;
+	    position: absolute;
+	}
+	&:hover:before {
+	  	opacity: 1;
+	}
+}
+
+.info-pr{
+	text-align: left;
+	h4{
+		color: @base-color;
+		font-size: 12px;
+		font-weight: 400;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		text-transform: uppercase;
+	}
+	a{
+		color: @base-color;
+		display: block;
+		transition: all 0.2s ease-in-out;
+		&:hover{
+			color: @base-color-activ;
 		}
 	}
+	span{
+	    font-family: CrimsonText;
+	    font-size: 18px;
+	    font-style: italic;
+	    color:  @base-color;
+	}
+	.x-text{
+		text-decoration: line-through;
+		color: #6f6f6f;
+	}
+}
+
 	.new{
 		position: absolute;
 		top: 8px;
@@ -369,7 +393,7 @@
 		padding: 10px 8px;
 		border: 2px solid @base-color;
 	}
-}
+
 
 #owl-demo {
 	.item {
@@ -390,7 +414,7 @@
 		position: relative;
 		overflow: hidden;
 		img{
-			transition: all 3s ease-in-out;
+			transition: all 2s ease-in-out;
 			&:hover{
 				transform: scale(1.3);
 			}
@@ -415,8 +439,7 @@
     		padding: 10px 40px;
     		transition: all 0.2s ease-in-out;
     		&:hover{
-    			color: @base-color;
-    			background-color: @base-color-activ;
+    			color: @base-color-activ; 
     			border-color: @base-color-activ;
     		}
     		&:focus{
@@ -464,6 +487,13 @@
 				color: @base-color-activ;
 			}
 		}
+		.f-h4{
+			color: @base-color;
+			&:hover{
+				color: @base-color-activ;
+				text-decoration: none;
+			}
+		}
 		a{
 			transition: all 0.2s ease-in-out;
 			&:hover{
@@ -482,8 +512,9 @@
 	.clickable{
 		margin: 0;
 		position: absolute;
-		top: 80%;
-    	left: 35%;
+		top: 50%;
+	    left: 0;
+	    transform: translateY(-50%);
 	}
 	.fash{
 		display: block;
@@ -500,6 +531,7 @@
 		a{
 			color: #6f6f6f;
 			font-size: 12px;
+			margin-right: 15px;
 			&:hover{
 				text-decoration: none;
 			}
@@ -536,6 +568,7 @@
 		&:hover{
 			background-color: @base-color-activ;
 			border: 2px solid @base-color-activ;
+			color: white;
 		}
 	}
 }

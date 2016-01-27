@@ -9,6 +9,18 @@ footer{
 	}
 	.footer-bloc{
 		text-align: left;
+		position: relative;
+		&:before{
+			content: '';
+			width: 1px; 
+			height: 261px; 
+			background-color: #2e2e2e; 
+			position: absolute; 
+			right: 0;
+		}
+		&:last-child:before{
+			width: 0;
+		}
 	}
 	.footer-h4{
 		width: 100%;
@@ -29,13 +41,6 @@ footer{
 			top: 23px; 
 			left: 0;; 
 		} 
-	}
-	.footer-line{
-		width: 1px; 
-		height: 261px; 
-		background-color: #2e2e2e; 
-		position: absolute; 
-		right: 0;
 	}
 	.footer-menu{
 		display: inline-block;
@@ -86,42 +91,6 @@ footer{
 			padding-left: 0;
 			padding-right: 0;
 		}
-		.f-img {
-			max-height: 98%;
-			display: block;
-			position: relative;
-			&:before{
-			    display: block;
-			    opacity: 0;
-			    ansition: all 0.3s ease-intr-out;
-			    content: '';
-			    width: 100%;
-			    height: 100%;
-			    background-color: @base-color-activ;
-			    position: absolute;
-			}
-			&:after{
-				opacity: 0;
-			    top: 50%;
-			    left:40%;
-			    transform: translateY(-50%);
-			    right: 0;
-			    content: '\f002';
-			    transition: all 0.3s ease-in-out;
-			    position: absolute;
-			    font-family: FontAwesome;
-	    		font-size: 16px;
-			}
-			&:hover{
-				color: #fff;
-			}
-			&:hover:after {
-			    opacity: 1;
-			}
-			&:hover:before {
-			    opacity: 1;
-			}
-		}
 	}
 	.copyright{
 		padding-top: 60px;
@@ -145,3 +114,41 @@ footer{
 		padding-top: 15px;
 	}
 }
+
+.f-img {
+			max-height: 98%;
+			display: block;
+			position: relative;
+			&:before{
+			    display: block;
+			    opacity: 0;
+			    transition: all 0.3s ease-in-out;
+			    content: '';
+			    width: 100%;
+			    height: 100%;
+			    background-color: @base-color-activ;
+			    position: absolute;
+			}
+			&:after{
+				opacity: 0;
+			    top: 50%;
+			    left:40%;
+			    transform: translateY(-50%);
+			    right: 0;
+			    content: '\f002';
+			    transition: all 0.3s ease-in-out;
+			    position: absolute;
+			    color: #fff;
+			    font-family: FontAwesome;
+	    		font-size: 16px;
+			}
+			&:hover{
+				color: #fff;
+			}
+			&:hover:after {
+			    opacity: 1;
+			}
+			&:hover:before {
+			    opacity: 1;
+			}
+		}
