@@ -165,6 +165,8 @@ footer{
 		padding-bottom: 30px;
 		color: #fff;
 		position: relative; 
+	}
+	.yelow-line{
 		&:after{ 
 			content: ''; 
 			width: 19px; 
@@ -238,7 +240,7 @@ footer{
 			&:before{
 			    display: block;
 			    opacity: 0;
-			    transition: all .3s ease-in-out;
+			    ansition: all 0.3s ease-intr-out;
 			    content: '';
 			    width: 100%;
 			    height: 100%;
@@ -252,7 +254,7 @@ footer{
 			    transform: translateY(-50%);
 			    right: 0;
 			    content: '\f002';
-			    transition: all .4s ease-in-out;
+			    transition: all 0.3s ease-in-out;
 			    position: absolute;
 			    font-family: FontAwesome;
 	    		font-size: 16px;
@@ -340,7 +342,6 @@ footer{
 		}
 		.container-fluid{
 			padding: 0;
-			margin-top: 8px;
 		}	
 	}	
 	.navbar-collapse{
@@ -789,7 +790,7 @@ footer{
 		border-top: 1px solid #ececec;
 		border-bottom: 1px solid #ececec;
 		margin: 15px 0;
-		padding: 8px 0;
+		padding: 9px 0;
 		a{
 			color: #6f6f6f;
 			font-size: 12px;
@@ -802,7 +803,7 @@ footer{
 		position: absolute;
 		background-color: @base-color-activ;
 		text-align: center;
-		top: 62%;
+		top: 62.6%;
     	left: 82%;
 		a{
 			color: #fff;
@@ -812,6 +813,10 @@ footer{
 			text-transform: uppercase;
 			padding: 9px 15px;
     		display: block;
+    		&:hover{
+				color: #fff;
+				text-decoration: none;
+			}
 		}
 	}
 	.button-fashion{
@@ -825,6 +830,33 @@ footer{
 		&:hover{
 			background-color: @base-color-activ;
 			border: 2px solid @base-color-activ;
+		}
+	}
+}
+.head-block{
+	height: 700px;
+	width: 100%;
+	background-color: #1d1d1d;
+	position: relative;
+}
+.line-header{
+	.menu-top {
+		.navbar{
+			background-color: #1d1d1d;
+			color: #fff;
+			border-color: #1d1d1d;
+		}
+	} 
+	.navbar-collapse {
+		li{
+			a{
+				color: #fff;
+			}
+		}
+	}
+	.shop-i{
+		a{
+			color: #fff;
 		}
 	}
 }

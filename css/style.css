@@ -156,7 +156,7 @@ footer .footer-h4 {
   color: #fff;
   position: relative;
 }
-footer .footer-h4:after {
+footer .yelow-line:after {
   content: '';
   width: 19px;
   height: 3px;
@@ -224,7 +224,7 @@ footer .b4 .f-img {
 footer .b4 .f-img:before {
   display: block;
   opacity: 0;
-  transition: all 0.3s ease-in-out;
+  ansition: all 0.3s ease-intr-out;
   content: '';
   width: 100%;
   height: 100%;
@@ -238,7 +238,7 @@ footer .b4 .f-img:after {
   transform: translateY(-50%);
   right: 0;
   content: '\f002';
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: absolute;
   font-family: FontAwesome;
   font-size: 16px;
@@ -324,7 +324,6 @@ footer .left-footer {
 }
 .line-header .menu-top .container-fluid {
   padding: 0;
-  margin-top: 8px;
 }
 .line-header .navbar-collapse {
   padding: 0;
@@ -736,7 +735,7 @@ footer .left-footer {
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   margin: 15px 0;
-  padding: 8px 0;
+  padding: 9px 0;
 }
 .line-vay .info-line a {
   color: #6f6f6f;
@@ -749,7 +748,7 @@ footer .left-footer {
   position: absolute;
   background-color: #eeb013;
   text-align: center;
-  top: 62%;
+  top: 62.6%;
   left: 82%;
 }
 .line-vay .date a {
@@ -760,6 +759,10 @@ footer .left-footer {
   text-transform: uppercase;
   padding: 9px 15px;
   display: block;
+}
+.line-vay .date a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 .line-vay .button-fashion {
   font-size: 14px;
@@ -773,4 +776,21 @@ footer .left-footer {
 .line-vay .button-fashion:hover {
   background-color: #eeb013;
   border: 2px solid #eeb013;
+}
+.head-block {
+  height: 700px;
+  width: 100%;
+  background-color: #1d1d1d;
+  position: relative;
+}
+.line-header .menu-top .navbar {
+  background-color: #1d1d1d;
+  color: #fff;
+  border-color: #1d1d1d;
+}
+.line-header .navbar-collapse li a {
+  color: #fff;
+}
+.line-header .shop-i a {
+  color: #fff;
 }
