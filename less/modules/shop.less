@@ -1,6 +1,5 @@
 
 .head-block{
-	height: 700px;
 	width: 100%;
 	background-color: #1d1d1d;
 	position: relative;
@@ -29,16 +28,20 @@
 		}
 	}
 }
-
+.bredkrams{
+	height: 600px;
+	width: 100%;
+	background-color: #1d1d1d;
+}
 .table-c{
 	padding-top: 180px;
-	padding-bottom: 250px;
+	padding-bottom: 180px;
 	text-align: center;
 	h1{
 		font-size: 48px;
 		color: #fff;
 		font-weight: 700;
-		line-height: 60px;
+		margin-bottom: 45px;
 		text-transform: uppercase;
 	}
 	a{
@@ -70,19 +73,21 @@
 .prod-main{
 	padding-left: 0;
 	padding-right: 0;
-}
-.prod-line{
-	padding: 0 0 80px 0;
-	.info-pr{}
-	&:last-child{
-		border-bottom: 1px solid #ececec;
-		padding-left: 0;
+	border-bottom: 1px solid #ececec;
+	.product-el{
+		margin-bottom: 80px;
+	}
+	&:nth-child(3n+1){
+		clear: both;
 	}
 }
+
+
 
 .form-search{
 	display: inline-block;
 	position: relative;
+	padding-bottom: 35px;
 	input {
 	    -webkit-appearance: textfield;
 	    background-color: white;
@@ -108,7 +113,7 @@
 		background-color: #fff;
 		position: absolute;
 		top: 50%;
-	    left: 84%;
+	    right: 5px;
 	    transform: translateY(-50%);
 	    color: #909090;
 	    outline: none;
@@ -194,23 +199,25 @@
 	}
 }
 
-.right-menu{
-	ul{
-		&:first-child{
-			padding-top: 15px;
-		}
-		&:last-child{
-			padding-bottom: 15px;
-		}
+.side-bar{
+	.right-menu{
 		li{
 			a{
 				font-size: 13px;
-				line-height: 48px;
 				color: #6f6f6f;
 				transition: all 0.2s ease-in-out;
+				padding-bottom: 15px;
+				padding-top: 15px;
+				display: block;
 				&:hover{
 					color: @base-color-activ;
 				}
+			}
+			&:first-child{
+				padding-top: 15px;
+			}
+			&:last-child{
+				padding-bottom: 15px;
 			}
 		}
 	}
@@ -246,6 +253,9 @@
 			position: relative;
 		}
 	}
+}
+
+.prod-main-right{
 	.by-element{
 		position: relative;
 		&:before{
@@ -253,11 +263,11 @@
 			background-color: @base-color-activ;
 			width: 10px;
 			height: 10px;
-			top: 44%;
+			top: 28px;
 			position: absolute;
 			transition: all 0.3s ease-in-out;
 			bottom: 0;
-			left: 3%;
+			left: 5px;
 			transform: translate(-50%) rotate(45deg);
 		}
 		h2{
@@ -266,18 +276,25 @@
 	}
 }
 
+.new1{
+	position: absolute;
+	top: 0;
+	left: 239px;
+	font-size: 10px;
+	font-weight: 700;
+	padding: 10px 8px;
+	background-color: @base-color-activ; 
+	border: 2px solid @base-color-activ;
+}
 
-.by-element{
-	&:before{
-		content: '';
-		background-color: @base-color-activ;
-		width: 10px;
-		height: 10px;
-		top: 50px;
-		position: absolute;
-		transition: all 0.3s ease-in-out;
-		bottom: 0;
-		left: 50%;
-		transform: translate(-50%) rotate(45deg);
+
+.money-line {
+	margin-top: 30px;
+	margin-bottom: 40px;
+	p {
+		text-align: center;
+		color: #6f6f6f;
+		font-size: 13px;
+		line-height: 48px;
 	}
 }

@@ -147,17 +147,10 @@ footer a {
 footer .footer-bloc {
   text-align: left;
   position: relative;
+  border-right: 1px solid #2e2e2e;
 }
-footer .footer-bloc:before {
-  content: '';
-  width: 1px;
-  height: 261px;
-  background-color: #2e2e2e;
-  position: absolute;
-  right: 0;
-}
-footer .footer-bloc:last-child:before {
-  width: 0;
+footer .footer-bloc:last-child {
+  border: none;
 }
 footer .footer-h4 {
   width: 100%;
@@ -300,7 +293,7 @@ footer .left-footer {
 }
 .line-header .shop-i ul {
   padding: 0;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 .line-header .shop-i ul li {
   display: inline-block;
@@ -324,7 +317,6 @@ footer .left-footer {
   background-color: white;
   border-color: white;
   padding: 0;
-  margin-top: 10px;
   margin-bottom: 0;
 }
 .line-header .menu-top .container-fluid {
@@ -335,7 +327,7 @@ footer .left-footer {
 }
 .line-header .navbar-collapse li a {
   padding: 0;
-  margin: 0px 76px;
+  margin: 15px 36px;
   font-size: 14px;
   font-weight: 400;
   color: #141414;
@@ -359,9 +351,6 @@ footer .left-footer {
   color: #eeb013;
   opacity: 1;
 }
-.line-header .navbar-collapse li a:first-child {
-  margin-left: 0;
-}
 .line-header .navbar-collapse li:last-child a {
   padding-right: 0;
 }
@@ -379,6 +368,9 @@ footer .left-footer {
 }
 .big-img img:hover {
   transform: scale(1.3);
+}
+.big-img .block-img {
+  margin-bottom: 80px;
 }
 .big-img .big-img-f {
   position: relative;
@@ -455,8 +447,7 @@ footer .left-footer {
   color: #eeb013;
 }
 .new-arrival {
-  padding-top: 80px;
-  padding-bottom: 90px;
+  margin-bottom: 90px;
   text-align: center;
 }
 .new-arrival a {
@@ -476,25 +467,25 @@ footer .left-footer {
   color: #eeb013;
   border-color: #eeb013;
 }
-.new-arrival .fai-info {
+.new-arrival .icon-info {
   padding-top: 38px;
 }
-.new-arrival .fai-info h4 {
+.new-arrival .icon-info h4 {
   color: #141414;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-.new-arrival .fai-info a {
+.new-arrival .icon-info a {
   padding: 0;
   margin-bottom: 20px;
   transition: all 0.2s ease-in-out;
 }
-.new-arrival .fai-info a:hover {
+.new-arrival .icon-info a:hover {
   color: #eeb013;
 }
-.new-arrival .fai-info p {
+.new-arrival .icon-info p {
   color: #6f6f6f;
   font-family: CrimsonText;
   font-size: 16px;
@@ -514,13 +505,16 @@ footer .left-footer {
   text-transform: uppercase;
   border: 2px solid #ececec;
   text-decoration: none;
-  display: initial;
+  display: inline-block;
 }
 .tab-product {
   text-align: center;
 }
 .tab-product .tab-content {
   padding-top: 50px;
+}
+.tab-product .tab-pane {
+  margin-left: 15px;
 }
 .tab-product .nav-tabs {
   text-align: center;
@@ -658,7 +652,7 @@ footer .left-footer {
   transition: all 2s ease-in-out;
 }
 .trend .sale img:hover {
-  transform: scale(1.3);
+  transform: scale(1.3) rotate(360deg);
 }
 .trend .sale .sale-img {
   overflow: hidden;
@@ -809,7 +803,6 @@ footer .left-footer {
   color: white;
 }
 .head-block {
-  height: 700px;
   width: 100%;
   background-color: #1d1d1d;
   position: relative;
@@ -828,16 +821,21 @@ footer .left-footer {
 .head-block .line-header .shop-i a {
   color: #fff;
 }
+.bredkrams {
+  height: 600px;
+  width: 100%;
+  background-color: #1d1d1d;
+}
 .table-c {
   padding-top: 180px;
-  padding-bottom: 250px;
+  padding-bottom: 180px;
   text-align: center;
 }
 .table-c h1 {
   font-size: 48px;
   color: #fff;
   font-weight: 700;
-  line-height: 60px;
+  margin-bottom: 45px;
   text-transform: uppercase;
 }
 .table-c a {
@@ -868,17 +866,18 @@ footer .left-footer {
 .prod-main {
   padding-left: 0;
   padding-right: 0;
-}
-.prod-line {
-  padding: 0 0 80px 0;
-}
-.prod-line:last-child {
   border-bottom: 1px solid #ececec;
-  padding-left: 0;
+}
+.prod-main .product-el {
+  margin-bottom: 80px;
+}
+.prod-main:nth-child(3n+1) {
+  clear: both;
 }
 .form-search {
   display: inline-block;
   position: relative;
+  padding-bottom: 35px;
 }
 .form-search input {
   -webkit-appearance: textfield;
@@ -905,7 +904,7 @@ footer .left-footer {
   background-color: #fff;
   position: absolute;
   top: 50%;
-  left: 84%;
+  right: 5px;
   transform: translateY(-50%);
   color: #909090;
   outline: none;
@@ -986,20 +985,22 @@ footer .left-footer {
   font-style: italic;
   line-height: 60px;
 }
-.right-menu ul:first-child {
-  padding-top: 15px;
-}
-.right-menu ul:last-child {
-  padding-bottom: 15px;
-}
-.right-menu ul li a {
+.side-bar .right-menu li a {
   font-size: 13px;
-  line-height: 48px;
   color: #6f6f6f;
   transition: all 0.2s ease-in-out;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  display: block;
 }
-.right-menu ul li a:hover {
+.side-bar .right-menu li a:hover {
   color: #eeb013;
+}
+.side-bar .right-menu li:first-child {
+  padding-top: 15px;
+}
+.side-bar .right-menu li:last-child {
+  padding-bottom: 15px;
 }
 .right-dlock .button-filter {
   font-size: 12px;
@@ -1029,35 +1030,43 @@ footer .left-footer {
   max-height: 100%;
   position: relative;
 }
-.right-dlock .by-element {
+.prod-main-right .by-element {
   position: relative;
 }
-.right-dlock .by-element:before {
+.prod-main-right .by-element:before {
   content: '';
   background-color: #eeb013;
   width: 10px;
   height: 10px;
-  top: 44%;
+  top: 28px;
   position: absolute;
   transition: all 0.3s ease-in-out;
   bottom: 0;
-  left: 3%;
+  left: 5px;
   transform: translate(-50%) rotate(45deg);
 }
-.right-dlock .by-element h2 {
+.prod-main-right .by-element h2 {
   padding-left: 30px;
 }
-.by-element:before {
-  content: '';
-  background-color: #eeb013;
-  width: 10px;
-  height: 10px;
-  top: 50px;
+.new1 {
   position: absolute;
-  transition: all 0.3s ease-in-out;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
+  top: 0;
+  left: 239px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 10px 8px;
+  background-color: #eeb013;
+  border: 2px solid #eeb013;
+}
+.money-line {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.money-line p {
+  text-align: center;
+  color: #6f6f6f;
+  font-size: 13px;
+  line-height: 48px;
 }
 .table-c li:nth-child(4) {
   padding-left: 15px;

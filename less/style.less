@@ -157,16 +157,9 @@ footer{
 	.footer-bloc{
 		text-align: left;
 		position: relative;
-		&:before{
-			content: '';
-			width: 1px; 
-			height: 261px; 
-			background-color: #2e2e2e; 
-			position: absolute; 
-			right: 0;
-		}
-		&:last-child:before{
-			width: 0;
+		border-right: 1px solid #2e2e2e;
+		&:last-child{
+			border: none;
 		}
 	}
 	.footer-h4{
@@ -263,42 +256,42 @@ footer{
 }
 
 .f-img {
-			max-height: 98%;
-			display: block;
-			position: relative;
-			&:before{
-			    display: block;
-			    opacity: 0;
-			    transition: all 0.3s ease-in-out;
-			    content: '';
-			    width: 100%;
-			    height: 100%;
-			    background-color: @base-color-activ;
-			    position: absolute;
-			}
-			&:after{
-				opacity: 0;
-			    top: 50%;
-			    left:40%;
-			    transform: translateY(-50%);
-			    right: 0;
-			    content: '\f002';
-			    transition: all 0.3s ease-in-out;
-			    position: absolute;
-			    color: #fff;
-			    font-family: FontAwesome;
-	    		font-size: 16px;
-			}
-			&:hover{
-				color: #fff;
-			}
-			&:hover:after {
-			    opacity: 1;
-			}
-			&:hover:before {
-			    opacity: 1;
-			}
-		}
+	max-height: 98%;
+	display: block;
+	position: relative;
+	&:before{
+	    display: block;
+	    opacity: 0;
+	    transition: all 0.3s ease-in-out;
+	    content: '';
+	    width: 100%;
+	    height: 100%;
+	    background-color: @base-color-activ;
+	    position: absolute;
+	}
+	&:after{
+		opacity: 0;
+	    top: 50%;
+	    left:40%;
+	    transform: translateY(-50%);
+	    right: 0;
+	    content: '\f002';
+	    transition: all 0.3s ease-in-out;
+	    position: absolute;
+	    color: #fff;
+	    font-family: FontAwesome;
+		font-size: 16px;
+	}
+	&:hover{
+		color: #fff;
+	}
+	&:hover:after {
+	    opacity: 1;
+	}
+	&:hover:before {
+	    opacity: 1;
+	}
+}
 .no-p{
 	padding-left: 0;
 	padding-right: 0;
@@ -318,10 +311,10 @@ footer{
 		font-size: 13px;
 		ul{
 			padding: 0;
-			padding-top: 10px;
+			padding-top: 15px;
 			li{
 				display: inline-block;
-					&:first-child{
+				&:first-child{
 					padding-right: 30px;
 				}
 			}
@@ -343,7 +336,6 @@ footer{
 			background-color: white;
 			border-color: white;
 			padding: 0;
-			margin-top: 10px;
 			margin-bottom: 0;
 		}
 		.container-fluid{
@@ -355,7 +347,7 @@ footer{
 		li{
 			a{
 				padding: 0;
-    			margin: 0px 76px;
+    			margin: 15px 36px;
 				font-size: 14px;
 				font-weight: 400;
 				color: @base-color;
@@ -377,9 +369,6 @@ footer{
 			    &:hover{
 			    	color: @base-color-activ;
 			    	opacity: 1;
-			    }
-			    &:first-child{
-			    	margin-left: 0;
 			    }
 			}
 			&:last-child a{
@@ -407,6 +396,9 @@ footer{
 		&:hover{
 		    transform: scale(1.3);
 		}
+	}
+	.block-img{
+		margin-bottom: 80px;
 	}
 	.big-img-f{
 		position: relative;
@@ -490,8 +482,7 @@ footer{
 
 
 .new-arrival{
-	padding-top: 80px;
-	padding-bottom: 90px;
+	margin-bottom: 90px;
 	text-align: center;
 	a{ 
 		color: @base-color;
@@ -510,7 +501,7 @@ footer{
 			}
 		}
 	}	
-	.fai-info{
+	.icon-info{
 		padding-top: 38px;
 		h4{
 			color: @base-color;
@@ -550,7 +541,7 @@ footer{
 		text-transform: uppercase;
 		border: 2px solid #ececec;
 		text-decoration: none;
-		display: initial;
+		display: inline-block;
 	}
 }
 
@@ -559,6 +550,9 @@ footer{
 	text-align: center;
 	.tab-content{
 		padding-top: 50px;
+	}
+	.tab-pane{
+		margin-left: 15px;
 	}
 	.nav-tabs{
 		text-align: center;
@@ -717,7 +711,7 @@ footer{
 		img{
 			transition: all 2s ease-in-out;
 			&:hover{
-				transform: scale(1.3);
+				transform: scale(1.3) rotate(360deg);
 			}
 		}
 		.sale-img{
@@ -875,7 +869,6 @@ footer{
 }
 
 .head-block{
-	height: 700px;
 	width: 100%;
 	background-color: #1d1d1d;
 	position: relative;
@@ -904,16 +897,20 @@ footer{
 		}
 	}
 }
-
+.bredkrams{
+	height: 600px;
+	width: 100%;
+	background-color: #1d1d1d;
+}
 .table-c{
 	padding-top: 180px;
-	padding-bottom: 250px;
+	padding-bottom: 180px;
 	text-align: center;
 	h1{
 		font-size: 48px;
 		color: #fff;
 		font-weight: 700;
-		line-height: 60px;
+		margin-bottom: 45px;
 		text-transform: uppercase;
 	}
 	a{
@@ -945,19 +942,21 @@ footer{
 .prod-main{
 	padding-left: 0;
 	padding-right: 0;
-}
-.prod-line{
-	padding: 0 0 80px 0;
-	.info-pr{}
-	&:last-child{
-		border-bottom: 1px solid #ececec;
-		padding-left: 0;
+	border-bottom: 1px solid #ececec;
+	.product-el{
+		margin-bottom: 80px;
+	}
+	&:nth-child(3n+1){
+		clear: both;
 	}
 }
+
+
 
 .form-search{
 	display: inline-block;
 	position: relative;
+	padding-bottom: 35px;
 	input {
 	    -webkit-appearance: textfield;
 	    background-color: white;
@@ -983,7 +982,7 @@ footer{
 		background-color: #fff;
 		position: absolute;
 		top: 50%;
-	    left: 84%;
+	    right: 5px;
 	    transform: translateY(-50%);
 	    color: #909090;
 	    outline: none;
@@ -1069,23 +1068,25 @@ footer{
 	}
 }
 
-.right-menu{
-	ul{
-		&:first-child{
-			padding-top: 15px;
-		}
-		&:last-child{
-			padding-bottom: 15px;
-		}
+.side-bar{
+	.right-menu{
 		li{
 			a{
 				font-size: 13px;
-				line-height: 48px;
 				color: #6f6f6f;
 				transition: all 0.2s ease-in-out;
+				padding-bottom: 15px;
+				padding-top: 15px;
+				display: block;
 				&:hover{
 					color: @base-color-activ;
 				}
+			}
+			&:first-child{
+				padding-top: 15px;
+			}
+			&:last-child{
+				padding-bottom: 15px;
 			}
 		}
 	}
@@ -1121,6 +1122,9 @@ footer{
 			position: relative;
 		}
 	}
+}
+
+.prod-main-right{
 	.by-element{
 		position: relative;
 		&:before{
@@ -1128,11 +1132,11 @@ footer{
 			background-color: @base-color-activ;
 			width: 10px;
 			height: 10px;
-			top: 44%;
+			top: 28px;
 			position: absolute;
 			transition: all 0.3s ease-in-out;
 			bottom: 0;
-			left: 3%;
+			left: 5px;
 			transform: translate(-50%) rotate(45deg);
 		}
 		h2{
@@ -1141,22 +1145,28 @@ footer{
 	}
 }
 
-
-.by-element{
-	&:before{
-		content: '';
-		background-color: @base-color-activ;
-		width: 10px;
-		height: 10px;
-		top: 50px;
-		position: absolute;
-		transition: all 0.3s ease-in-out;
-		bottom: 0;
-		left: 50%;
-		transform: translate(-50%) rotate(45deg);
-	}
+.new1{
+	position: absolute;
+	top: 0;
+	left: 239px;
+	font-size: 10px;
+	font-weight: 700;
+	padding: 10px 8px;
+	background-color: @base-color-activ; 
+	border: 2px solid @base-color-activ;
 }
 
+
+.money-line {
+	margin-top: 30px;
+	margin-bottom: 40px;
+	p {
+		text-align: center;
+		color: #6f6f6f;
+		font-size: 13px;
+		line-height: 48px;
+	}
+}
 
 .table-c{
 	li{
