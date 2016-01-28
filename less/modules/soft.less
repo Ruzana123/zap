@@ -1,9 +1,261 @@
-
+.line-product{
+	padding-bottom: 270px;
+}
 .table-c{
 	li{
 		&:nth-child(4){
 			padding-left: 15px;
 			padding-right: 15px;
 		}
+	}
+}
+.soft-content{
+	padding-top: 80px;
+	padding-bottom: 110px;
+	.img-mini-photo{
+		padding-top: 10px;
+	}
+}
+.info-tov{
+	h2{
+		color: @base-color;
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	p{
+		color: #6f6f6f;
+		font-size: 13px;
+		padding-bottom: 28px;
+		line-height: 30px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid #ececec;
+	}
+	.line-info-photo{
+		padding-bottom: 40px;
+		.star{
+			float: right;
+			li{
+				display: inline-block;
+			}
+		}
+	}
+	span{
+		font-size: 11px;
+		color: #6f6f6f;
+		text-transform: uppercase;
+	}
+	.dark{
+		color: @base-color;
+	}
+	.price{
+		padding-bottom: 35px;
+		.price-old{
+			color: #6f6f6f;
+			font-family: CrimsonText;
+			font-size: 36px;
+			font-style: italic;
+			line-height: 60px;
+			text-decoration: line-through;
+			padding-right: 15px;
+		}
+		.price-new{
+			color: @base-color;
+			font-family: CrimsonText;
+			font-size: 36px;
+			font-style: italic;
+			line-height: 60px;
+		}
+	}
+	.add-to{
+		padding: 13px 25px;
+		background-color: @base-color-activ;
+		color: #fff;
+		text-transform: uppercase;
+		transition: all 0.2s ease-in-out;
+		display: inline-block;
+		&:hover{
+			color: @base-color;
+		}
+	}
+	.info-2{
+		padding-bottom: 15px;
+	}
+	.social-icon {
+		margin-top: 25px;
+		li{
+			display: inline-block;
+			margin-right: 5px;
+			text-align: center;
+			i {
+			    height: 40px;
+			    width: 40px;
+			    border: 1px solid transparent;
+			    background-color: #ebebeb;
+			    border-radius: 50px;
+			    line-height: 38px;
+			}
+			a{
+				color: @base-color;
+				display: block;
+				transition: all 0.2s ease-in-out;
+				&:hover{
+					i{
+						background-color: @base-color-activ;
+					}
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+.element-b{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 40px;
+}
+/*===========AKORDEON=============*/
+
+.mini-menu ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    text-align:left;
+}
+.mini-menu > ul > li {
+    position: relative;
+}
+.mini-menu > ul > li > a {
+    display: block;
+    outline: 0;
+    text-decoration: none;
+}
+.mini-menu .sub > ul {
+    counter-reset: items;
+    height: 0;
+    overflow: hidden;
+}
+.mini-menu .sub > ul > li > a {
+    display: block;
+    text-decoration: none;
+}
+
+.mini-menu{
+	width: 100%;
+	display: block;
+	.sub{
+		padding-bottom: 10px;
+		padding-top: 25px;
+		border-bottom: 1px solid #ececec;
+		padding-left: 10px;
+		&:before {
+		    position: absolute;
+		    font-family: FontAwesome;
+		    content: '\f005';
+		    left: 0;
+		    font-size: 5px;
+		    color: @base-color-activ;
+		}
+		a{
+			font-family: CrimsonText;
+			font-size: 12px;
+			color: @base-color;
+			font-style: italic;
+			text-transform: uppercase;
+			transition: all 0.2s ease-in-out;
+		}
+		li{
+			display: inline-block;
+			position: relative;
+			padding-bottom: 10px;
+			&:before {
+			    position: absolute;
+			    font-family: FontAwesome;
+			    content: '\f005';
+			    left: 0;
+			    font-size: 5px;
+			    color: @base-color-activ;
+			}
+			a{
+				&:hover{
+					color: @base-color-activ;
+				}
+			}
+		}
+		i{
+			position: absolute;
+			display: block;
+			color: #909090;
+			left: 100%;
+		}
+		&:first-child{
+			padding-top: 0;
+		}
+		&:last-child{
+			margin-bottom: 35px;
+		}
+		li{
+			padding: 5px;
+		}
+	}
+}
+
+.related{
+	text-align: center;
+	display: block;
+	padding-bottom: 70px;
+	h3{
+		color: @base-color;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding-bottom: 25px;
+	}
+	hr{
+		width: 80px;
+		height: 1px;
+		color: #141414;
+		margin: 15px;
+		display: inline-block;
+	}
+	span{
+		color: #6f6f6f;
+		font-family: CrimsonText;
+		font-size: 16px;
+		font-style: italic;
+		line-height: 30px;
+		display: block;
+	}
+	img{
+		display: inline-block;
+		padding: 10px;
+	}
+}
+.tab-product-soft{
+	padding-bottom: 75px;
+	.nav-tab{
+		li{ 
+			text-align: center;
+			padding-bottom: 20px;
+			a{
+				background-color: #ececec;
+				color:@base-color;
+				padding: 20px 60px;
+				text-transform: uppercase;
+				transition: all 0.2s ease-in-out;
+				&:hover{
+					background-color: @base-color-activ;
+					color: #fff;
+				}
+			}
+		}
+	}
+	p{
+		color: #6f6f6f;
+		font-size: 13px;
+		line-height: 30px;
+	}
+	.tab-content{
+		border: 1px solid #ececec;
 	}
 }

@@ -28,7 +28,7 @@
 		}
 	}
 }
-.bredkrams{
+.breadcrumbs{
 	height: 600px;
 	width: 100%;
 	background-color: #1d1d1d;
@@ -73,7 +73,6 @@
 .prod-main{
 	padding-left: 0;
 	padding-right: 0;
-	border-bottom: 1px solid #ececec;
 	.product-el{
 		margin-bottom: 80px;
 	}
@@ -82,22 +81,11 @@
 	}
 }
 
-
-
 .form-search{
 	display: inline-block;
 	position: relative;
 	padding-bottom: 35px;
 	input {
-	    -webkit-appearance: textfield;
-	    background-color: white;
-	    border-image-source: initial;
-	    border-image-slice: initial;
-	    border-image-width: initial;
-	    border-image-outset: initial;
-	    border-image-repeat: initial;
-	    -webkit-rtl-ordering: logical;
-	    -webkit-user-select: text;
 	    width: 270px;
 		height: 50px;
 		background-color: transparent;
@@ -112,7 +100,7 @@
 	.btn{
 		background-color: #fff;
 		position: absolute;
-		top: 50%;
+		top: 30%;
 	    right: 5px;
 	    transform: translateY(-50%);
 	    color: #909090;
@@ -133,6 +121,9 @@
 	.left-settings{
 		float: left;
 		display: inline-block;
+		a{
+			padding-left: 10px;
+		}
 	}
 	.right-settings{
 		float: right;
@@ -168,6 +159,12 @@
 	    	box-shadow: none;
 	    }
 	}
+	.dropdown-menu{
+		font-size: 13px;
+	}
+	.open>.dropdown-toggle.btn-default{
+		background-color: #fff;
+	}
 	.btn-default{
 	border: none;
 	width: 170px;
@@ -199,8 +196,9 @@
 	}
 }
 
-.side-bar{
+.sidebar{
 	.right-menu{
+		padding-left: 30px;
 		li{
 			a{
 				font-size: 13px;
@@ -228,7 +226,7 @@
 		color: @base-color;
 		text-transform: uppercase;
 		border: 2px solid #e4e4e4;
-		padding: 10px 30px;
+		padding: 10px 35px;
 		line-height: 60px;
 		transition: all 0.2s ease-in-out;
 		&:hover{
@@ -238,6 +236,8 @@
 		}
 	}
 	.sale{
+			padding-top: 20px;
+			padding-bottom: 20px;
 		li{
 			padding-bottom: 30px;
 			display: block;
@@ -287,6 +287,83 @@
 	border: 2px solid @base-color-activ;
 }
 
+.size-line{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	li{ 
+		display: inline-block;
+		padding: 3px;
+		&:first-child{
+			padding-left: 0;
+		}
+		&:nth-child(5){
+			padding-left: 0;
+		}
+	}
+	a{
+		color: @base-color;
+		font-size: 12px;
+		display: block;
+		text-transform: uppercase;
+		font-size: 12px;
+		border: 2px solid #e4e4e4;
+		padding: 8px 17px;
+		transition: all 0.2s ease-in-out;
+		&:hover{
+			border: 2px solid @base-color;
+		}
+		&:active{
+			text-decoration: none;
+		}
+		&:focus{
+			text-decoration: none;
+		}
+	}
+	.tag{
+		li{
+			padding: 3px 1px;
+			&:nth-child(4){
+				padding-left: 0;
+			}
+		}
+		a{
+			color: #6f6f6f;
+			padding: 8px 5px;
+			border: 1px solid #e4e4e4;
+
+			&:hover{
+				border: 1px solid @base-color;
+				color: @base-color;
+			}
+		}
+	}	
+}
+
+.pages{
+	text-align: center;
+	border-top: 2px solid #ececec;
+	.number{
+		padding-top: 65px;
+		li{
+			display: inline-block;
+			padding: 5px;
+		}
+		a{
+			color: #6f6f6f;
+			padding: 12px 17px;
+			border: 1px solid #e4e4e4;
+			color: #141414;
+			font-family: CrimsonText;
+			font-size: 18px;
+			font-style: italic;
+			line-height: 30px;
+			transition: all .2s ease-in-out;
+			&:hover{
+				color: @base-color-activ;
+			}
+		}
+	}
+}
 
 .money-line {
 	margin-top: 30px;
@@ -297,4 +374,72 @@
 		font-size: 13px;
 		line-height: 48px;
 	}
+	.ui-slider .ui-slider-handle{ 
+width: 20px; 
+height: 20px; 
+border-radius: 50px; 
+} 
+.ui-slider .ui-slider-range{ 
+background-color: #141414; 
+} 
+.ui-slider-horizontal .ui-slider-handle{ 
+top:-9px; 
+} 
+.ui-slider-horizontal{ 
+height: 4px; 
+border-radius: 0; 
+background-color: #909090; 
+} 
+.ui-widget-content{ 
+border: 0; 
+background-color: #909090; 
+margin-bottom: 50px; 
+} 
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{ 
+background-color: @base-color-activ; 
+} 
+p{ 
+text-align: center; 
+input{ 
+color: #6f6f6f; 
+font-size: 13px; 
+font-weight: 400; 
+border: 0; 
+text-align: center; 
+margin-bottom: 8px; 
+outline: none; 
+} 
 }
+}
+
+.pr{
+	position: relative;
+	display: block;
+	
+}
+.img-and-hover{
+	position: relative;
+	overflow: hidden;
+	&:hover {
+		.poz {
+			height: 60px;
+			bottom: 0;
+			z-index: 2;
+		}
+	}
+}
+.poz{
+	position: absolute;
+	text-transform: uppercase;
+	height: 60px;
+	width: 100%;
+	background-color: @base-color-activ;
+	color: @base-color;
+	text-align: center;
+	padding-top: 22px;
+	font-size: 14px;
+	z-index: -2;
+	transition: all .2s ease-in-out;
+	bottom: -60px;
+}
+
