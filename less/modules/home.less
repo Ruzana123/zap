@@ -1,17 +1,14 @@
-.no-p{
-	padding-left: 0;
-	padding-right: 0;
-}
+
 .line-header{
 	padding: 90px 0 68px 0;  
-    .row-menu{
-    	width: 100%;
-    	vertical-align: middle;
-    }
-    .logo-img-big{ 
-    	float: left;
-    }
-    .shop-i{
+	.row-menu{
+		width: 100%;
+		vertical-align: middle;
+	}
+	.logo-img-big{ 
+		float: left;
+	}
+	.shop-i{
 		text-align: right;
 		padding-right: 0;
 		font-size: 13px;
@@ -33,12 +30,12 @@
 				color: @base-color-activ;
 			}
 		}
-    }
+	}
 
-    .menu-top{
-    	float: left;
-    	padding-left: 230px;
-	    .navbar{
+	.menu-top{
+		float: left;
+		padding-left: 220px;
+		.navbar{
 			background-color: white;
 			border-color: white;
 			padding: 0;
@@ -53,13 +50,13 @@
 		li{
 			a{
 				padding: 0;
-    			margin: 15px 36px;
+				margin: 15px 36px;
 				font-size: 14px;
 				font-weight: 400;
 				color: @base-color;
-			    text-transform: uppercase;
-			    transition: all 0.2s ease-in-out;
-			    &:after{ 
+				text-transform: uppercase;
+				transition: all 0.2s ease-in-out;
+				&:after{ 
 					content:''; 
 					width: 100%; 
 					height: 2px; 
@@ -72,10 +69,10 @@
 				&:hover:after{ 
 					opacity: 1;
 				}
-			    &:hover{
-			    	color: @base-color-activ;
-			    	opacity: 1;
-			    }
+			&:hover{
+					color: @base-color-activ;
+					opacity: 1;
+				}
 			}
 			&:last-child a{
 				padding-right: 0;
@@ -100,7 +97,7 @@
 	img{
 		transition: all 2s ease-in-out;
 		&:hover{
-		    transform: scale(1.3);
+			transform: scale(1.3);
 		}
 	}
 	.block-img{
@@ -111,12 +108,12 @@
 		overflow: hidden;
 		.info-post{
 			position: absolute;
-		    text-align: center;
-		    left: 50%;
-		    top: 51%;
-		    width: 100%;
-		    display: block;
-		    transform: translate3d(-50%,-50%,0);
+			text-align: center;
+			left: 50%;
+			top: 51%;
+			width: 100%;
+			display: block;
+			transform: translate3d(-50%,-50%,0);
 			h3{
 				color: #fff;
 				font-size: 60px;
@@ -159,7 +156,7 @@
 		img{
 			transition: all 2s ease-in-out;
 			&:hover{
-			    transform: scale(1.3);
+			transform: scale(1.3);
 			}
 		}
 		.info-post{
@@ -256,9 +253,12 @@
 	text-align: center;
 	.tab-content{
 		padding-top: 50px;
+		.poz{
+			display: none;
+		}
 	}
 	.tab-pane{
-		margin-left: 15px;
+		margin-left: 0;
 	}
 	.nav-tabs{
 		text-align: center;
@@ -322,16 +322,30 @@
 
 .owl-theme {
 	.owl-controls {
+		height: 0;
+		padding: 0;
 		margin: 0;
 		top: 50%;
 		width: 100%;
+		position: absolute;
    		left: 0;
 		.owl-buttons {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			top: 50%;
+			transform: translateY(-50%);
            .owl-prev{
 				float: left;
+				width: 35px;
+				height: 35px;
+				margin-left: 20px;
            }
            .owl-next{
            		float: right;
+           		width: 35px;
+				height: 35px;
+				margin-right: 20px;
            }
 		}
 	}
@@ -351,7 +365,7 @@
 	    position: absolute;
 	}
 	&:hover:before {
-	  	opacity: 1;
+	  	opacity: 0.6;
 	}
 }
 
@@ -401,7 +415,7 @@
 		img{
 		    display: block;
 		    width: 100%;
-		    height: auto;
+		    height: 340px;
 		}
 	}
 }
@@ -409,8 +423,8 @@
 
 
 .trend{
-	padding-top: 75px;
-	padding-bottom: 100px;
+	margin-top: 75px;
+	margin-bottom: 100px;
 	.sale{
 		position: relative;
 		overflow: hidden;
@@ -475,10 +489,14 @@
 }
 
 .fashion{
-	padding-top: 80px;
-	padding-bottom: 290px;
+	margin-top: 80px;
+	margin-bottom: 290px;
 }
 .line-vay{
+	.owl-theme .owl-controls .owl-buttons div{
+		padding: 7px 14px;
+	    font-size: 10px;
+	}
 	.info-fashion{
 		text-align: left;
 		padding-top: 20px;
@@ -519,6 +537,9 @@
 	}
 	.fash{
 		display: block;
+		img{
+			height: 340px;
+		}
 	}
 	h4{
 		font-size: 18px;
@@ -542,8 +563,8 @@
 		position: absolute;
 		background-color: @base-color-activ;
 		text-align: center;
-		top: 62.6%;
-    	left: 82%;
+		top: 59.7%;
+		left: 82%;
 		a{
 			color: #fff;
 			font-family: CrimsonText;
@@ -551,8 +572,8 @@
 			font-style: italic;
 			text-transform: uppercase;
 			padding: 9px 15px;
-    		display: block;
-    		&:hover{
+			display: block;
+			&:hover{
 				color: #fff;
 				text-decoration: none;
 			}
@@ -565,6 +586,7 @@
 		text-transform: uppercase;
 		border: 2px solid #e4e4e4;
 		padding: 15px 38px;
+		display: inline-block;
 		transition: all 0.2s ease-in-out;
 		&:hover{
 			background-color: @base-color-activ;
