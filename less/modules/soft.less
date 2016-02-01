@@ -7,11 +7,15 @@
 		}
 	}
 }
+.photo-tov{
+	overflow: hidden;
+}
 .soft-content{
 	margin-top: 80px;
 	margin-bottom: 110px;
 	.exp{
-		margin: 0 -7px;
+		margin: 0;
+		overflow: hidden;
 	}
 	.mini-p{
 		padding-top: 10px;
@@ -134,7 +138,6 @@
 			    border-radius: 50px;
 			    line-height: 38px;
 			    font-size: 12px;
-			    transition: all 0.2s ease-in-out;
 			}
 			a{
 				color: @base-color;
@@ -212,8 +215,10 @@
 		li{
 			display: inline-block;
 			position: relative;
+			color: #6f6f6f;
 			padding-bottom: 10px;
 			font-size: 13px;
+			line-height: 18px;
 		}
 		i{
 			position: absolute;
@@ -334,6 +339,7 @@
 .ui-spinner-up{
 	position: absolute;
 	right: 10px;
+	display: block;
 	&:before{
 		content: '+'; 
 		font-size: 18px;
@@ -353,6 +359,7 @@
 	}
 }
 .ui-spinner-button {
+	cursor: pointer;
 	transform: translateY(-50%);
 	top: 50%;
 	span{
@@ -368,14 +375,6 @@
 	width: 140px;
 }
 
-.mini-p{
-	display: block;
-	margin-right: 9px;
-	margin-left: 9px;
-}
 .bl{
 	overflow: hidden;
-}
-.img-mini-photo{
-	width: 110.5%;
 }

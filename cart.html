@@ -10,16 +10,18 @@
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<link href="css/jquery-ui.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet" >
 		<link href="css/responsive.css" rel="stylesheet">
-		<link href="css/owl.carousel.css" rel="stylesheet">
+		
 		
 	</head>
 	<!--end head-->
 	<!--body-->
 	<body>
 		<!--header-->
-		<header class="header-absolut">
+		<header class="header-absolute">
 			<!--line-header-->
 			<div class="head-block">
 				<div class="line-header">
@@ -68,7 +70,7 @@
 		<div class="breadcrumbs">
 			<div class="container">
 				<div class="col-md-12 table-c">
-					<h1>Soft rucksack</h1>
+					<h1>Shopping cart</h1>
 					<ul class="top-ul">
 						<li><a href="#">Home</a></li>
 						<li><i class="fa fa-angle-right"></i></li>
@@ -82,63 +84,136 @@
 	</header>
 	<!--end header-->
 	<div class="container">
-		<div class="tabl-click">
+		<div class="tabl-main">
 			<table>
-				<tr class="row line first">
-					<td class="col-md-6">Product</td>
-					<td class="col-md-3">Price</td>
-					<td class="col-md-3">Qty</td>
-					<td class="col-md-3">Total</td>
-				</tr>
-				<tr class="row line second">
-					<td class="col-md-6"><a href="#"><img src="images/cart/t1.png" alt=""></a> Raincoat with contrast sleeve</td>
-					<td class="col-md-3 cost">$79.00</td>
-					<td class="col-md-3">
-						<input id="spinner1" name="value" value="1" min="1" max="9999">
-					</td>
-					<td class="col-md-3 cost">$159.00</td>
-				</tr>
-				<tr class="row line second">
-					<td class="col-md-6"><a href="#"><img src="images/cart/t1.png" alt=""></a>Embroidered shirt</td>
-					<td class=" col-md-3cost">$79.00</td>
-					<td class="col-md-3">
-						<input id="spinner" name="value" value="1" min="1" max="9999">
-					</td>
-					<td class="col-md-3 cost">$159.00</td>
-				</tr>
-				<tr class="row line">
-					<td class="col-md-6"><a href="#"class="btn-cart">Update cart</a><a href="#" class="btn-cart">Clear cart</a></td>
-					<td class="col-md-3"></td>
-					<td class="col-md-3"></td>
-					<td class="col-md-3"><a href="#" class="btn-cart">Continue</a></td>
-				</tr>
+				<thead>
+					<tr>
+						<th>Product</th>
+						<th>Price</th>
+						<th>Qty</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="line">
+						<td><a href="#"><img src="images/cart/t1.png" alt=""></a><a href="#">Raincoat with contrast sleeve</a></td>
+						<td class="cost">$79.00</td>
+						<td>
+							<input type="number" id="spinner-line" name="value" value="04" min="1" max="9999">
+						</td>
+						<td class="cost">$159.00</td>
+					</tr>
+					<tr class="line">
+						<td><a href="#"><img src="images/cart/t1.png" alt=""></a><a href="#">Embroidered shirt</a></td>
+						<td class="cost">$79.00</td>
+						<td>
+							<input type="number" id="spinner-line" name="value" value="04" min="1" max="9999">
+						</td>
+						<td class="cost">$159.00</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>
+							<a href="#"class="btn-cart first-btn">Update cart</a>
+							<a href="#" class="btn-cart">Clear cart</a>
+						</td>
+						<td  colspan="3"><a href="#" class="btn-cart">Continue</a></td>
+					</tr>
+				</tfoot>
 			</table>
 		</div>
+
 		<div class="row purchase">
 			<div class="col-md-4">
-				
+				<h4>Have a coupon ?</h4>
+				<form>
+					<div class="form-group">
+					    <input type="email" class="form-control basic-input" placeholder="Enter your code...">
+					    <a href="#" class="btn-cart">Apply coupon</a>
+					</div>
+				</form>
 			</div>
 			<div class="col-md-4">
-				
+				<h4>Estimate shipping tax</h4>
+				<form>
+					<div class="form-group middle-group">
+						<label for="country" class="form-label star">Country</label>
+						<select name="country" id="country" class="form-control basic-select">
+							<option selected="selected">United states</option>
+							<option>Switzerland</option>
+							<option>Deuchland</option>
+						</select>
+					</div>
+					<div class="form-group middle-group">
+						<label for="state" class="form-label">State / province</label>
+						<input type="email" class="form-control basic-input" id="state">
+					</div>
+					<div class="form-group middle-group">
+						<label for="zip" class="form-label">Zip / postal code</label>
+						<input type="email" class="form-control basic-input" id="zip">
+						<a href="#" class="btn-cart">Estimate tax</a>
+					</div>
+				</form>
 			</div>
 			<div class="col-md-4">
-				<div class="radio">
-					<label>
-						<input class="" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-						<span>Flat rate</span><span class="value">$85.00</span>
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-						<span>International</span><span class="value">$60.00</span>
-					</label>
-				</div>
-				<div class="radio disabled">
-					<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-						<span>Local pickup</span><span class="value">FREE</span>
-					</label>
+				<h4>Cart totals</h4>
+				<div class="totals">
+					<table class="mini-table">
+						<thead>
+							<tr>
+								<th>Subtotal</th>
+								<th class="cost">$159.00</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Shipping</td>
+								<td>
+									<div class="radio">
+										<label>
+											<input class="" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+											<label for="flat" class="radio-label">
+												<div class="rad"></div>
+											</label>
+												<span>Flat rate</span><span class="value">$85.00</span>
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											<label for="flat" class="radio-label">
+												<div class="rad"></div>
+											</label>
+											<span>International</span><span class="value">$60.00</span>
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+											<label for="flat" class="radio-label">
+												<div class="rad"></div>
+											</label>
+											<span>Local pickup</span><span class="value">FREE</span>
+										</label>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td>Total</td>
+								<td class="big-cost">$159.00</td>
+							</tr>
+						</tfoot>
+					</table>
+
+					<div class="totals-footer">
+						<p>
+							Note: Shipping and taxes are estimated and will be updated during checkout based on your billing and shipping information.
+						</p>
+						<a href="#" class="big-btn-cart">Process to checkout</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -233,20 +308,19 @@
 		<!-- end footer -->
 	</body>
 	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<script>
-	$(function() {
-	var spinner = $( "#spinner" ).spinner();
-	$( "button" ).button();
-	});
-	</script>
-	<script>
-	$(function() {
-	var spinner1 = $( "#spinner1" ).spinner();
-	$( "button" ).button();
-	});
-	</script>
+	
 	<script src="js/jquery.vide.min.js"></script>
-	<script src="js/owl.carousel.js"></script>
+	<script>
+		$(function() {
+		$( "#country" ).selectmenu();
+		$( "#files" ).selectmenu();
+		$( "#number" )
+		.selectmenu()
+		.selectmenu( "menuWidget" )
+		.addClass( "overflow" );
+		});
+	</script>
 </html>
