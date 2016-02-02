@@ -1,5 +1,5 @@
 .check{
-	margin-top: 70px;
+	margin-top: 75px;
 	margin-bottom: 170px;
 	label{
 		text-transform: uppercase;
@@ -7,6 +7,7 @@
 		color: @base-color;
 		font-family: CrimsonText;
 		font-size: 12px;
+		letter-spacing: 1px;
 		font-style: italic;
 	}
 	.basic-input{
@@ -15,10 +16,13 @@
 	.lon{
 		margin-bottom: 20px;
 	}
+	.form-group{
+		margin: 0;
+	}
 }
 .click-line{
 	width: 100%;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 	span{
 		font-family: CrimsonText;
 		font-size: 16px;
@@ -57,7 +61,7 @@
 .form-control{
 	border-radius: 1px;
 	outline: none;
-	padding: 20px 25px;
+	padding: 24px 25px;
 	box-shadow: none;
 	transition: all 0.2s ease-in-out;
 	border: 1px solid #ececec;
@@ -107,15 +111,34 @@
 		background-color: #fff;
 	}
 }
+.check{
+	.order{
+		tr{
+			td{
+				padding-bottom: 20px;
+	    		padding-top: 20px;
+			}
+			.emobire{
+				padding-bottom: 60px;
+    			padding-top: 10px;
+			}
+		}
+		p{
+			margin-top: 0;
+		}
+	}
+}
 .order{
-	margin-top: 60px;
+	margin-top: 5px;
 	width: 100%;
 	border: 2px solid #ececec;
-	padding:40px 38px;
+	padding: 40px 30px;
 	.inline input[type="checkbox"]:checked + span:before{
 		top: -6px;
 	}
 	tr {
+		border-bottom: none;
+		border-top: 1px solid #ececec;
 		th:last-child{
 			font-style:normal;
 			font-size: 12px;
@@ -127,6 +150,7 @@
 		font-size: 18px;
 		text-align: right;
 		font-style: italic;
+		letter-spacing: 1px;
 	}
 	.some{
 		padding-bottom: 70px;
@@ -135,26 +159,27 @@
 		font-size: 10px;
 		text-align: right;
 		color: #6f6f6f;
+		letter-spacing: 1px;
 	}
 	h2{
 		color: @base-color-activ;
 		font-size: 18px;
 		font-weight: 700;
-		margin-bottom: 30px;
+		line-height: 30px;
+		margin-bottom: 28px;
 	}
 	span{
 		display: inline-block;
 		color: #6f6f6f;
+		font-size: 10px;
 		line-height: 24px;
 	}
 	.x1{
 		color: @base-color;
+		margin-right: 20px;
 	}
 	p{
 		text-align: left;
-	}
-	.payment{
-		margin-top: 10px;
 	}
 	.checkbox{
 		padding-top: 20px;
@@ -162,12 +187,14 @@
 		font-family: Montserrat;
 		font-size: 10px;
 		font-style:normal;
+		padding: 20px 0;
+    	margin: 0;
 		}
 		.checkbox input[type=checkbox]{
 			margin-top:0;
 		}
 		.big-btn-cart{
-			margin-top: 45px;
+			margin-top: 20px;
 			display: block;
 			text-align: center;
 		}

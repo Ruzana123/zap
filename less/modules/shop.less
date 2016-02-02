@@ -115,14 +115,18 @@
 	.btn{
 		background-color: #fff;
 		position: absolute;
-		top: 30%;
+		top: 35%;
 	    right: 5px;
 	    transform: translateY(-50%);
 	    color: #909090;
 	    outline: none;
+	    transition: all 0.2s ease-in-out;
 	    &:active{
 	    	outline: none;
 	    	box-shadow: none;
+	    }
+	    &:hover{
+	    	color: @base-color-activ;
 	    }
 	}
 }
@@ -161,7 +165,7 @@
 				border: 1px solid black; 
 				position: absolute; 
 				transform: rotate(45deg); 
-				left: 86%;
+				left: 84%;
     			top: 9px;
 				}
 			}
@@ -272,7 +276,7 @@
 			margin-top: 20px;
 			margin-bottom: 20px;
 		li{
-			padding-bottom: 10px;
+			padding-bottom: 25px;
 			padding-top: 25px;
 			display: block;
 		}
@@ -285,6 +289,11 @@
 			display: block;
 			max-height: 100%;
 			position: relative;
+		}
+		.info-pr{
+			h4{
+				margin-top: 0;
+			}
 		}
 	}
 }
@@ -414,6 +423,7 @@
 	.ui-slider .ui-slider-handle{ 
 		width: 20px; 
 		height: 20px; 
+		cursor: pointer;
 		border-radius: 50px; 
 	} 
 .ui-slider .ui-slider-range{ 

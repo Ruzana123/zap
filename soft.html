@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<link href="css/style.css" rel="stylesheet" >
@@ -110,30 +110,30 @@
 				<div class="line-info-photo">
 					<span>Product code:</span> <span class="dark">ref. 8073/027</span>
 					<span>In store: </span> <span class="dark">Availabilty</span>
-					<ul class="star">
-						<li><img src="images/soft/s.png" alt=""></li>
-						<li><img src="images/soft/s.png" alt=""></li>
-						<li><img src="images/soft/s.png" alt=""></li>
-						<li><img src="images/soft/s.png" alt=""></li>
-						<li><img src="images/soft/s.png" alt=""></li>
+					<ul class="star-line">
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
 					</ul>
 				</div>
 				<div class="price">
 					<span class="price-old">$99.00</span>
 					<span class="price-new">$45.00</span>
 				</div>
-				<div class="mini-menu">
+				<div class="accordion">
 					<ul>
-						<li class="sub"> 
+						<li class="sub">
 							<a href="#">Size <i class="fa fa-caret-down"></i></a>
 							<ul>
-								<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit consequuntur dicta blanditiis at aliquid quis deserunt perferendis soluta? Quisquam optio expedita eum laborum? Perspiciatis fuga quam, hic recusandae itaque sed.</li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit consequuntur dicta blanditiis at aliquid quis deserunt perferendis soluta?</li>
 							</ul>
 						</li>
 						<li class="sub">
 							<a href="#">Colour <i class="fa fa-caret-down"></i></a>
 							<ul>
-								<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit consequuntur dicta blanditiis at aliquid quis deserunt perferendis soluta? Quisquam optio expedita eum laborum? Perspiciatis fuga quam, hic recusandae itaque sed.</li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit consequuntur dicta blanditiis at aliquid quis deserunt perferendis soluta? </li>
 							</ul>
 						</li>
 					</ul>
@@ -145,14 +145,14 @@
 					
 					<a href="#" class="add-to">Add to cart</a>
 				</div>
-				<div class="info-2">
+				<div class="info-2 mini-2">
 					<span>Sku: </span><span class="dark">0568</span>
 				</div>
-				<div class="info-2">
-					<span>Categories: </span><span class="dark">Fashion</span>
+				<div class="info-2 mini-2">
+					<span>Categories: </span><a href="#" class="dark dark-link">Fashion</a>
 				</div>
-				<div class="info-2">
-					<span>Tag: </span><span class="dark">Coat</span>
+				<div class="info-2 mini-2">
+					<span>Tag: </span><a href="#" class="dark dark-link">Coat</a>
 				</div>
 				<ul class="social-icon">
 					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -282,15 +282,15 @@
 				<div class="col-md-3 footer-block b3">
 					<h4 class="footer-h4 yelow-line">Twitter widget</h4>
 					<div class="f-info">
-						<p>Looking for an awesome CREATIVE WordPress Theme? Esquise was updated and optimized to run even better. Find it here: http://t.co/0WWEMQEQ48</p>
-						<a href="#"><i class="fa fa-twitter"></i></a>
+						<p>Looking for an awesome CREATIVE WordPress Theme? Esquise was updated and optimized to run even better. Find it here: <a href="#">http://t.co/0WWEMQEQ48</a></p>
+						<i class="fa fa-twitter"></i>
 						<span>
 							01 day ago
 						</span>
 					</div>
 					<div class="f-info">
-						<p>It is a long established fact that a reader will be distracted by the readable . Find it here: http://t.co/0WWEMQEQ48</p>
-						<a href="#"><i class="fa fa-twitter"></i></a>
+						<p>It is a long established fact that a reader will be distracted by the readable. Find it here: <a href="#">http://t.co/0WWEMQEQ48</a></p>
+						<i class="fa fa-twitter"></i>
 						<span>
 							02 day ago
 						</span>
@@ -350,14 +350,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script>
 $(document).ready(function() {
-
 $("#owl-demo-photo").owlCarousel({
-
 //Set AutoPlay to 3 seconds
 	
 items : 3
 });
-
 });
 </script>
 <script>
@@ -395,11 +392,9 @@ items : 3
 <script>
 	$(function() {
 	var spinner = $( "#spinner" ).spinner();
-
 	$( "button" ).button();
 	});
 </script>
-
 <script src="js/jquery.vide.min.js"></script>
 <script src="js/owl.carousel.js"></script>
 </html>

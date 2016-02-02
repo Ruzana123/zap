@@ -14,7 +14,8 @@ module.exports = function(grunt) {
     less: {
       development: {
         files: {
-          "css/style.css": "less/style.less"
+          "css/style.css": "less/style.less",
+          "css/responsive.css": "less/modules/responsive.less"
         }
       }
       },

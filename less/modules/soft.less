@@ -50,10 +50,14 @@
 	.line-info-photo{
 		padding-bottom: 40px;
 		position: relative;
-		.star{
+		.star-line{
 			float: right;
 			li{
 				display: inline-block;
+				i{
+					color: @base-color-activ;
+					cursor: pointer;
+				}
 			}
 		}
 		span:nth-child(1){
@@ -83,6 +87,13 @@
 			}
 		}
 	}
+	.mini-2{
+		font-size: 10px;
+		text-transform: uppercase;
+		span{
+			font-size: 10px;
+		}
+	}
 	span{
 		font-size: 11px;
 		color: #6f6f6f;
@@ -90,6 +101,12 @@
 	}
 	.dark{
 		color: @base-color;
+	}
+	.dark-link{
+		transition: all 0.2s ease-in-out;
+		&:hover{
+			color: @base-color-activ;
+		}
 	}
 	.price{
 		padding-bottom: 35px;
@@ -111,14 +128,16 @@
 		}
 	}
 	.add-to{
-		padding: 13px 25px;
+		padding: 15px 28px;
 		background-color: @base-color-activ;
 		color: #fff;
+		letter-spacing: 1px;
 		text-transform: uppercase;
 		transition: all 0.2s ease-in-out;
 		display: inline-block;
 		&:hover{
-			background-color: darken(@base-color-activ, 5%)
+			background-color: darken(@base-color-activ, 5%);
+			border-color: darken(@base-color-activ, 5%);
 		}
 	}
 	.info-2{
@@ -138,11 +157,11 @@
 			    border-radius: 50px;
 			    line-height: 38px;
 			    font-size: 12px;
+			    transition: all 0.3s ease-in-out;
 			}
 			a{
 				color: @base-color;
 				display: block;
-				transition: all 0.2s ease-in-out;
 				&:hover{
 					i{
 						background-color: @base-color-activ;
@@ -162,33 +181,33 @@
 		padding-right: 28px;
 	}
 }
-/*===========AKORDEON=============*/
+/*===========accordion=============*/
 
-.mini-menu ul {
+.accordion ul {
     list-style: none;
     margin: 0;
     padding:0;
     text-align:left;
 }
-.mini-menu > ul > li {
+.accordion > ul > li {
     position: relative;
 }
-.mini-menu > ul > li > a {
+.accordion > ul > li > a {
     display: block;
     outline: 0;
     text-decoration: none;
 }
-.mini-menu .sub > ul {
+.accordion .sub > ul {
     counter-reset: items;
     height: 0;
     overflow: hidden;
 }
-.mini-menu .sub > ul > li > a {
+.accordion .sub > ul > li > a {
     display: block;
     text-decoration: none;
 }
 
-.mini-menu{
+.accordion{
 	width: 100%;
 	display: block;
 	.sub{
@@ -209,6 +228,7 @@
 			font-size: 12px;
 			color: @base-color;
 			font-style: italic;
+			letter-spacing: 1px;
 			text-transform: uppercase;
 			transition: all 0.2s ease-in-out;
 		}
@@ -218,7 +238,7 @@
 			color: #6f6f6f;
 			padding-bottom: 10px;
 			font-size: 13px;
-			line-height: 18px;
+			line-height: 30px;
 		}
 		i{
 			position: absolute;
@@ -302,6 +322,8 @@
 				color:@base-color;
 				padding: 20px 60px;
 				color: #6f6f6f;
+				letter-spacing: 2px;
+				font-size: 12px;
 				text-transform: uppercase;
 				transition: all 0.2s ease-in-out;
 				&:hover{
@@ -324,7 +346,7 @@
 }
 
 .line-product-va{
-	margin-bottom: 270px;
+	margin-bottom: 150px;
 }
 
 .number-cl{
