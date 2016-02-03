@@ -7,6 +7,10 @@
 		}
 	}
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 .photo-tov{
 	overflow: hidden;
 }
@@ -61,6 +65,7 @@
 			}
 		}
 		span:nth-child(1){
+			position: relative;
 			margin-left: 28px;
 			&:before { 
 				content: ''; 
@@ -69,8 +74,8 @@
 				border: 1px solid black; 
 				position: absolute; 
 				transform: rotate(45deg); 
-				left: 1%;
-    			top: 9px;
+				left: -40%;
+    			top: 5px;
 			}
 		}
 		span:nth-child(3){

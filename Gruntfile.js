@@ -14,34 +14,23 @@ module.exports = function(grunt) {
     less: {
       development: {
         files: {
-          "css/style.css": "less/style.less"
+          "css/style.css": "less/style.less",
+          "css/responsive.css": "less/responsive.less"
         }
       }
       },
 
     watch: { 
       scripts: { 
-        files: 'less/modules/*.less', 
+        files: ['less/modules/*.less',
+                'less/responsive.less'], 
           tasks: ['concat','less','cssmin'], 
           options: { 
             interrupt: true, 
           }, 
         }, 
       },
-      browserSync: {
-          dev: {
-              bsFiles: {
-                  src : [
-                      'less/*.less',
-                      '*.html'
-                  ]
-              },
-              options: {
-                  watchTask: true,
-                  server: './'
-              }
-          }
-      },
+     
 
     cssmin: {
       target: {
@@ -58,12 +47,11 @@ module.exports = function(grunt) {
     // 3. Тут мы указываем Grunt, что хотим использовать этот плагин
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
-    grunt.registerTask('default', ['browserSync', 'watch']);
+    grunt.registerTask('default', ['watch']);
 
 };

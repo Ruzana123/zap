@@ -68,10 +68,7 @@
 		padding-left: 0;
 	}
 	.form-search input {
-    	width: 250px;
-	}
-	.prod-top .right-settings span:last-child:before{
-		left: 81%;
+    	width: 200px;
 	}
 	.new1{
 	    top: 5px;
@@ -104,6 +101,11 @@
 
 @media only screen and (max-width: 992px) {
 		/*home*/
+	.head-block{
+		.line-header .shop-i ul li:first-child{
+			padding-right: 10px;
+		}
+	} 
 	.big-img .info-post {
 		h2{
 			font-size: 80px;
@@ -113,6 +115,7 @@
 		}
 	}
 	.tr{
+		
 		display: block;
 	}
 	.fashion .owl-carousel .owl-item{
@@ -185,7 +188,7 @@
 		.product-el{
 			margin-bottom: 80px;
 			&:nth-child(3n+1){
-				clear: none;
+				clear:both;
 			}
 		}
 	}
@@ -234,6 +237,26 @@
 		margin-right: 10px;
     	margin-left: 14px;
 	}
+	.pages .number{
+		margin-bottom: 60px;
+	}
+	.form-search{
+		width: 100%;
+		input{
+			width: 100%;
+		}
+	}
+	.widget{
+		text-align: center;
+		.f-img{
+			&:before{
+				display: none;
+			}
+			&:after{
+				display: none;
+			}
+		}
+	}
 		/* shop*/
 }
 
@@ -279,6 +302,7 @@
 }
 
 @media only screen and (max-width: 768px){
+
 		/*home*/
 	.line-header {
 		.navbar-collapse{
@@ -387,8 +411,12 @@
 		text-align: center;
 		margin-bottom: 25px;
 		.fash{
+			text-align: center;
 			img{
 				display: inline-block;
+			}
+			.last-fashion-img{
+				width: 50%;
 			}
 		}
 	}
@@ -397,6 +425,10 @@
 	    padding-bottom: 30px;
 	}
 	.line-vay {
+		.last-fashion-info{
+			width: 50%;
+			display: inline-block;
+		}
 		.button-fashion{
 			padding: 9px 35px;
 		}
@@ -489,6 +521,26 @@
 	}
 		/*home*/
 		/*shop*/
+	.header-absolute{
+		.head-block .line-header {
+			.navbar-collapse {
+				background-color: #141414;
+			}
+			.line-header .shop-i{
+				margin-right: 90px;
+			}
+		}
+	}
+	.prod-main{
+		.product-el{
+			&:nth-child(2n+1){
+				clear: both;
+			}
+			&:nth-child(3n+1){
+				clear: none;
+			}
+		}
+	}
 	.widget{
 		margin-top: 25px;
 		text-align: center;
@@ -528,6 +580,21 @@
 		}
 	}
 		/*home*/
+		/*shop*/
+	.header-absolute .head-block .line-header .navbar-collapse{
+		background-color: #1d1d1d;
+	}
+	.prod-main{
+		.product-el{
+			&:nth-child(3n+1){
+				clear: both;
+			}
+			&:nth-child(2n+1){
+				clear: none;
+			}
+		}
+	}
+		/*shop*/
 }
 
 @media only screen and (min-width: 420px) and (max-width: 568px){
@@ -539,6 +606,18 @@
 
 @media screen and (max-width:480px){
 		/*home*/
+	.info-base .fash .last-fashion-img{
+		width: 100%;
+	}
+	.line-vay {
+		.last-fashion-info{
+			width: 100%;
+			display: inline-block;
+		}
+	}
+	#owl-demo .item img{
+		display: inline-block;
+	}
 	.line-header .menu-top{
 		width: 75%;
 	}
@@ -599,6 +678,45 @@
 		width: 100%;
 	}
 		/*home*/
+		/*shop*/
+	.left-settings{
+		width: 100%;
+		display: block;
+		position: relative;
+	}
+	.product-base{
+		margin-top: 40px;
+		margin-bottom: 40px;
+		.prod-main{
+			.product-el{
+				width: 100%;
+			}
+		}
+	}
+	.widget .sale{
+		text-align: left;
+		li{
+			display: inline-flex;
+		}
+	}
+	.right-settings {
+		display: block;
+		padding-top: 20px;
+		text-align: center;
+		width: 100%;
+		span{
+			width: 100%;
+			position: relative;
+			display: block;
+			&:before{
+				display: none;
+			}
+		}
+	}
+	.pages .number a{
+		padding: 12px 15px;
+	}
+		/*shop*/
 }
 
 @media screen and (max-width:320px){
@@ -609,4 +727,253 @@
 	.navbar-toggle {
 	    margin-right: -35px;
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* soft */
+@media only screen and (max-width: 1200px){
+	.tab-product-soft .nav-tab li a{
+		font-size: 10px;
+	}
+	.mini-p{
+		img{
+			display: inline-block;
+		}
+	}
+	.photo-tov{
+		text-align: center;
+		img{
+			display: inline-block;
+		}
+	}
+	.info-tov{
+		margin-top: 40px;
+		text-align: center;
+	}
+	.info-tov .line-info-photo span:nth-child(3):before{
+		display: none;
+	}
+	.mini-p{
+		a{
+			display: block;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.line-product-va{
+		.info-pr{
+			width: 75%;
+		}
+		.poz{
+			display: none;
+		}
+	}
+}
+
+
+@media screen and (max-width:480px){
+	.table-c {
+		h1{
+			font-size: 40px;
+		}
+	}
+	.line-product-va{
+		.info-pr{
+			width: 75%;
+		}
+	}
+	.info-tov .social-icon li{
+		margin-right: 0;
+	}
+	.element-b p{
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width:320px){
+	.element-b{
+		margin-bottom: 30px;
+	}
+	.soft-content{
+		margin-bottom: 40px;
+		margin-top: 40px;
+	}
+}
+
+
+
+
+
+
+
+/* cart */
+@media only screen and (max-width: 1200px){
+	.table-main .line td a{
+		padding-right: 5px;
+	}
+	.totals .big-btn-cart{
+		padding: 11px 19px;
+	}
+	.purchase{
+		margin-bottom: 80px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.line{
+		img{
+			max-width: 75px;
+		}
+	}
+	.totals{
+		margin-top: 35px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	
+}
+
+@media only screen and (max-width: 768px){
+	.line{
+		img{
+			display: none;
+		}
+	}
+	.btn-cart-line{
+		.btn-cart{
+			padding: 10px 8px;
+		}
+		.first-btn{
+			margin-right: 15px;
+		}
+	}
+	.table-main .line td a{
+		font-size: 11px;
+	}
+
+}
+
+@media screen and (width : 768px){
+		
+}
+
+@media screen and (max-width:480px){
+	.purchase{
+		margin-bottom: 40px;
+	}
+	.btn-cart-line {
+		.first-btn {
+	    	margin-right: 5px;
+	    }
+	    .btn-cart{
+			font-size: 8px;
+			padding: 8px 8px;
+		}
+	}
+	.table-main input{
+		height: 30px;
+		width: 55px;
+	}
+}
+
+@media screen and (max-width:320px){
+	.table-main input{
+		width: 40px;
+	}
+	.btn-cart{
+		font-size: 8px;
+		padding: 8px 8px;
+	}
+	.purchase {
+		h4{
+			font-size: 11px;
+		}
+		.form-group {
+			label{
+				font-size: 11px;
+			}
+			input{
+				height: 30px;
+				margin-bottom: 15px;
+				padding: 20px 20px;
+				font-size: 11px;
+			}
+		}
+		.middle-group{
+			margin-bottom: 15px;
+		}
+	}
+}
+
+
+
+
+/* chick-out */
+@media only screen and (max-width: 1200px){
+	.half:first-child{
+		margin-right: 5px;
+	}
+	.first-half {
+		margin-right: 5px;
+	}
+	.click-form{
+		.ui-selectmenu-button{
+			width: 100%;
+			padding: 12px 20px;
+			margin-bottom: 20px;
+		}
+	}
+	.click-form .checkbox{
+		margin-top: 0;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	
+}
+
+@media only screen and (max-width: 768px){
+	
+
+}
+
+@media screen and (width : 768px){
+		
+}
+
+@media screen and (max-width:480px){
+
+}
+
+@media screen and (max-width:320px){
+	
 }
