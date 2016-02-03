@@ -3,9 +3,6 @@
 	width: 100%;
 	z-index: 2;
 	.line-header {
-		.menu-top{
-			    padding-left: 195px;
-		}
 	}
 }
 .head-block{
@@ -151,6 +148,7 @@
 		float: right;
 		span{
 			color: #6f6f6f;
+			position: relative;
 			font-family: CrimsonText;
 			font-size: 16px;
 			font-style: italic;
@@ -165,8 +163,8 @@
 				border: 1px solid black; 
 				position: absolute; 
 				transform: rotate(45deg); 
-				left: 84%;
-    			top: 9px;
+				left: -12px;
+    			top: 8px;
 				}
 			}
 		}
@@ -299,20 +297,21 @@
 }
 
 .sidebar{
-	.by-element{
-		position: relative;
+	h2{
 		&:before{
 			content: '';
 			background-color: @base-color-activ;
 			width: 10px;
 			height: 10px;
-			top: 28px;
+			top: 15px;
 			position: absolute;
 			transition: all 0.3s ease-in-out;
 			bottom: 0;
-			left: 5px;
-			transform: translate(-50%) rotate(45deg);
+			transform: translate(-175%) rotate(45deg);
 		}
+	}
+	.by-element{
+		position: relative;
 		h2{
 			padding-left: 30px;
 		}
@@ -346,7 +345,10 @@
 			padding-left: 0;
 		}
 	}
-	a{
+	.active{
+		border: 2px solid @base-color;
+	}
+	span{
 		color: @base-color;
 		font-size: 12px;
 		display: block;
@@ -397,6 +399,7 @@
 		}
 		a{
 			color: #6f6f6f;
+			display: block;
 			padding: 12px 17px;
 			border: 1px solid #e4e4e4;
 			color: #141414;
@@ -407,6 +410,12 @@
 			&:hover{
 				color: @base-color-activ;
 				border-color: @base-color-activ;
+			}
+			&:active{
+				text-decoration: none;
+			}
+			&:focus{
+				text-decoration: none;
 			}
 		}
 	}
