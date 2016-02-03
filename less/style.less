@@ -107,7 +107,6 @@ q:after {
 body{
 	background-color: white;
 	font-family: Montserrat;
-	
 }
 img{
 	max-width: 100%;
@@ -1337,7 +1336,6 @@ footer{
 	.item {
 		img{
 		    display: block;
-		    width: 100%;
 		}
 	}
 }
@@ -1525,7 +1523,7 @@ footer{
 
 
 @media only screen and (max-width: 1200px){
-		/* home*/
+		/*home*/
 	.line-header {
 		.menu-top{
 			padding-left: 0;
@@ -1544,6 +1542,7 @@ footer{
 		padding: 0 10px;
 	}
 	.trend {
+		margin-bottom: 75px;
 		.tr-text {
 			.a70{
 				font-size: 65px;
@@ -1555,19 +1554,9 @@ footer{
 			}
 		}
 	}
-	.trend {
-	    margin-bottom: 75px;
-	}
 	.tab-product {
 		.tab-content{
 			padding-top: 30px;
-		}
-	}
-	#owl-demo {
-		.item {
-			img{
-				height: 270px;
-			}
 		}
 	}
 	.fashion{
@@ -1638,7 +1627,7 @@ footer{
 }
 
 @media only screen and (max-width: 992px) {
-		/* home*/
+		/*home*/
 	.big-img .info-post {
 		h2{
 			font-size: 80px;
@@ -1647,11 +1636,8 @@ footer{
 			font-size: 45px;
 		}
 	}
-	.owl-carousel .owl-item{
-	    margin-left: 30px;
-	}
-	#owl-demo .item img {
-	    height: 205px;
+	.tr{
+		display: block;
 	}
 	.fashion .owl-carousel .owl-item{
 	    margin-left: 0;
@@ -1678,7 +1664,23 @@ footer{
 			font-size: 45px;
 		}
 	}
-		/* home*/
+	.info-base{
+		text-align: center;
+		.fash{
+			img{
+				display: inline-block;
+			}
+		}
+		&:last-child{
+			margin-top: 40px;
+			width: 100%;
+		}
+	}
+	footer .footer-block{
+		border:none;
+	}
+
+		/*home*/
 		/* shop*/
 	.form-search input{
 		height: 40px;
@@ -1760,14 +1762,16 @@ footer{
 }
 
 @media screen and (width : 1024px){
-		/* home*/
-		/* home*/
+		/*home*/
+		/*home*/
 	
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
-		/* home*/
-	.line-header .navbar-collapse li a{
-		margin: 16px 19px;
+		/*home*/
+	.line-header .navbar-collapse li {
+		a{
+			margin: 16px 19px;
+		}
 	}
 	.big-img {
 		.mini-bg img:hover{
@@ -1795,13 +1799,26 @@ footer{
 			text-align: center;
 		}
 	}
-		/* home*/
+		/*home*/
 }
 
 @media only screen and (max-width: 768px){
-		/* home*/
+		/*home*/
+	.line-header {
+		.navbar-collapse{
+			margin-top: 20px;
+		}
+		.shop-i{
+			margin-right: 75px;
+		    position: relative;
+		    z-index: 3;
+		}
+	}
 	.navbar-nav{
-		background-color: rgba(238, 176, 19, 0.3);
+		margin: 0;
+	}
+	.navbar-toggle{
+		margin-right: -45px;;
 	}
 	.big-img {
 		.big-img-f .btn a{
@@ -1816,9 +1833,20 @@ footer{
 				font-size: 30px;
 			}
 		}
-		.mini-bg .info-post {
-			a{
-				font-size: 25px;
+		.mini-bg {
+			width: 47%;
+			display: inline-block;
+			&:last-child{
+				float: right;
+				margin-top: 0;
+			}
+			&:first-child{
+				float: left;
+			}
+			.info-post {
+				a{
+					font-size: 25px;
+				}
 			}
 		}
 		.m-i-b{
@@ -1833,12 +1861,26 @@ footer{
 		display: none;
 	}
 	.tab-product {
-		.nav-tabs li a{
-			margin: 0;
+		.nav-tabs {
+			.active a{
+				line-height: 17px; 
+				&:before{
+					display: none;
+				}
+			}
+			li a{
+				margin: 0;
+			}
 		}
 		.nav>li>a{
 			padding: 10px 7px;
 		}
+	}
+	.big-img img:hover {
+	    transform: none;
+	}
+	.big-img .mini-bg img:hover {
+	    transform: none;
 	}
 	.line-header {
 		.logo-img-big {
@@ -1852,20 +1894,18 @@ footer{
 		    z-index: 2;
 		}
 		.navbar-collapse{
-			margin-left: 20px;
-			width: 100%;
-			li a:after{
-				display: none;
+			margin-left: -2px;
+    		width: 113%;
+    		position: absolute;
+    		top: 60px;
+    		z-index: 3;
+    		background-color: #fff;
+			li {
+				a:after{
+					display: none;
+				}
 			}
 		}
-	}
-	.tr{
-		img{
-			max-width: 50%;
-		}
-	}
-	.navbar-toggle{
-		margin-right: 25px;
 	}
 	.info-base{
 		text-align: center;
@@ -1878,7 +1918,7 @@ footer{
 	}
 	.new-arrival .icon-info {
     	padding-top: 15px; 
-	    padding-bottom: 15px;
+	    padding-bottom: 30px;
 	}
 	.line-vay {
 		.button-fashion{
@@ -1900,9 +1940,6 @@ footer{
 			text-align: center;
 		}
 	}
-	#owl-demo .item img {
-	    height: 185px;
-	}
 	.fashion{
 		margin-bottom: 80px;
 	}
@@ -1911,14 +1948,25 @@ footer{
 	}
 	.trend {
 		.sale {
+			width: 50%;
 			text-align: center;
 			img{
 				display: inline-block;
+				&:hover{
+					transform: none;
+				}
 			}
 			.sale-img{
 				margin-bottom: 20px;
 			}
+			&:last-child{
+				width: 100%;
+			}
 		}
+	}
+	.sale-img-50{
+		width: 50%;
+		display: inline-block;
 	}
 	.info-pr{
 		text-align: center;
@@ -1950,11 +1998,20 @@ footer{
 		.yelow-line:after{
 			left: 48%;
 		}
+		.left-footer{
+			text-align: center;
+		}
+		.right-footer{
+			text-align: center;
+		}
+		.copyright{
+			padding: 0;
+		}
 	}
 	.f-img:after{
 		display: none;
 	}
-		/* home*/
+		/*home*/
 		/*shop*/
 	.widget{
 		margin-top: 25px;
@@ -1970,11 +2027,31 @@ footer{
 }
 
 @media screen and (width : 768px){
-		/* home*/
-	.line-header .menu-top .navbar{
-		padding-left: 165px;
+		/*home*/
+	.line-header {
+		.menu-top .navbar{
+			padding-left: 165px;
+		}
+		.navbar-collapse{
+			position: relative;
+			margin-top: 0;
+			top: 0;
+		}
+		.shop-i {
+			padding-right: 9px;
+    		line-height: 23px;
+    		margin-right: 0;
+		}
 	}
-		/* home*/
+	.big-img {
+		.big-img-f{
+			width: 100%;
+		}
+		.m-i-b{
+			width: 100%;
+		}
+	}
+		/*home*/
 }
 
 @media only screen and (min-width: 420px) and (max-width: 568px){
@@ -1985,12 +2062,20 @@ footer{
 }
 
 @media screen and (max-width:480px){
-		/* home*/
+		/*home*/
 	.line-header .menu-top{
 		width: 75%;
 	}
-	.line-header .shop-i ul li:first-child {
-	    padding-right: 10px;
+	.navbar-toggle {
+	    margin-right: -50px;
+	}
+	.line-header {
+		.navbar-collapse{
+			width: 125%;
+		}
+		.shop-i ul li:first-child {
+	    	padding-right: 10px;
+	    }
 	}
 	.btn-in-tab .big-button{
 		font-size: 16px;
@@ -2027,15 +2112,27 @@ footer{
 		.tr-bottom a{
 			padding: 6px 14px;
 		}
+		.sale{
+			width: 100%;
+		}
+	}
+	.info-base{
+		width: 100%;
 	}
 	.tr img{
 		width: 100%;
 	}
-		/* home*/
+		/*home*/
 }
 
 @media screen and (max-width:320px){
-	
+	/*home*/
+	.line-header .shop-i{
+		margin-right: 63px;
+	}
+	.navbar-toggle {
+	    margin-right: -35px;
+	}
 }
 .header-absolute{
 	position: absolute;
@@ -2532,6 +2629,7 @@ p{
 		color: @base-color;
 	}
 }
+
 
 
 
