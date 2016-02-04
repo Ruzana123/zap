@@ -72,7 +72,7 @@
   .widget .sale .info-pr h4 {
     font-size: 10px;
   }
-  .widget .sale .f-img {
+  .widget .sale .footer-img {
     margin-right: 10px;
   }
   .widget .sale li {
@@ -238,7 +238,7 @@
   .widget .button-filter {
     padding: 5px 57px;
   }
-  .widget .sale .f-img {
+  .widget .sale .footer-img {
     margin-right: 0;
   }
   .widget .sale li {
@@ -282,10 +282,10 @@
   .widget {
     text-align: center;
   }
-  .widget .f-img:before {
+  .widget .footer-img:before {
     display: none;
   }
-  .widget .f-img:after {
+  .widget .footer-img:after {
     display: none;
   }
   /* shop*/
@@ -526,7 +526,7 @@
   footer .copyright {
     padding: 0;
   }
-  .f-img:after {
+  .footer-img:after {
     display: none;
   }
   /*home*/
