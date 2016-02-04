@@ -13,7 +13,7 @@
 	.basic-input{
 		margin-bottom: 28px;
 	}
-	.lon{
+	.address-line{
 		margin-bottom: 20px;
 	}
 	.form-group{
@@ -33,10 +33,10 @@
 		font-family: CrimsonText;
 		font-size: 16px;
 		font-style: italic;
-		color: @base-color-activ;
+		color: @base-color-active;
 		transition: all 0.2s ease-in-out;
 	    &:hover{
-	    	color: @base-color-activ;
+	    	color: @base-color-active;
 	    }
 	    &:first-child{
 	    	padding-right: 30px;
@@ -52,10 +52,10 @@
 	margin-bottom: 25px;
 }
 .half{
-	width: 48%;
+	width: 49%;
 	display: inline-block;
 	&:first-child{
-		margin-right: 21px;
+		margin-right: 8px;
 	}
 }
 .form-control{
@@ -87,7 +87,7 @@
 	}
 }
 .first-half{
-	margin-right: 21px;
+	margin-right: 8px;
 }
 .checkbox-group{
 	display: inline-block;
@@ -117,6 +117,7 @@
 			td{
 				padding-bottom: 20px;
 	    		padding-top: 20px;
+	    		vertical-align: middle;
 			}
 			.emobire{
 				padding-bottom: 60px;
@@ -152,17 +153,17 @@
 		font-style: italic;
 		letter-spacing: 1px;
 	}
-	.some{
+	.price-in-table{
 		padding-bottom: 70px;
 	}
-	.free-s{
+	.text-free-shipping{
 		font-size: 10px;
 		text-align: right;
 		color: #6f6f6f;
 		letter-spacing: 1px;
 	}
 	h2{
-		color: @base-color-activ;
+		color: @base-color-active;
 		font-size: 18px;
 		font-weight: 700;
 		line-height: 30px;
@@ -189,6 +190,15 @@
 		font-style:normal;
 		padding: 20px 0;
     	margin: 0;
+    	p{
+    		    padding-top: 20px;
+    border-top: 1px solid #ebebeb;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    padding: 20px 0;
+    margin: 0;
+    	}
 		}
 		.checkbox input[type=checkbox]{
 			margin-top:0;
@@ -209,7 +219,7 @@ input[type="checkbox"] {
     position: relative;
     height: 16px;
     margin-right: 10px;
-    color: @base-color-activ;
+    color: @base-color-active;
     vertical-align:middle;
     cursor:pointer;
   	border: 2px solid #ececec;

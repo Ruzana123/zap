@@ -19,6 +19,18 @@ module.exports = function(grunt) {
         }
       }
       },
+ 
+ postcss: {
+  options: {
+    map: true,
+    processors: [
+      require('autoprefixer')({browsers: ['last 5 version']})
+    ]
+  },
+    dist: {
+    src: 'css/style.css'
+  }
+},
 
     watch: { 
       scripts: { 
@@ -47,6 +59,7 @@ module.exports = function(grunt) {
     // 3. Тут мы указываем Grunt, что хотим использовать этот плагин
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     
