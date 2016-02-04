@@ -1,9 +1,8 @@
+
 .header-absolute{
 	position: absolute;
 	width: 100%;
 	z-index: 2;
-	.line-header {
-	}
 }
 .head-block{
 	width: 100%;
@@ -22,7 +21,7 @@
 				a{
 					color: #fff;
 					&:focus{
-						color: @base-color-activ;
+						color: @base-color-active;
 					}
 				}
 			}
@@ -42,7 +41,7 @@
 	padding-top: 325px;
 	background-color: #1d1d1d;
 }
-.table-c{
+.table-cell{
 	position: relative;
 	display: table-cell;
 	text-align: center;
@@ -61,7 +60,7 @@
 		text-decoration: none;
 		transition: all 0.2s ease-in-out;
 		&:hover{
-			color: @base-color-activ;
+			color: @base-color-active;
 		}
 	}
 	li{
@@ -123,7 +122,7 @@
 	    	box-shadow: none;
 	    }
 	    &:hover{
-	    	color: @base-color-activ;
+	    	color: @base-color-active;
 	    }
 	}
 }
@@ -173,7 +172,7 @@
 		color: #6f6f6f;
 		transition: all 0.2s ease-in-out;
 		&:hover{
-			color: @base-color-activ;
+			color: @base-color-active;
 		}
 	}
 	.dropdown{
@@ -243,7 +242,7 @@
 				padding-top: 16px;
 				display: block;
 				&:hover{
-					color: @base-color-activ;
+					color: @base-color-active;
 				}
 			}
 			&:first-child{
@@ -265,13 +264,13 @@
 		line-height: 60px;
 		transition: all 0.2s ease-in-out;
 		&:hover{
-			background-color: @base-color-activ;
-			border: 2px solid @base-color-activ;
+			background-color: @base-color-active;
+			border: 2px solid @base-color-active;
 			color: white;
 		}
 	}
 	.sale{
-			margin-top: 20px;
+			margin-top: 25px;
 			margin-bottom: 20px;
 		li{
 			padding-bottom: 25px;
@@ -288,7 +287,7 @@
 			max-height: 100%;
 			position: relative;
 		}
-		.info-pr{
+		.product-information{
 			h4{
 				margin-top: 0;
 			}
@@ -300,7 +299,7 @@
 	h2{
 		&:before{
 			content: '';
-			background-color: @base-color-activ;
+			background-color: @base-color-active;
 			width: 10px;
 			height: 10px;
 			top: 15px;
@@ -328,8 +327,8 @@
 	font-size: 10px;
 	font-weight: 700;
 	padding: 10px 8px;
-	background-color: @base-color-activ; 
-	border: 2px solid @base-color-activ;
+	background-color: @base-color-active; 
+	border: 2px solid @base-color-active;
 }
 
 .size-line{
@@ -382,8 +381,8 @@
 	    display: inline-block;
 	    transition: all 0.2s ease-in-out;
 		&:hover{
-			border-color: @base-color-activ;
-			color: @base-color-activ;
+			border-color: @base-color-active;
+			color: @base-color-active;
 		}
 	}
 }
@@ -408,8 +407,8 @@
 			font-style: italic;
 			transition: all .2s ease-in-out;
 			&:hover{
-				color: @base-color-activ;
-				border-color: @base-color-activ;
+				color: @base-color-active;
+				border-color: @base-color-active;
 			}
 			&:active{
 				text-decoration: none;
@@ -452,8 +451,8 @@
 	margin-bottom: 50px; 
 } 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{ 
-	background-color: @base-color-activ; 
-	border-color: @base-color-activ; 
+	background-color: @base-color-active; 
+	border-color: @base-color-active; 
 } 
 p{ 
 	text-align: center; 
@@ -469,7 +468,7 @@ p{
 }
 }
 
-.pr{
+.product-photo-links{
 	position: relative;
 	display: block;
 	
@@ -478,19 +477,19 @@ p{
 	position: relative;
 	overflow: hidden;
 	&:hover {
-		.poz {
+		.hover-button-to-add {
 			height: 60px;
 			bottom: 0;
 			z-index: 2;
 		}
 	}
 }
-.poz{
+.hover-button-to-add{
 	position: absolute;
 	text-transform: uppercase;
 	height: 60px;
 	width: 100%;
-	background-color: @base-color-activ;
+	background-color: @base-color-active;
 	color: @base-color;
 	text-align: center;
 	padding-top: 22px;

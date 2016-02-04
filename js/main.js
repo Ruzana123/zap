@@ -1,4 +1,23 @@
 /*home*/
+
+$(window).resize(function() {
+	document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
+});
+	/* Scroll events
+=================================*/
+
+$(window).scroll(function(){
+if ($(window).scrollTop() >= 200) {
+$('.static-header').addClass('fixed-header');
+
+}
+else {
+$('.static-header').removeClass('fixed-header');
+}
+});
+
+
+
 $(document).ready(function() {
 
 $("#owl-demo").owlCarousel({
@@ -136,7 +155,7 @@ $("#owl-demo-photo").owlCarousel({
 
 items : 3,
 itemsDesktopSmall : [979,4], 
-itemsTablet :[768,3],
+itemsTablet :[768,4],
 itemsMobile :[477,2]
 });
 });
@@ -196,14 +215,42 @@ $( "#number" )
 
 
 
+/*check-out*/
+$(function() {
+$( "#country1" ).selectmenu();
+$( "#files" ).selectmenu();
+$( "#number" )
+.selectmenu()
+.selectmenu( "menuWidget" )
+.addClass( "overflow" );
+});
 
 
-
-
-
-
-
-
-
-
-
+$('#open-popup').magnificPopup({
+    items: [
+      {
+        src: 'http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Peter_%26_Paul_fortress_in_SPB_03.jpg/800px-Peter_%26_Paul_fortress_in_SPB_03.jpg',
+        title: 'Peter & Paul fortress in SPB'
+      },
+      {
+        src: 'http://vimeo.com/123123',
+        type: 'iframe' // this overrides default type
+      },
+      {
+        src: $('<div class="white-popup">Dynamically created element</div>'), // Dynamically created element
+        type: 'inline'
+      },
+      {
+        src: '<div class="white-popup">Popup from HTML string</div>', // HTML string
+        type: 'inline'
+      },
+      {
+        src: '#my-popup', // CSS selector of an element on page that should be used as a popup
+        type: 'inline'
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+});
