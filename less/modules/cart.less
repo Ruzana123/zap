@@ -86,6 +86,7 @@
     	text-decoration: none;
     }
 }
+
 .purchase{
 	margin-bottom: 150px;
 	h4{
@@ -171,6 +172,9 @@
 	padding: 0 24px 24px 24px;
     border: 2px solid #ececec;
 	text-transform: uppercase;
+	.subtotal{
+		padding: 22px 0px;
+	}
 	.mini-table{
 		width: 100%;
 	}
@@ -210,8 +214,8 @@
 			font-weight: 400;
 			padding-bottom: 25px;
 			padding-top: 25px;
+			vertical-align: top;
 			letter-spacing: 1px;
-			vertical-align: middle;
 			}
     	}
     	.big-cost{
@@ -226,7 +230,7 @@
     .radio{
     	position: relative;
     	margin: 0;
-    	padding-top: 20px;
+    	margin-top: 26px;
     	&:last-child{
     		margin-bottom: 25px;
     	}
@@ -310,6 +314,7 @@
     background-color: #fff;
     box-shadow: none;
   	color: #6f6f6f;
+  	margin-bottom: 20px;
   	border: 1px solid #ececec;
 	font-family: CrimsonText;
 	font-size: 16px;
@@ -320,6 +325,11 @@
 	}
 	&:focus{
 		border: 1px solid #ececec;
+	}
+}
+.first-half{
+	.form-control{
+		padding-left: 20px;
 	}
 }
 .ui-menu-item {
@@ -336,6 +346,10 @@
     width: 100%;
     background-color: #fff;
 }
+.ui-selectmenu-menu{
+	width: 100%;
+}
+
 .ui-selectmenu-button span.ui-selectmenu-text{
 	padding: 0;	
 }

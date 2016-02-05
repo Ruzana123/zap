@@ -1,6 +1,19 @@
 
 .head-block .fixed-header{
-	background-color: rgba(29, 29, 29, 0.6)!important;
+	background-color: #fff !important;
+	.navbar-collapse li a{
+		color: @base-color !important;
+	}
+	.shop-i a{
+		color: @base-color !important;
+	}
+	.logo-fixed{
+		display: inline-block;
+		float: left;
+	}
+	.logo-img-big{
+		display: none;
+	}
 }
 .fixed-header + .header-replace {
 	display: block !important;
@@ -8,31 +21,31 @@
 .fixed-header {
 	position: fixed;
 	width: 100%;
-	background-color: rgba(238, 176, 19, 0.8);
+	background-color: #fff;
 	z-index: 10;
 	padding: 18px 0 18px 0 !important;
 	transition: all 0.5s ease-in-out;
+	border-bottom: 1px solid @base-color;
 	.menu-top .navbar{
 		background-color: transparent !important;
     	border-color: transparent !important;
 	}
-	.navbar-collapse {
-		li {
-			.active{
-				color: #fff !important;
-			}
-			a:hover{
-				color: #fff !important;
-			}
-		}
-	}
 }
+
 .header-replace{
 	display: none;
 }
 
 .line-header{
-	padding: 90px 0 68px 0;  
+	transition: all 0.5s ease-in-out;
+	.menu-top .navbar{
+		background-color: transparent !important;
+    	border-color: transparent !important;
+	}
+	.logo-fixed{
+		display: none;
+	}
+	padding: 90px 0 75px 0;  
 	.row-menu{
 		width: 100%;
 		vertical-align: middle;
@@ -82,7 +95,7 @@
 		li{
 			a{
 				padding: 0;
-				margin: 15px 36px;
+				margin: 15px 35px;
 				font-size: 14px;
 				font-weight: 400;
 				color: @base-color;
@@ -97,6 +110,7 @@
 					position: absolute; 
 					top: 50px; 
 					left: 0;
+					transition: all 0.2s ease-in-out;
 				}
 				&:hover:after{ 
 					opacity: 1;
@@ -210,6 +224,9 @@
 				}
 			}
 		}
+	}
+	.min-img{
+		overflow: hidden;
 	}
 }
 
@@ -520,7 +537,7 @@
 
 .fashion{
 	margin-top: 80px;
-	margin-bottom: 290px;
+	margin-bottom: 200px;
 }
 .line-vay{
 	.owl-theme .owl-controls .owl-buttons div{
@@ -555,7 +572,7 @@
 			font-weight: 400;
 			line-height: 24px;
 			color: #6f6f6f;
-			margin-bottom: 65px;
+			margin-bottom: 45px;
 		}
 	}
 	.clickable{
@@ -591,8 +608,8 @@
 		position: absolute;
 		background-color: @base-color-active;
 		text-align: center;
-		top: -38%;
-		left: 84%;
+		top: -15px;
+		right: 0;
 		a{
 			color: #fff;
 			font-family: CrimsonText;
@@ -628,7 +645,12 @@
 }
 
 
-
+.play-button{
+	background-color: #242424;
+	img{
+		display: inline-block;
+	}
+}
 .video-fashion {
 	position: relative;
 	#open-popup {
