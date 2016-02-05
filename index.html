@@ -853,8 +853,11 @@
 		<script src="js/main.js"></script>
 		<script src="js/classie.js"></script>
 		<script>
-		document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
-		</script>
+  document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
+  $(window).resize(function() {
+      document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
+  });
+ </script>
 	</body>
 	
 </html>
