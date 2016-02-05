@@ -12,6 +12,7 @@
 		<link href="css/style.css" rel="stylesheet" >
 		<link href="css/responsive.css" rel="stylesheet">
 		<link href="css/owl.carousel.css" rel="stylesheet">
+		
 		<link rel="stylesheet" href="css/magnific-popup.css">
 		<link rel="stylesheet" type="text/css" href="css/menu_sideslide.css">
 		
@@ -853,8 +854,11 @@
 		<script src="js/main.js"></script>
 		<script src="js/classie.js"></script>
 		<script>
-		document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
-		</script>
+  document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
+  $(window).resize(function() {
+      document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
+  });
+ </script>
 	</body>
 	
 </html>
