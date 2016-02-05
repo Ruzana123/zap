@@ -46,9 +46,9 @@ input::-webkit-inner-spin-button {
 	p{
 		color: #6f6f6f;
 		font-size: 13px;
-		padding-bottom: 28px;
 		line-height: 30px;
-		margin-bottom: 15px;
+		margin-bottom: 48px;
+		margin-right: 28px;
 		border-bottom: 1px solid #ececec;
 	}
 	.line-info-photo{
@@ -64,9 +64,13 @@ input::-webkit-inner-spin-button {
 				}
 			}
 		}
+		span{
+			letter-spacing: 1px;
+		}
 		span:nth-child(1){
 			position: relative;
-			margin-left: 28px;
+			margin-left: 40px;
+			letter-spacing: 1px;
 			&:before { 
 				content: ''; 
 				width: 5px; 
@@ -74,7 +78,7 @@ input::-webkit-inner-spin-button {
 				border: 1px solid black; 
 				position: absolute; 
 				transform: rotate(45deg); 
-				left: -40%;
+				left: -25%;
     			top: 5px;
 			}
 		}
@@ -87,7 +91,7 @@ input::-webkit-inner-spin-button {
 				border: 1px solid black; 
 				position: absolute; 
 				transform: rotate(45deg); 
-				left: 42%;
+				left: 49%;
     			top: 9px;
 			}
 		}
@@ -130,10 +134,11 @@ input::-webkit-inner-spin-button {
 			font-size: 36px;
 			font-style: italic;
 			line-height: 60px;
+			
 		}
 	}
 	.add-to{
-		padding: 15px 28px;
+		padding: 15px 23px;
 		background-color: @base-color-active;
 		color: #fff;
 		letter-spacing: 1px;
@@ -183,7 +188,6 @@ input::-webkit-inner-spin-button {
 	p{
 		border:none;
 		display: inline-block;
-		padding-right: 28px;
 	}
 }
 /*===========accordion=============*/

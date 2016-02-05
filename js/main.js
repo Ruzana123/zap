@@ -34,7 +34,7 @@ $(document).ready(function() {
 
 $("#owl-demo1").owlCarousel({
 
-autoPlay: 2000, //Set AutoPlay to 3 seconds
+/*autoPlay: 2000, //Set AutoPlay to 3 seconds*/
 
 items : 4
 });
@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 $("#owl-demo2").owlCarousel({
 
-autoPlay: 2000, //Set AutoPlay to 3 seconds
+/*autoPlay: 2000, //Set AutoPlay to 3 seconds*/
 
 items : 4
 });
@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 $("#owl-demo3").owlCarousel({
 
-autoPlay: 2000, //Set AutoPlay to 3 seconds
+/*autoPlay: 2000, //Set AutoPlay to 3 seconds*/
 
 items : 4,
 });
@@ -66,7 +66,7 @@ $(document).ready(function() {
 
 $("#owl-demo4").owlCarousel({
 
-autoPlay: 2000, //Set AutoPlay to 3 seconds
+/*autoPlay: 2000, //Set AutoPlay to 3 seconds*/
 
 items : 4
 });
@@ -77,7 +77,7 @@ $(document).ready(function() {
 
 $("#owl-demo5").owlCarousel({
 
-autoPlay: 2000, //Set AutoPlay to 3 seconds
+/*autoPlay: 2000, //Set AutoPlay to 3 seconds*/
 
 items : 4
 });
@@ -88,7 +88,7 @@ $(document).ready(function() {
 
 $("#owl-demo6").owlCarousel({
 
-autoPlay: 2000, //Set AutoPlay to 3 seconds
+/*autoPlay: 2000, //Set AutoPlay to 3 seconds*/
 
 items : 4
 });
@@ -99,7 +99,7 @@ $(document).ready(function() {
 
 $("#owl-demo7").owlCarousel({
 
-autoPlay: 2000, //Set AutoPlay to 3 seconds
+/*autoPlay: 2000, //Set AutoPlay to 3 seconds*/
 
 items : 4
 });
@@ -110,7 +110,7 @@ $(document).ready(function() {
 
 $("#owl-demo8").owlCarousel({
 
-autoPlay: 2000, //Set AutoPlay to 3 seconds
+/*autoPlay: 2000, //Set AutoPlay to 3 seconds*/
 
 items : 4
 });
@@ -164,7 +164,7 @@ $(document).ready(function() {
 
 $("#owl-pr").owlCarousel({
 
-autoPlay: 2000, //Set AutoPlay to 3 seconds
+/*autoPlay: 2000, //Set AutoPlay to 3 seconds*/
     
 items : 4,
 

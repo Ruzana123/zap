@@ -142,9 +142,12 @@
   .info-base {
     width: 33.33%;
   }
-  footer .b4 ul li {
+  footer .alignment4 ul li {
     width: 31%;
     padding: 0 5px 8px 0;
+  }
+  .navbar-collapse li:first-child a {
+    margin-left: 10px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -152,6 +155,9 @@
   .breadcrumbs {
     padding-bottom: 200px;
     padding-top: 250px;
+  }
+  .prod-top {
+    padding-left: 15px;
   }
   .head-block .line-header .shop-i ul li:first-child {
     padding-right: 10px;
@@ -313,17 +319,17 @@
   .big-img img:hover {
     transform: none;
   }
-  footer .b3 {
+  footer .alignment3 {
     margin-top: 40px;
   }
-  footer .b3 p {
+  footer .alignment3 p {
     padding-bottom: 10px;
     padding-top: 25px;
   }
-  footer .b4 {
+  footer .alignment4 {
     margin-top: 40px;
   }
-  footer .b4 ul li {
+  footer .alignment4 ul li {
     padding: 10px 20px;
   }
   footer .right-footer {
@@ -332,11 +338,30 @@
   /*home*/
 }
 @media only screen and (max-width: 768px) {
+  .menu-button {
+    display: block!important;
+  }
+  .menu-wrap {
+    display: block!important;
+    position: fixed;
+  }
   .head-block .fixed-header .navbar-collapse {
-    background-color: rgba(29, 29, 29, 0.6) !important;
+    background-color: #fff!important;
+  }
+  .head-block .fixed-header .navbar-collapse li:first-child a {
+    margin-left: 35px !important;
+  }
+  .head-block .fixed-header .navbar-collapse li a {
+    color: #141414 !important;
   }
   .fixed-header .navbar-collapse {
-    background-color: rgba(238, 176, 19, 0.8) !important;
+    background-color: #fff!important;
+  }
+  .fixed-header .navbar-collapse li:first-child a {
+    margin-left: 35px !important;
+  }
+  .fixed-header .navbar-collapse li a {
+    color: #141414 !important;
   }
   /*home*/
   .line-header .navbar-collapse {
@@ -782,7 +807,7 @@
     width: 85%;
   }
   .line-header .shop-i {
-    margin-right: 80px;
+    margin-right: 70px;
   }
   .navbar-toggle {
     margin-right: -35px;
@@ -834,5 +859,13 @@
   }
   .purchase .middle-group {
     margin-bottom: 15px;
+  }
+  .img-and-hover {
+    width: 100%;
+  }
+  .menu-button {
+    top: 32px;
+    margin-right: 15px !important;
+    right: 0;
   }
 }
