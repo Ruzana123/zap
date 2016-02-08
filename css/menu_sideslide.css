@@ -5,14 +5,7 @@ body,
 	height: 100%;
 }
 
-.menu-wrap a {
-	color: @base-color-active;;
-}
 
-.menu-wrap a:hover,
-.menu-wrap a:focus {
-	color: @base-color-active;
-}
 
 .content-wrap {
 	overflow-y: scroll;
@@ -126,15 +119,14 @@ body,
 	position: absolute;
 	z-index: 1001;
 	display: none;
+	height: 100vh;
 	transition: all 0.5s ease-in-out;
 	width: 300px;
-	height: 275px;
 	left: 0;
 	background: #fff;
 	padding: 2.5em 1.5em 0;
 	padding-top: 25px;
 	font-size: 1.15em;
-	top: 90px;
 	-webkit-transform: translate3d(-320px,0,0);
 	transform: translate3d(-320px,0,0);
 	-webkit-transition: -webkit-transform 0.4s;
@@ -226,6 +218,8 @@ transition: transform 0.8s;
 	-webkit-transition: -webkit-transform 0.8s;
 	transition: transform 0.8s;
 	font-size: 16px;
+	top: 0;
+	height: 100vh;
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }

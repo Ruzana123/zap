@@ -1,8 +1,5 @@
 /*home*/
 
-$(window).resize(function() {
-	document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
-});
 	/* Scroll events
 =================================*/
 
