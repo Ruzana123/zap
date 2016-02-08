@@ -877,7 +877,7 @@ footer .alignment4 .footer-h4 {
 }
 footer .copyright {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   text-align: left;
   color: #3a3a3a;
   font-size: 11px;
@@ -942,6 +942,13 @@ footer .left-footer span {
 .footer-img:hover:before {
   opacity: 1;
 }
+.big-img {
+  padding-top: 218px;
+  position: relative;
+}
+.fixed-header .line-header {
+  top: 20px;
+}
 .head-block .fixed-header {
   background-color: #fff !important;
 }
@@ -958,28 +965,26 @@ footer .left-footer span {
 .head-block .fixed-header .logo-img-big {
   display: none;
 }
-.fixed-header + .header-replace {
-  display: block !important;
-}
 .fixed-header {
-  position: fixed;
+  position: fixed !important;
   width: 100%;
-  background-color: #fff;
+  background-color: #fff !important;
   z-index: 10;
+  height: 100px;
+  top: 0 !important;
   padding: 18px 0 18px 0 !important;
-  transition: all 0.5s ease-in-out;
   border-bottom: 1px solid #141414;
 }
 .fixed-header .menu-top .navbar {
   background-color: transparent !important;
   border-color: transparent !important;
 }
-.header-replace {
-  display: none;
-}
 .line-header {
-  transition: all 0.5s ease-in-out;
-  padding: 90px 0 75px 0;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  top: 90px;
 }
 .line-header .menu-top .navbar {
   background-color: transparent !important;

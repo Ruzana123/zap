@@ -12,30 +12,30 @@
 		<link href="css/style.css" rel="stylesheet" >
 		<link href="css/responsive.css" rel="stylesheet">
 		<link href="css/owl.carousel.css" rel="stylesheet">
-			
 		<link rel="stylesheet" href="css/magnific-popup.css">
 		<link rel="stylesheet" type="text/css" href="css/menu_sideslide.css">
-		
 	</head>
 	<!--end head-->
 	<!--body-->
 	<body>
 		<!--header-->
-		<header>
+		<header class="static-header">
 			<!--line-header-->
-			
-			<div class="line-header static-header" id="header">
+			<div class="line-header">
 				<div class="container">
 					<div class="row-menu">
 						<div class="menu-wrap">
 							<nav class="menu">
 								<div class="icon-list">
+									<a href="index.html" class="logo"><img src="images/main/logo.png" alt=""></a>
 									<a href="index.html" class="active">Home</a>
 									<a href="shop.html">Shop</a>
 									<a href="soft.html">Soft</a>
 									<a href="cart.html">Cart</a>
 									<a href="check-out.html">Check</a>
 									<a href="#">Blog</a>
+									<a href="#" class="shopping-cart-logo-mini"><i class="fa fa-shopping-cart"></i></a>
+									<a href="#" class="search-logo-mini"><i class="fa fa-search"></i></a>
 								</div>
 							</nav>
 							<button class="close-button" id="close-button">Close Menu</button>
@@ -47,7 +47,6 @@
 						<div class="menu-top">
 							<nav class="navbar navbar-default">
 								<div class="container-fluid">
-									
 									<div class="navbar-header">
 										<!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 										<span class="sr-only">Site navigation</span>
@@ -56,7 +55,6 @@
 										<span class="icon-bar"></span>
 										</button>-->
 									</div>
-									
 									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 										<ul class="nav navbar-nav">
 											<li><a href="index.html" class="active">Home</a></li>
@@ -80,12 +78,9 @@
 				</div>
 			</div>
 			<!-- end line-header-->
-			<div class="header-replace" id="header-replace"></div>
 		</header>
 		<!--end header-->
 		<!-- big-img -->
-		
-		
 		<div class="container">
 			<div class="big-img">
 				<div class="row block-img">
@@ -101,7 +96,6 @@
 							</div>
 						</div>
 					</div>
-					
 					<div class="col-md-4 col-sm-4 col-xs-12 m-i-b">
 						<div class="mini-bg">
 							<a href="#" class="min-img"><img src="images/main/m1.jpg" alt=""></a>
@@ -157,7 +151,6 @@
 					<li><a href="#messages" data-toggle="tab">Acessories</a></li>
 					<li><a href="#settings" data-toggle="tab">Beauty</a></li>
 				</ul>
-				
 				<div class="tab-content">
 					<div class="tab-pane active" id="home2">
 						<div class="line-product" id="owl-demo1">
@@ -438,7 +431,6 @@
 					<li><a href="#messages1" data-toggle="tab">Acessories</a></li>
 					<li><a href="#settings1" data-toggle="tab">Beauty</a></li>
 				</ul>
-				
 				<div class="tab-content">
 					<div class="tab-pane active" id="home1">
 						<div class="line-product" id="owl-demo5">
@@ -708,11 +700,9 @@
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-6 info-base">
 						<div id="owl-demo" class="owl-carousel owl-theme">
-							
 							<div class="item"><img src="images/main/bg4.png" alt=""></div>
 							<div class="item"><img src="images/main/bg4.png" alt=""></div>
 							<div class="item"><img src="images/main/bg4.png" alt=""></div>
-							
 						</div>
 						<div class="info-fashion">
 							<a href="#" class="fashion-h4"><h4 class="h-entry">Faster Response Time with Reverse</h4></a>
@@ -827,10 +817,10 @@
 			<div class="copyright">
 				<div class="container">
 					<div class="row footer-main">
-						<div class="col-md-9 col-sm-6 col-xs-12 left-footer">
+						<div class="col-md-8 col-sm-6 col-xs-12 left-footer">
 							<span>© 2015 ZAP CREATIVE PSD TEMPLATE. Powered By WPELITE</span>
 						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12 right-footer">
+						<div class="col-md-4 col-sm-6 col-xs-12 right-footer">
 							<ul>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -854,11 +844,10 @@
 		<script src="js/main.js"></script>
 		<script src="js/classie.js"></script>
 		<script>
-  document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
-  $(window).resize(function() {
-      document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
-  });
- </script>
+		document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
+		$(window).resize(function() {
+		document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
+		});
+		</script>
 	</body>
-	
 </html>
