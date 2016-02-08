@@ -2,6 +2,12 @@
 	padding-top: 218px;
 	position: relative;
 }
+.shopping-cart-logo-mini{
+	display: none;
+}
+.search-logo-mini{
+	display: none;
+}
 .fixed-header{
 	.line-header{
 		top: 20px;
@@ -540,7 +546,41 @@
 	    }
 	}
 }
-
+.information-post{
+	text-align: left;
+	padding-top: 20px;
+	.h-entry{
+			font-size: 18px;
+			margin-bottom: 15px;
+		}
+	span{
+		font-size: 14px;
+		a{
+			color: @base-color-active;
+		}
+	}
+	.blog-post-title{
+		color: @base-color;
+		&:hover{
+			color: @base-color-active;
+			text-decoration: none;
+		}
+	}
+	a{
+		transition: all 0.2s ease-in-out;
+		&:hover{
+			color: @base-color-active;
+			text-decoration: underline;
+		}
+	}
+	p{
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 24px;
+		color: #6f6f6f;
+		margin-bottom: 45px;
+	}
+}
 .fashion{
 	margin-top: 80px;
 	margin-bottom: 200px;
@@ -550,37 +590,6 @@
 		padding: 7px 14px;
 	    font-size: 10px;
 	}
-	.info-fashion{
-		text-align: left;
-		padding-top: 20px;
-		span{
-			font-size: 14px;
-			a{
-				color: @base-color-active;
-			}
-		}
-		.fashion-h4{
-			color: @base-color;
-			&:hover{
-				color: @base-color-active;
-				text-decoration: none;
-			}
-		}
-		a{
-			transition: all 0.2s ease-in-out;
-			&:hover{
-				color: @base-color-active;
-				text-decoration: underline;
-			}
-		}
-		p{
-			font-size: 13px;
-			font-weight: 400;
-			line-height: 24px;
-			color: #6f6f6f;
-			margin-bottom: 45px;
-		}
-	}
 	.clickable{
 		margin: 0;
 		position: absolute;
@@ -588,13 +597,13 @@
 	    left: 0;
 	    transform: translateY(-50%);
 	}
-	.fash{
+	.link-in-post{
 		display: block;
 	}
-	h4{
-		font-size: 18px;
-		margin-bottom: 15px;
-	}
+}
+
+
+.blog-post{
 	.meta-post{
 		border-top: 1px solid #ececec;
 		border-bottom: 1px solid #ececec;
@@ -632,7 +641,28 @@
 			}
 		}
 	}
-	.button-fashion{
+	.video-post {
+	position: relative;
+		#open-popup {
+			width: 90px;
+			height: 90px;
+			background-color: #242424;
+			outline: none;
+			border: 1px solid #666;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			i {
+				font-size: 40px;
+				color: #fff;
+			}
+		}
+	}
+	.video-wrap {
+		position: relative;
+	}
+	.button-in-blog{
 		font-size: 14px;
 		font-weight: 400;
 		color: @base-color;
@@ -650,31 +680,10 @@
 	}
 }
 
-
 .play-button{
 	background-color: #242424;
 	img{
 		display: inline-block;
 	}
 }
-.video-fashion {
-	position: relative;
-	#open-popup {
-		width: 90px;
-		height: 90px;
-		background-color: #242424;
-		outline: none;
-		border: 1px solid #666;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		i {
-			font-size: 40px;
-			color: #fff;
-		}
-	}
-	.video-wrap {
-		position: relative;
-	}
-}
+
