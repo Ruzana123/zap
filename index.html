@@ -33,7 +33,7 @@
 									<a href="soft.html">Soft</a>
 									<a href="cart.html">Cart</a>
 									<a href="check-out.html">Check</a>
-									<a href="#">Blog</a>
+									<a href="blog.html">Blog</a>
 									<a href="#" class="shopping-cart-logo-mini"><i class="fa fa-shopping-cart"></i></a>
 									<a href="#" class="search-logo-mini"><i class="fa fa-search"></i></a>
 								</div>
@@ -62,7 +62,7 @@
 											<li><a href="soft.html">Soft</a></li>
 											<li><a href="cart.html">Cart</a></li>
 											<li><a href="check-out.html">Check</a></li>
-											<li><a href="#">Blog</a></li>
+											<li><a href="blog.html">Blog</a></li>
 										</ul>
 									</div>
 								</div>
@@ -681,10 +681,10 @@
 					<h3 class="big-button">Fashion news</h3>
 				</div>
 				<div class="row line-vay">
-					<div class="col-md-4 col-sm-6 col-xs-6 info-base">
-						<a href="#" class="fash"><img src="images/main/bg4.png" alt=""></a>
-						<div class="info-fashion">
-							<a href="#" class="fashion-h4"><h4 class="h-entry">Faster Response Time with Reverse</h4></a>
+					<article class="col-md-4 col-sm-6 col-xs-6 blog-post">
+						<a href="#" class="link-in-post"><img src="images/main/bg4.png" alt=""></a>
+						<div class="information-post">
+							<a href="#" class="blog-post-title"><h4 class="h-entry">Faster Response Time with Reverse</h4></a>
 							<span>by <a href="#">Natasha</a></span>
 							<div class="meta-post">
 								<a href="#"><i class="fa fa-comments"></i> 97</a>
@@ -696,16 +696,16 @@
 							</div>
 							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</p>
 						</div>
-						<a href="#" class="button-fashion">Read more</a>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-6 info-base">
+						<a href="#" class="button-in-blog">Read more</a>
+					</article>
+					<article class="col-md-4 col-sm-6 col-xs-6 blog-post">
 						<div id="owl-demo" class="owl-carousel owl-theme">
 							<div class="item"><img src="images/main/bg4.png" alt=""></div>
 							<div class="item"><img src="images/main/bg4.png" alt=""></div>
 							<div class="item"><img src="images/main/bg4.png" alt=""></div>
 						</div>
-						<div class="info-fashion">
-							<a href="#" class="fashion-h4"><h4 class="h-entry">Faster Response Time with Reverse</h4></a>
+						<div class="information-post">
+							<a href="#" class="blog-post-title"><h4 class="h-entry">Faster Response Time with Reverse</h4></a>
 							<span>by <a href="#">Natasha</a></span>
 							<div class="meta-post">
 								<a href="#"><i class="fa fa-comments"></i> 97</a>
@@ -717,18 +717,18 @@
 							</div>
 							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</p>
 						</div>
-						<a href="#" class="button-fashion">Read more</a>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-6 info-base">
-						<div class="video-fashion">
-							<a href="#" class="fash"><img class="last-fashion-img" src="images/main/bg4.png" alt=""></a>
+						<a href="#" class="button-in-blog">Read more</a>
+					</article>
+					<article class="col-md-4 col-sm-6 col-xs-6 blog-post">
+						<div class="video-post">
+							<a href="#" class="link-in-post"><img class="last-post-img" src="images/main/bg4.png" alt=""></a>
 							<div class="play-button">
 								<button id="open-popup"><img src="images/main/icon.png" alt=""></button>
 							</div>
 						</div>
-						<div class="last-fashion-info">
-							<div class="info-fashion">
-								<a href="#" class="fashion-h4"><h4 class="h-entry">Faster Response Time with Reverse</h4></a>
+						<div class="last-post-info">
+							<div class="information-post">
+								<a href="#" class="blog-post-title"><h4 class="h-entry">Faster Response Time with Reverse</h4></a>
 								<span>by <a href="#">Natasha</a></span>
 								<div class="meta-post">
 									<a href="#"><i class="fa fa-comments"></i> 97</a>
@@ -740,9 +740,9 @@
 								</div>
 								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</p>
 							</div>
-							<a href="#" class="button-fashion">Read more</a>
+							<a href="#" class="button-in-blog">Read more</a>
 						</div>
-					</div>
+					</article>
 				</div>
 			</div>
 		</div>
@@ -844,10 +844,34 @@
 		<script src="js/main.js"></script>
 		<script src="js/classie.js"></script>
 		<script>
-		document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
-		$(window).resize(function() {
-		document.getElementById('header-replace').style.height = document.getElementById('header').offsetHeight + "px";
-		});
+		$('#open-popup').magnificPopup({
+    items: [
+      {
+        src: 'http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Peter_%26_Paul_fortress_in_SPB_03.jpg/800px-Peter_%26_Paul_fortress_in_SPB_03.jpg',
+        title: 'Peter & Paul fortress in SPB'
+      },
+      {
+        src: 'http://vimeo.com/123123',
+        type: 'iframe' // this overrides default type
+      },
+      {
+        src: $('<div class="white-popup">Dynamically created element</div>'), // Dynamically created element
+        type: 'inline'
+      },
+      {
+        src: '<div class="white-popup">Popup from HTML string</div>', // HTML string
+        type: 'inline'
+      },
+      {
+        src: '#my-popup', // CSS selector of an element on page that should be used as a popup
+        type: 'inline'
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+});
 		</script>
 	</body>
 </html>
