@@ -6,6 +6,31 @@
 		width: 100%;
 	}
 }
+.navbar-nav>li>.dropdown-menu{
+	li a{
+		color: @base-color !important;
+		&:hover{
+			color: @base-color-active !important;
+		}
+	}
+	background-color: #fff;
+}
+.head-block .line-header .navbar-collapse li a{
+	background-color: transparent;
+	&:hover{
+		background-color:transparent;
+		color: @base-color-active;
+	}
+	&:focus{
+		background-color: transparent;
+	}
+	&:active{
+		background-color: transparent;
+	}
+}
+.line-header .navbar-collapse .navbar-nav>li>.dropdown-menu a:after{
+	display: none;
+}
 .information-post {
 	.author-blockquote{
 		color: @base-color;

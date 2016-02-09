@@ -164,6 +164,25 @@ span {
   width: 100%;
   text-align: center;
 }
+.main-blog .information-post .h-entry {
+  font-size: 26px;
+}
+.main-blog .link-post {
+  position: relative;
+}
+.main-blog .link-post .link-in-post {
+  position: relative;
+}
+.main-blog .link-post .download-link {
+  color: white;
+  font-family: CrimsonText;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 30px;
+  position: absolute;
+  top: 65px;
+  left: 80px;
+}
 .content-blog {
   margin: 80px 0;
   margin-right: -15px;
@@ -171,6 +190,31 @@ span {
 }
 .content-blog .blog-post {
   width: 100%;
+}
+.navbar-nav > li > .dropdown-menu {
+  background-color: #fff;
+}
+.navbar-nav > li > .dropdown-menu li a {
+  color: #141414 !important;
+}
+.navbar-nav > li > .dropdown-menu li a:hover {
+  color: #eeb013 !important;
+}
+.head-block .line-header .navbar-collapse li a {
+  background-color: transparent;
+}
+.head-block .line-header .navbar-collapse li a:hover {
+  background-color: transparent;
+  color: #eeb013;
+}
+.head-block .line-header .navbar-collapse li a:focus {
+  background-color: transparent;
+}
+.head-block .line-header .navbar-collapse li a:active {
+  background-color: transparent;
+}
+.line-header .navbar-collapse .navbar-nav > li > .dropdown-menu a:after {
+  display: none;
 }
 .information-post .author-blockquote {
   color: #141414;
@@ -2029,6 +2073,159 @@ footer .left-footer span {
 }
 .play-button img {
   display: inline-block;
+}
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+/* End: Recommended Isotope styles */
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.isotope {
+  margin-bottom: 320px;
+  margin-top: 70px;
+  width: 100%;
+  text-align: center;
+}
+.iso-hover img {
+  position: relative;
+}
+.iso-hover {
+  display: none;
+}
+.hover-content {
+  position: absolute;
+}
+.hover-content h4 {
+  color: #141414;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hover-content hr {
+  width: 37px;
+  height: 1px;
+  color: #141414;
+}
+.hover-content a {
+  color: #6f6f6f;
+  font-family: CrimsonText;
+  font-size: 18px;
+  font-style: italic;
+  transition: all 0.2s ease-in-out;
+}
+.hover-content a:hover {
+  color: #eeb013;
+}
+#works,
+.works {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+#filter {
+  display: inline-block;
+  list-style: none;
+  float: none;
+  width: 100%;
+  margin-bottom: 75px;
+}
+#filter li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 9px;
+}
+#filter li a {
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: none;
+  border: 1px solid #ececec;
+  color: #141414;
+  transition: all 0.4s ease;
+}
+#filter li a:hover,
+#filter li a.current {
+  color: #eeb013;
+}
+.work {
+  display: inline-block;
+}
+.work img {
+  display: inline-block;
+}
+.work div {
+  position: relative;
+}
+.work div h3 {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+.work div p {
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  color: #eee;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 7px 0;
 }
 .header-absolute {
   position: absolute;

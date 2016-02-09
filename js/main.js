@@ -208,15 +208,11 @@ $( "#number" )
 });
 
 
-
-
-
-
 /*check-out*/
 $(function() {
 $( "#country1" ).selectmenu();
-$( "#files" ).selectmenu();
-$( "#number" )
+$( "#files1" ).selectmenu();
+$( "#number1" )
 .selectmenu()
 .selectmenu( "menuWidget" )
 .addClass( "overflow" );
