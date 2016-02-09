@@ -395,34 +395,34 @@
 	border-top: 2px solid #ececec;
 }
 .number{
-		margin-top: 65px;
+	margin-top: 65px;
+	display: inline-block;
+	li{
 		display: inline-block;
-		li{
-			display: inline-block;
-			padding: 5px;
+		padding: 5px;
+	}
+	a{
+		color: #6f6f6f;
+		display: block;
+		padding: 12px 17px;
+		border: 1px solid #e4e4e4;
+		color: #141414;
+		font-family: CrimsonText;
+		font-size: 18px;
+		font-style: italic;
+		transition: all .2s ease-in-out;
+		&:hover{
+			color: @base-color-active;
+			border-color: @base-color-active;
 		}
-		a{
-			color: #6f6f6f;
-			display: block;
-			padding: 12px 17px;
-			border: 1px solid #e4e4e4;
-			color: #141414;
-			font-family: CrimsonText;
-			font-size: 18px;
-			font-style: italic;
-			transition: all .2s ease-in-out;
-			&:hover{
-				color: @base-color-active;
-				border-color: @base-color-active;
-			}
-			&:active{
-				text-decoration: none;
-			}
-			&:focus{
-				text-decoration: none;
-			}
+		&:active{
+			text-decoration: none;
+		}
+		&:focus{
+			text-decoration: none;
 		}
 	}
+}
 .money-line {
 	margin-top: 30px;
 	margin-bottom: 40px;
