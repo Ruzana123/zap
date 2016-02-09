@@ -58,15 +58,46 @@
 }
 
 .iso-hover{
+    position: absolute;
     img{
         position: relative;
     }
 }
 .iso-hover{
-    display: none;
+    z-index: -2; 
+    top: -60px;
+    left: 37px;
+    transition: all 0.6s ease-in-out;
+    .control-element{
+        margin-top: 30px;
+        a{
+            font-size: 13px;
+            color: #fff;
+            i{
+                height: 29px;
+                width: 29px;
+                border: 1px solid @base-color-active;
+                background-color: @base-color-active;
+                border-radius: 50px;
+                font-size: 12px;
+                line-height: 26px;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color: darken(@base-color-active, 5%);
+                    border-color: darken(@base-color-active, 5%);
+                    color: #fff;
+                }
+            }
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
 }
 .hover-content{
     position: absolute;
+    top: 25%;
+    left: 25%;
     h4{
         color: @base-color;
         font-family: Montserrat;
@@ -76,8 +107,7 @@
     }
     hr{
         width: 37px;
-        height: 1px;
-        color: #141414;
+        border-color: @base-color;
     }
     a{
         color: #6f6f6f;
@@ -91,30 +121,42 @@
     }
 }
 
+.control-element{
+    a{
+        &:focus{
+            outline: none;
+            border:none;
+        }
+        &:active{
+            outline: none;
+            border:none;
+        }
+    }
+}
 
 #works,
 .works {
     width: 100%;
-    position: relative;
-    display: inline-block;
+    a{
+        display: inline-block;
+    }
 }
+
 #filter {
     display: inline-block;
     list-style: none;
     float: none;
     width: 100%;
     margin-bottom: 75px;
-  li {
-    display: inline-block;
-    list-style: none;
-    margin-left: 9px;
-  }
+    li {
+        display: inline-block;
+        list-style: none;
+    }
 }
 #filter li a {
     background: #fff;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 10px 15px;
     display: inline-block;
     border-radius: 0;
     text-transform: uppercase;
@@ -127,34 +169,23 @@
 #filter li a.current {
     color: @base-color-active;
 }
+
 .work {
-  display: inline-block;
-    img{
-      display: inline-block;
+    position: relative;
+    margin: 0 5px 10px;
+    &:hover{
+         .iso-hover{
+            z-index: 1;
+            top: 35px;
+        }
     }
 }
-.work div {
-    position: relative;
-}
-.work div h3 {
-    background: rgba(0,0,0, .7);
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 7px 0;
-    text-align: center;
-    font-size: 18px;
-    color: #fff;
-}
-.work div p {
-    background: rgba(0,0,0, .7);
-    font-size: 14px;
-    color: #eee;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    padding: 7px 0;
+
+.clearfix{
+    li{
+        a{
+            padding: 10px 13px;
+            margin: 0 5px;
+        }
+    }
 }

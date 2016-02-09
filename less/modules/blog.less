@@ -339,13 +339,18 @@
 			}
 		}
 	}
-	input:invalid{
-		border-color: red;
-	}
 	input:valid{
-		border-color: #ebebeb;
+		border-color: @base-color-active;
+	}
+	input:focus{
+		&:invalid{
+			border-color: red;
+		}
 	}
 	.form-control:hover{
+		border-color: @base-color-active;
+	}
+	.form-control:focus{
 		border-color: @base-color-active;
 	}
 	.form-3{
@@ -385,7 +390,9 @@
 	.comment-info-post{
 		border: 1px solid #ececec;
 		padding: 30px;
-		margin-left: 100px;
+		display: inline-block;
+		width: 85%;
+		float: right;
 	}
 	h2{
 		position: relative;
@@ -404,9 +411,7 @@
 		}
 	}
 	.comment-img{
-		position: absolute;
-		top: 0;
-		left: 0;
+		float: left;
 		display: inline-block;
 		img{
 			display: inline-block;
@@ -418,6 +423,7 @@
 		color: #fff;
 		letter-spacing: 1px;
 		float: right;
+		border:none;
 		font-size: 12px;
 		text-transform: uppercase;
 		transition: all 0.2s ease-in-out;
@@ -430,6 +436,7 @@
 }
 .comment-post{
 	position: relative;
+	display: inline-block;
 	margin-bottom: 40px;
 	h4{
 		font-size: 12px;
