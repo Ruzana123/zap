@@ -312,7 +312,7 @@
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   /*home*/
   .line-header .navbar-collapse li a {
-    margin: 16px 19px;
+    margin: 16px 18px;
   }
   .big-img .mini-bg img:hover {
     transform: none;
