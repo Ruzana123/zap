@@ -1,0 +1,203 @@
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+/* End: Recommended Isotope styles */
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+
+.isotope{
+    margin-bottom: 320px;
+    margin-top: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.iso-hover{
+    z-index: -2; 
+    top: -60px;
+    left: 37px;
+    transition: all 0.6s ease-in-out;
+    position: absolute;
+    img{
+        position: relative;
+    }
+    .control-element{
+        margin-top: 30px;
+        a{
+            font-size: 13px;
+            color: #fff;
+            i{
+                height: 29px;
+                width: 29px;
+                border: 1px solid @base-color-active;
+                background-color: @base-color-active;
+                border-radius: 50px;
+                font-size: 12px;
+                line-height: 26px;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color: darken(@base-color-active, 5%);
+                    border-color: darken(@base-color-active, 5%);
+                    color: #fff;
+                }
+            }
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}
+.hover-content{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    h4{
+        color: @base-color;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    hr{
+        width: 37px;
+        border-color: @base-color;
+    }
+    a{
+        color: #6f6f6f;
+        font-family: CrimsonText;
+        font-size: 18px;
+        font-style: italic;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            color: @base-color-active;
+        }
+    }
+}
+
+.control-element{
+    a{
+        &:focus{
+            outline: none;
+            border:none;
+        }
+        &:active{
+            outline: none;
+            border:none;
+        }
+    }
+}
+
+#works,
+.works {
+    width: 100%;
+    a{
+        display: inline-block;
+    }
+}
+
+#filter {
+    display: inline-block;
+    list-style: none;
+    float: none;
+    width: 100%;
+    margin-bottom: 75px;
+    li {
+        display: inline-block;
+        list-style: none;
+    }
+}
+#filter li a {
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: inline-block;
+    border-radius: 0;
+    text-transform: uppercase;
+    box-shadow: none;
+    border: 1px solid #ececec;
+    color: @base-color;
+    transition: all 0.4s ease;
+}
+#filter li a:hover,
+#filter li a.current {
+    color: @base-color-active;
+}
+
+.work {
+    transition: all 0.6s ease-in-out;
+    position: relative;
+    margin: 0 5px 10px;
+    &:hover{
+        .iso-hover{
+            z-index: 1;
+            top: 35px;
+        }
+        .white-fon{
+            opacity: 1;
+        }
+    }
+}
+.white-fon{
+    position: relative;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.clearfix{
+    li{
+        a{
+            padding: 10px 13px;
+            margin: 0 5px;
+        }
+    }
+}

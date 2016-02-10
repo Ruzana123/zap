@@ -194,6 +194,19 @@ article iframe {
 .content-blog .blog-post {
   width: 100%;
 }
+.content-blog .information-post .h-entry {
+  margin-bottom: 10px;
+}
+.content-blog .information-post p {
+  line-height: 29px;
+  margin-bottom: 35px;
+}
+.content-blog .information-post p:last-child {
+  margin-bottom: 30px;
+}
+.content-blog .accordion .sub:last-child {
+  margin-bottom: 15px;
+}
 .navbar-nav > li > .dropdown-menu {
   background-color: #fff;
 }
@@ -240,7 +253,7 @@ article iframe {
   font-family: CrimsonText;
   font-size: 18px;
   font-style: italic;
-  line-height: 24px;
+  line-height: 20px;
   margin: 50px 45px;
 }
 .mini-img-blog {
@@ -319,9 +332,9 @@ article iframe {
   border-bottom: 1px solid #141414;
   text-align: right;
   margin-bottom: 100px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  margin-bottom: 110px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 85px;
 }
 .post-navigation a {
   color: #141414;
@@ -650,7 +663,6 @@ article iframe {
   text-decoration: none;
 }
 .more-comments {
-  margin-top: 65px;
   text-align: center;
 }
 .table-main {
