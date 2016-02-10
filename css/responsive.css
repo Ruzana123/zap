@@ -138,6 +138,11 @@
     margin-top: 0;
     width: 100%;
   }
+  /*blog-detail*/
+  .comments .form-group .middle-group {
+    margin-right: 30px;
+    text-align: left;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .blog-post {
@@ -308,11 +313,14 @@
     padding-top: 30px;
     vertical-align: middle;
   }
+  .widget-photo li:nth-child(3) {
+    margin-right: 18px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   /*home*/
   .line-header .navbar-collapse li a {
-    margin: 16px 19px;
+    margin: 16px 18px;
   }
   .big-img .mini-bg img:hover {
     transform: none;

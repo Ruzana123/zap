@@ -191,6 +191,21 @@ span {
 .content-blog .blog-post {
   width: 100%;
 }
+.content-blog .sidebar h2 {
+  text-align: left;
+}
+.content-blog .sidebar h2:before {
+  content: '';
+  background-color: #eeb013;
+  width: 10px;
+  height: 10px;
+  top: 43%;
+  left: 20px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  bottom: 0;
+  transform: translate(-175%) rotate(45deg);
+}
 .navbar-nav > li > .dropdown-menu {
   background-color: #fff;
 }
