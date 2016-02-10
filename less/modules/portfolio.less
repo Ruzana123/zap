@@ -57,68 +57,6 @@
     text-align: center;
 }
 
-.iso-hover{
-    z-index: -2; 
-    top: -60px;
-    left: 37px;
-    transition: all 0.6s ease-in-out;
-    position: absolute;
-    img{
-        position: relative;
-    }
-    .control-element{
-        margin-top: 30px;
-        a{
-            font-size: 13px;
-            color: #fff;
-            i{
-                height: 29px;
-                width: 29px;
-                border: 1px solid @base-color-active;
-                background-color: @base-color-active;
-                border-radius: 50px;
-                font-size: 12px;
-                line-height: 26px;
-                transition: all 0.3s ease-in-out;
-                &:hover{
-                    background-color: darken(@base-color-active, 5%);
-                    border-color: darken(@base-color-active, 5%);
-                    color: #fff;
-                }
-            }
-            &:hover{
-                color: #fff;
-            }
-        }
-    }
-}
-.hover-content{
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    h4{
-        color: @base-color;
-        font-family: Montserrat;
-        font-size: 12px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-    hr{
-        width: 37px;
-        border-color: @base-color;
-    }
-    a{
-        color: #6f6f6f;
-        font-family: CrimsonText;
-        font-size: 18px;
-        font-style: italic;
-        transition: all 0.2s ease-in-out;
-        &:hover{
-            color: @base-color-active;
-        }
-    }
-}
-
 .control-element{
     a{
         &:focus{
@@ -169,13 +107,13 @@
 }
 
 .work {
-    transition: all 0.6s ease-in-out;
     position: relative;
-    margin: 0 5px 10px;
+    width: 31%;
+    margin:13px;
     &:hover{
-        .iso-hover{
-            z-index: 1;
-            top: 35px;
+        .hover-content{
+            opacity: 1;
+            top: 35%;
         }
         .white-fon{
             opacity: 1;
@@ -183,10 +121,10 @@
     }
 }
 .white-fon{
-    position: relative;
+    position: absolute;
     text-align: center;
-    top: 0;
-    left: 0;
+    top: 10%;
+    left: 7%;
     width: 300px;
     height: 250px;
     background-color: #fff;
@@ -198,6 +136,36 @@
         a{
             padding: 10px 13px;
             margin: 0 5px;
+            font-size: 10px;
+        }
+    }
+}
+
+.hover-content{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    h4{
+        color: @base-color;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    hr{
+        width: 37px;
+        border-color: @base-color;
+    }
+    a{
+        color: #6f6f6f;
+        font-family: CrimsonText;
+        font-size: 18px;
+        font-style: italic;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            color: @base-color-active;
         }
     }
 }

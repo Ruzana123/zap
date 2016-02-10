@@ -154,6 +154,28 @@ span {
 .link-in-post img {
   display: inline-block;
 }
+.main-blog .content-blog {
+  margin-bottom: 140px;
+}
+.main-blog .content-blog .information-post .blog-product-info {
+  margin-bottom: 10px;
+}
+.main-blog .content-blog .audio-post {
+  padding-bottom: 160px;
+}
+.main-blog .information-post {
+  padding-top: 0;
+}
+.main-blog .blog-post-title {
+  margin-top: 20px;
+  display: block;
+}
+.main-blog .link-post .blog-post-title {
+  margin-top: 8px;
+}
+.link-img {
+  position: relative;
+}
 .main-blog .blog-post {
   padding-bottom: 100px;
 }
@@ -180,7 +202,7 @@ span {
   font-style: italic;
   line-height: 30px;
   position: absolute;
-  top: 65px;
+  top: 40%;
   left: 80px;
 }
 article iframe {
@@ -201,11 +223,24 @@ article iframe {
   line-height: 29px;
   margin-bottom: 35px;
 }
-.content-blog .information-post p:last-child {
-  margin-bottom: 30px;
+.content-blog .information-post .article-information p:last-child {
+  margin-bottom: 25px;
+}
+.content-blog .information-post .base-blockquote {
+  margin-bottom: 55px !important;
 }
 .content-blog .accordion .sub:last-child {
   margin-bottom: 15px;
+}
+.content-blog .sidebar .writer-block hr {
+  width: 270px;
+  border-color: #ececec;
+}
+.content-blog .sidebar .writer-block h2 {
+  text-align: left;
+}
+.content-blog .sidebar .right-menu li:last-child {
+  padding-bottom: 18px;
 }
 .navbar-nav > li > .dropdown-menu {
   background-color: #fff;
@@ -247,11 +282,12 @@ article iframe {
 .information-post blockquote {
   border: 1px solid #ececec;
   margin-bottom: 45px;
+  margin-top: 50px;
 }
 .information-post blockquote p {
   color: #272727;
   font-family: CrimsonText;
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   line-height: 20px;
   margin: 50px 45px;
@@ -359,7 +395,7 @@ article iframe {
 }
 .writer-block .writer-photo {
   display: inline-block;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 .writer-block .title-writer {
   color: #141414;
@@ -371,22 +407,23 @@ article iframe {
 }
 .writer-block .category-author {
   display: inline-block;
+  font-size: 14px;
 }
 .writer-block a {
   display: block;
 }
 .writer-block .writer-info {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 55px;
+  margin-bottom: 35px;
 }
 .writer-block .writer {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 .writer-block p {
   color: #6f6f6f;
   font-family: CrimsonText;
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   line-height: 24px;
   margin-bottom: 30px;
@@ -415,9 +452,12 @@ article iframe {
   transition: all 0.3s ease-in-out;
 }
 .articles-menu li {
-  margin-top: 40px;
+  margin-top: 37px;
   width: 100%;
   display: inline-block;
+}
+.articles-menu li:last-child {
+  margin-bottom: 30px;
 }
 .articles-menu li img {
   display: inline-block;
@@ -446,7 +486,6 @@ article iframe {
 }
 .widget-photo {
   margin-top: 40px;
-  padding-bottom: 20px;
 }
 .widget-photo li {
   margin-bottom: 30px;
@@ -469,36 +508,7 @@ article iframe {
   margin: 65px 0 0 0;
   display: block;
 }
-.comments .accordion .sub {
-  border: none;
-}
-.comments .accordion .sub a:last-child i {
-  position: relative;
-  display: block;
-  top: -21px;
-  left: 50px;
-  color: #141414;
-}
-.comments .accordion .sub .comment-post a:first-child {
-  color: #eeb013;
-  font-style: normal;
-  font-family: Montserrat;
-}
-.comments .accordion .sub:before {
-  display: none;
-}
-.comments .accordion .sub .reply {
-  color: #141414;
-  font-size: 12px;
-  font-style: normal;
-  font-family: Montserrat;
-  float: right;
-  text-transform: uppercase;
-}
-.comments .accordion .sub .reply:hover {
-  text-decoration: none;
-}
-.comments .accordion .sub .more {
+.comments .more {
   display: inline-block;
   color: #141414;
   width: 100%;
@@ -513,20 +523,49 @@ article iframe {
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
 }
-.comments .accordion .sub .more i {
+.comments .more i {
   color: #141414;
   top: 38%;
   left: 60%;
   transition: all 0.2s ease-in-out;
 }
-.comments .accordion .sub .more:hover {
+.comments .more:hover {
   color: #eeb013;
   border-color: #eeb013;
 }
-.comments .accordion .sub .more:hover i {
+.comments .more:hover i {
   color: #eeb013;
 }
-.comments .accordion .sub .more:focus {
+.comments .more:focus {
+  text-decoration: none;
+}
+.comments .comment-post a:first-child {
+  color: #eeb013;
+  font-style: normal;
+  font-family: Montserrat;
+}
+.comments .accordion .sub {
+  border: none;
+}
+.comments .accordion .sub a:last-child i {
+  position: relative;
+  display: block;
+  top: -21px;
+  left: 50px;
+  color: #141414;
+}
+.comments .accordion .sub:before {
+  display: none;
+}
+.comments .accordion .sub .reply {
+  color: #141414;
+  font-size: 12px;
+  font-style: normal;
+  font-family: Montserrat;
+  float: right;
+  text-transform: uppercase;
+}
+.comments .accordion .sub .reply:hover {
   text-decoration: none;
 }
 .comments input:valid {
@@ -622,6 +661,7 @@ article iframe {
   border-color: #d89f10;
 }
 .comment-post {
+  text-align: left;
   position: relative;
   display: inline-block;
   margin-bottom: 40px;
@@ -664,6 +704,24 @@ article iframe {
 }
 .more-comments {
   text-align: center;
+  display: block;
+}
+#comment-button-more {
+  display: block;
+}
+#comment-button-hidden {
+  display: none;
+}
+.hidden-comment {
+  display: none;
+  height: 200px;
+  position: relative;
+}
+.comment-button-hidden {
+  position: relative;
+}
+.first-hidden-comment {
+  height: 220px !important;
 }
 .table-main {
   text-transform: uppercase;
@@ -2169,67 +2227,6 @@ footer .left-footer span {
   width: 100%;
   text-align: center;
 }
-.iso-hover {
-  z-index: -2;
-  top: -60px;
-  left: 37px;
-  transition: all 0.6s ease-in-out;
-  position: absolute;
-}
-.iso-hover img {
-  position: relative;
-}
-.iso-hover .control-element {
-  margin-top: 30px;
-}
-.iso-hover .control-element a {
-  font-size: 13px;
-  color: #fff;
-}
-.iso-hover .control-element a i {
-  height: 29px;
-  width: 29px;
-  border: 1px solid #eeb013;
-  background-color: #eeb013;
-  border-radius: 50px;
-  font-size: 12px;
-  line-height: 26px;
-  transition: all 0.3s ease-in-out;
-}
-.iso-hover .control-element a i:hover {
-  background-color: #d89f10;
-  border-color: #d89f10;
-  color: #fff;
-}
-.iso-hover .control-element a:hover {
-  color: #fff;
-}
-.hover-content {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-}
-.hover-content h4 {
-  color: #141414;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.hover-content hr {
-  width: 37px;
-  border-color: #141414;
-}
-.hover-content a {
-  color: #6f6f6f;
-  font-family: CrimsonText;
-  font-size: 18px;
-  font-style: italic;
-  transition: all 0.2s ease-in-out;
-}
-.hover-content a:hover {
-  color: #eeb013;
-}
 .control-element a:focus {
   outline: none;
   border: none;
@@ -2274,22 +2271,22 @@ footer .left-footer span {
   color: #eeb013;
 }
 .work {
-  transition: all 0.6s ease-in-out;
   position: relative;
-  margin: 0 5px 10px;
+  width: 31%;
+  margin: 13px;
 }
-.work:hover .iso-hover {
-  z-index: 1;
-  top: 35px;
+.work:hover .hover-content {
+  opacity: 1;
+  top: 35%;
 }
 .work:hover .white-fon {
   opacity: 1;
 }
 .white-fon {
-  position: relative;
+  position: absolute;
   text-align: center;
-  top: 0;
-  left: 0;
+  top: 10%;
+  left: 7%;
   width: 300px;
   height: 250px;
   background-color: #fff;
@@ -2299,6 +2296,35 @@ footer .left-footer span {
 .clearfix li a {
   padding: 10px 13px;
   margin: 0 5px;
+  font-size: 10px;
+}
+.hover-content {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.hover-content h4 {
+  color: #141414;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hover-content hr {
+  width: 37px;
+  border-color: #141414;
+}
+.hover-content a {
+  color: #6f6f6f;
+  font-family: CrimsonText;
+  font-size: 18px;
+  font-style: italic;
+  transition: all 0.2s ease-in-out;
+}
+.hover-content a:hover {
+  color: #eeb013;
 }
 .header-absolute {
   position: absolute;
@@ -2388,7 +2414,7 @@ footer .left-footer span {
 .form-search {
   display: inline-block;
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 .form-search input {
   width: 270px;
@@ -2676,7 +2702,7 @@ footer .left-footer span {
 .number a {
   color: #6f6f6f;
   display: block;
-  padding: 12px 17px;
+  padding: 10px 16px;
   border: 1px solid #e4e4e4;
   color: #141414;
   font-family: CrimsonText;
