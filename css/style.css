@@ -183,6 +183,9 @@ span {
   top: 65px;
   left: 80px;
 }
+article iframe {
+  width: 100%;
+}
 .content-blog {
   margin: 80px 0;
   margin-right: -15px;
@@ -190,21 +193,6 @@ span {
 }
 .content-blog .blog-post {
   width: 100%;
-}
-.content-blog .sidebar h2 {
-  text-align: left;
-}
-.content-blog .sidebar h2:before {
-  content: '';
-  background-color: #eeb013;
-  width: 10px;
-  height: 10px;
-  top: 43%;
-  left: 20px;
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-  bottom: 0;
-  transform: translate(-175%) rotate(45deg);
 }
 .navbar-nav > li > .dropdown-menu {
   background-color: #fff;
@@ -2170,16 +2158,14 @@ footer .left-footer span {
   text-align: center;
 }
 .iso-hover {
-  position: absolute;
-}
-.iso-hover img {
-  position: relative;
-}
-.iso-hover {
   z-index: -2;
   top: -60px;
   left: 37px;
   transition: all 0.6s ease-in-out;
+  position: absolute;
+}
+.iso-hover img {
+  position: relative;
 }
 .iso-hover .control-element {
   margin-top: 30px;
@@ -2276,12 +2262,27 @@ footer .left-footer span {
   color: #eeb013;
 }
 .work {
+  transition: all 0.6s ease-in-out;
   position: relative;
   margin: 0 5px 10px;
 }
 .work:hover .iso-hover {
   z-index: 1;
   top: 35px;
+}
+.work:hover .white-fon {
+  opacity: 1;
+}
+.white-fon {
+  position: relative;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 250px;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
 }
 .clearfix li a {
   padding: 10px 13px;
