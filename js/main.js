@@ -222,15 +222,19 @@ $( "#number1" )
 
 
 
-$(document).ready(function () {
-        $(".more").click(function() {
-            var ul = $(this).next(),
-                    clone = ul.clone().css({"height":"auto"}).appendTo(".mini-menu"),
-                    height = ul.css("height") === "0px" ? ul[0].scrollHeight + "px" : "0px";
-                    $(this).remove();
-            clone.remove();
-            ul.animate({"height":height});
-            $('<a href="#" class="more">more<i class="fa fa-angle-down"></i></a>').insertAfter('.mini-menu > ul > .sub').css('display', 'block');
-            return false;
-        });
-    });
+
+$(function() {
+   $('#comment-button-more').click(function( e ) {
+       e.preventDefault(); 
+       $(".hidden-comment").css("display","block");
+       $("#comment-button-more").css("display","none");
+       $("#comment-button-hidden").css("display","block");
+   });
+
+    $('#comment-button-hidden').click(function( e ) {
+      e.preventDefault();
+       $(".hidden-comment").css("display","none");
+       $("#comment-button-more").css("display","block");
+       $("#comment-button-hidden").css("display","none");
+       });
+});

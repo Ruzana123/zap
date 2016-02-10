@@ -158,6 +158,34 @@ span{
 		display: inline-block;
 	}
 }
+.main-blog{	
+	.content-blog {
+		margin-bottom: 140px;
+		.information-post {
+			.blog-product-info{
+				margin-bottom: 10px;
+			}
+		}
+		.audio-post{
+			padding-bottom: 160px;
+		}
+	}
+	.information-post{
+		padding-top: 0;
+	}
+	.blog-post-title{
+		margin-top: 20px;
+		display: block;
+	}
+	.link-post{
+		.blog-post-title{
+				margin-top: 8px;
+			}
+	}
+}
+.link-img{
+	position: relative;
+}
 .main-blog{
 	.blog-post{
 		padding-bottom: 100px;
@@ -184,7 +212,7 @@ span{
 			font-style: italic;
 			line-height: 30px;
 			position: absolute;
-			top: 65px;
+			top: 40%;
     		left: 80px;
 		}
 	}
@@ -209,13 +237,32 @@ article{
 		p{
 			line-height: 29px;
 			margin-bottom: 35px;
-			&:last-child{
-				margin-bottom: 30px;
+		}
+		.article-information{
+			p:last-child{
+				margin-bottom: 25px;
 			}
+		}
+		.base-blockquote{
+			margin-bottom: 55px !important;
 		}
 	}
 	.accordion .sub:last-child{
 		margin-bottom: 15px;
+	}
+	.sidebar{
+		.writer-block{
+			hr{
+				width: 270px;
+				border-color: #ececec;
+			}
+			h2{
+				text-align: left;
+			}
+		}
+		.right-menu li:last-child{
+			padding-bottom: 18px;
+		}
 	}
 }
 .navbar-nav>li>.dropdown-menu{
@@ -259,10 +306,11 @@ article{
 	blockquote{
 		border: 1px solid #ececec;
 		margin-bottom: 45px;
+		margin-top: 50px;
 		p{
 			color: #272727;
 			font-family: CrimsonText;
-			font-size: 18px;
+			font-size: 16px;
 			font-style: italic;
 			line-height: 20px;
 			margin: 50px 45px;
@@ -372,7 +420,7 @@ article{
 	text-align: center;
 	.writer-photo{
 		display: inline-block;
-		margin-bottom: 18px;
+		margin-bottom: 8px;
 	}
 	.title-writer{
 		color: @base-color;
@@ -384,22 +432,23 @@ article{
 	}
 	.category-author{
 		display: inline-block;
+		font-size: 14px;
 	}
 	a{
 		display: block;
 	}
 	.writer-info{
-		margin-top: 50px;
-		margin-bottom: 50px;
+		margin-top: 55px;
+		margin-bottom: 35px;
 	}
 	.writer{
 		text-align: center;
-		margin-bottom: 45px;
+		margin-bottom: 20px;
 	}
 	p{
 		color: #6f6f6f;
 		font-family: CrimsonText;
-		font-size: 18px;
+		font-size: 16px;
 		font-style: italic;
 		line-height: 24px;
 		margin-bottom: 30px;
@@ -430,10 +479,13 @@ article{
 }
 .articles-menu{
 	li{
-		margin-top: 40px;
+		margin-top: 37px;
 		display: inline-block;
 		width: 100%;
 		display: inline-block;
+		&:last-child{
+			margin-bottom: 30px;
+		}
 		img{
 			display: inline-block;
 			float: left;
@@ -463,7 +515,6 @@ article{
 }
 .widget-photo{
 	margin-top: 40px;
-	padding-bottom: 20px;
 	li{
 		margin-bottom: 30px;
 		display: inline-block;
@@ -487,39 +538,7 @@ article{
 	display: block;
 }
 .comments{
-	.accordion .sub{
-		border:none;
-		a:last-child{
-			i{
-				position: relative;
-				display: block;
-				top: -21px;
-	    		left: 50px;
-				color: @base-color;
-			}
-		}
-		.comment-post a{
-			&:first-child{
-				color: @base-color-active;
-				font-style: normal;
-				font-family: Montserrat;
-			}
-		}
-		&:before{
-			display: none;
-		}
-		.reply{
-			color: @base-color;
-			font-size: 12px;
-			font-style: normal;
-			font-family: Montserrat;
-			float: right;
-			text-transform: uppercase;
-			&:hover{
-				text-decoration: none;
-			}
-		}
-		.more{
+	.more{
 			display: inline-block;
 			color: #141414;
 			width: 100%;
@@ -547,6 +566,38 @@ article{
 				}
 			}
 			&:focus{
+				text-decoration: none;
+			}
+		}
+		.comment-post a{
+			&:first-child{
+				color: @base-color-active;
+				font-style: normal;
+				font-family: Montserrat;
+			}
+		}
+	.accordion .sub{
+		border:none;
+		a:last-child{
+			i{
+				position: relative;
+				display: block;
+				top: -21px;
+	    		left: 50px;
+				color: @base-color;
+			}
+		}
+		&:before{
+			display: none;
+		}
+		.reply{
+			color: @base-color;
+			font-size: 12px;
+			font-style: normal;
+			font-family: Montserrat;
+			float: right;
+			text-transform: uppercase;
+			&:hover{
 				text-decoration: none;
 			}
 		}
@@ -647,6 +698,7 @@ article{
 	}
 }
 .comment-post{
+	text-align: left;
 	position: relative;
 	display: inline-block;
 	margin-bottom: 40px;
@@ -689,6 +741,24 @@ article{
 }
 .more-comments{
 	text-align: center;
+	display: block;
+}
+#comment-button-more{
+	display: block;
+}
+#comment-button-hidden{
+	display: none;
+}
+.hidden-comment{
+	display: none;
+	height: 200px;
+	position: relative;
+}
+.comment-button-hidden{
+	position: relative;
+}
+.first-hidden-comment{
+	height: 220px !important;
 }
 .table-main{
 	text-transform: uppercase;
@@ -2283,68 +2353,6 @@ footer{
     text-align: center;
 }
 
-.iso-hover{
-    z-index: -2; 
-    top: -60px;
-    left: 37px;
-    transition: all 0.6s ease-in-out;
-    position: absolute;
-    img{
-        position: relative;
-    }
-    .control-element{
-        margin-top: 30px;
-        a{
-            font-size: 13px;
-            color: #fff;
-            i{
-                height: 29px;
-                width: 29px;
-                border: 1px solid @base-color-active;
-                background-color: @base-color-active;
-                border-radius: 50px;
-                font-size: 12px;
-                line-height: 26px;
-                transition: all 0.3s ease-in-out;
-                &:hover{
-                    background-color: darken(@base-color-active, 5%);
-                    border-color: darken(@base-color-active, 5%);
-                    color: #fff;
-                }
-            }
-            &:hover{
-                color: #fff;
-            }
-        }
-    }
-}
-.hover-content{
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    h4{
-        color: @base-color;
-        font-family: Montserrat;
-        font-size: 12px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-    hr{
-        width: 37px;
-        border-color: @base-color;
-    }
-    a{
-        color: #6f6f6f;
-        font-family: CrimsonText;
-        font-size: 18px;
-        font-style: italic;
-        transition: all 0.2s ease-in-out;
-        &:hover{
-            color: @base-color-active;
-        }
-    }
-}
-
 .control-element{
     a{
         &:focus{
@@ -2395,13 +2403,13 @@ footer{
 }
 
 .work {
-    transition: all 0.6s ease-in-out;
     position: relative;
-    margin: 0 5px 10px;
+    width: 31%;
+    margin:13px;
     &:hover{
-        .iso-hover{
-            z-index: 1;
-            top: 35px;
+        .hover-content{
+            opacity: 1;
+            top: 35%;
         }
         .white-fon{
             opacity: 1;
@@ -2409,10 +2417,10 @@ footer{
     }
 }
 .white-fon{
-    position: relative;
+    position: absolute;
     text-align: center;
-    top: 0;
-    left: 0;
+    top: 10%;
+    left: 7%;
     width: 300px;
     height: 250px;
     background-color: #fff;
@@ -2424,6 +2432,36 @@ footer{
         a{
             padding: 10px 13px;
             margin: 0 5px;
+            font-size: 10px;
+        }
+    }
+}
+
+.hover-content{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    h4{
+        color: @base-color;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    hr{
+        width: 37px;
+        border-color: @base-color;
+    }
+    a{
+        color: #6f6f6f;
+        font-family: CrimsonText;
+        font-size: 18px;
+        font-style: italic;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            color: @base-color-active;
         }
     }
 }
@@ -2524,7 +2562,7 @@ footer{
 .form-search{
 	display: inline-block;
 	position: relative;
-	padding-bottom: 20px;
+	padding-bottom: 18px;
 	input {
 	    width: 270px;
 		height: 50px;
@@ -2833,7 +2871,7 @@ footer{
 	a{
 		color: #6f6f6f;
 		display: block;
-		padding: 12px 17px;
+		padding: 10px 16px;
 		border: 1px solid #e4e4e4;
 		color: #141414;
 		font-family: CrimsonText;

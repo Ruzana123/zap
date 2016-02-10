@@ -138,6 +138,19 @@
     margin-top: 0;
     width: 100%;
   }
+  .widget-photo li:nth-child(3) {
+    margin-right: 18px;
+  }
+  .blog-post .owl-item {
+    padding: 0;
+  }
+  .comments .form-3 {
+    width: 29%;
+  }
+  .comments .form-group .middle-group {
+    text-align: left;
+    margin-right: 40px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .blog-post {
@@ -150,9 +163,18 @@
   .navbar-collapse li:first-child a {
     margin-left: 10px;
   }
+  .line-header .navbar-collapse .dropdown-menu li:first-child a {
+    padding-left: 25px;
+  }
+  .articles-menu li img {
+    margin-right: 10px;
+  }
 }
 @media only screen and (max-width: 992px) {
   /*home*/
+  .content-blog .sidebar {
+    margin-top: 50px;
+  }
   .breadcrumbs {
     padding-bottom: 200px;
     padding-top: 250px;
@@ -308,6 +330,25 @@
     padding-top: 30px;
     vertical-align: middle;
   }
+  .content-blog .sidebar .writer-block h2 {
+    text-align: center;
+  }
+  .content-blog .sidebar .right-menu {
+    padding-left: 0;
+  }
+  .content-blog .sidebar h2:before {
+    top: 15px;
+  }
+  .articles-menu li .articles-information {
+    width: 30%;
+    vertical-align: top;
+    float: none;
+    text-align: left;
+  }
+  .main-blog .link-post .download-link {
+    font-size: 15px;
+    left: 10%;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   /*home*/
@@ -341,8 +382,14 @@
     text-align: center;
   }
   /*home*/
+  .line-header .navbar-collapse .dropdown-menu li:first-child a {
+    padding-left: 0;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .blog-post .video-post .link-in-post .last-post-img {
+    width: 100%;
+  }
   .logo {
     margin-bottom: 20px;
   }
@@ -616,6 +663,10 @@
   .shop-i {
     display: none;
   }
+  .comments .form-group .middle-group {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 @media only screen and (min-width: 568px) and (max-width: 768px) {
   /*home*/
@@ -679,11 +730,30 @@
     font-size: 13px;
     padding-left: 35px;
   }
+  .show-menu .icon-list .shopping-cart-logo-mini i {
+    padding-top: 0;
+  }
+  .show-menu .icon-list .shopping-cart-logo-mini i i {
+    font-size: 11px;
+  }
+  .show-menu .icon-list .search-logo-mini {
+    padding-top: 0;
+  }
+  .show-menu .icon-list .search-logo-mini i {
+    font-size: 11px;
+  }
   .half {
     width: 100%;
   }
   .totals p {
     text-align: center;
+  }
+  .show-menu .logo {
+    margin-bottom: 0;
+    width: 50%;
+  }
+  .comments .send {
+    margin-bottom: 40px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 600px) {
@@ -693,13 +763,15 @@
   .prod-main .product-el:nth-child(2n+1) {
     clear: both;
   }
+  .main-blog .information-post .h-entry {
+    font-size: 20px;
+  }
+  .mini-img-blog {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 480px) {
   /*home*/
-  .breadcrumbs {
-    padding-bottom: 100px;
-    padding-top: 150px;
-  }
   .blog-post .link-in-post .last-post-img {
     width: 100%;
   }
@@ -834,6 +906,15 @@
     margin-top: 40px;
     margin-bottom: 80px;
   }
+  .comments .comment-post a:first-child {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .comments .comment-info-post {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 320px) {
   /*home*/
@@ -907,5 +988,42 @@
   }
   .totals .big-btn-cart {
     font-size: 13px;
+  }
+  .main-blog .content-blog .audio-post {
+    padding-bottom: 90px;
+  }
+  .main-blog .information-post {
+    font-size: 13px;
+  }
+  .main-blog .information-post .h-entry {
+    font-size: 18px;
+  }
+  .pages .number {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .widget-photo li:nth-child(3) {
+    margin-right: 0;
+  }
+  footer .alignment4 li:nth-child(3) {
+    margin-right: 0;
+  }
+  footer .alignment4 li:nth-child(6) {
+    margin-right: 0;
+  }
+  footer .footer-h4 {
+    margin-left: 0;
+  }
+  .post-navigation {
+    font-size: 12px;
+  }
+  .comment-info-post {
+    text-align: center;
+  }
+  .hidden-comment {
+    height: 700px;
+  }
+  .comments .send {
+    margin-bottom: 30px;
   }
 }
