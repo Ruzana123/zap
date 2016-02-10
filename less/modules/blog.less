@@ -5,6 +5,23 @@
 	.blog-post{
 		width: 100%;
 	}
+	.sidebar{
+		h2{
+			text-align: left;
+			&:before{
+				content: '';
+				background-color: @base-color-active;
+				width: 10px;
+				height: 10px;
+				top: 43%;
+				left: 20px;
+				position: absolute;
+				transition: all 0.3s ease-in-out;
+				bottom: 0;
+				transform: translate(-175%) rotate(45deg);
+			}
+		}
+	}
 }
 .navbar-nav>li>.dropdown-menu{
 	li a{
