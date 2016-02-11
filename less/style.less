@@ -212,8 +212,11 @@ span{
 			font-style: italic;
 			line-height: 30px;
 			position: absolute;
-			top: 40%;
-    		left: 80px;
+		    top: 50%;
+		    width: 80%;
+		    left: 50%;
+		    display: inline-block;
+		    transform: translate(-50%,-50%);
 		}
 	}
 }
@@ -1613,55 +1616,6 @@ footer{
 	    opacity: 1;
 	}
 }
-.big-img{
-	padding-top: 218px;
-	position: relative;
-}
-.shopping-cart-logo-mini{
-	display: none;
-}
-.search-logo-mini{
-	display: none;
-}
-.fixed-header{
-	.line-header{
-		top: 20px;
-	}
-}
-.show-menu {
-	text-transform: uppercase;
-}
-.head-block .fixed-header{
-	background-color: #fff !important;
-	.navbar-collapse li a{
-		color: @base-color !important;
-	}
-	.shop-i a{
-		color: @base-color !important;
-	}
-	.logo-fixed{
-		display: inline-block;
-		float: left;
-	}
-	.logo-img-big{
-		display: none;
-	}
-}
-.fixed-header {
-	position: fixed !important;
-	width: 100%;
-	background-color: #fff !important;
-	z-index: 10;
-	height: 100px;
-	top: 0 !important;
-	padding: 18px 0 18px 0 !important;
-	border-bottom: 1px solid @base-color;
-	.menu-top .navbar{
-		background-color: transparent !important;
-    	border-color: transparent !important;
-	}
-}
-
 
 .line-header{
 	position: absolute;
@@ -1706,7 +1660,6 @@ footer{
 			}
 		}
 	}
-
 	.menu-top{
 		float: left;
 		padding-left: 220px;
@@ -1759,8 +1712,158 @@ footer{
 		}
 	}
 }
+.logo{
+	display: inline-block;
+}
+.big-img{
+	padding-top: 218px;
+	position: relative;
+}
+.shopping-cart-logo-mini{
+	display: none;
+}
+.search-logo-mini{
+	display: none;
+}
+.fixed-header{
+	.line-header{
+		top: 20px;
+	}
+}
+.show-menu {
+	text-transform: uppercase;
+}
+.menu-wrap{
+	top: 0;
+}
+.head-block .fixed-header{
+	background-color: #fff !important;
+	.navbar-collapse li a{
+		color: @base-color !important;
+	}
+	.shop-i a{
+		color: @base-color !important;
+	}
+	.logo-fixed{
+		display: inline-block;
+		float: left;
+	}
+	.logo-img-big{
+		display: none;
+	}
+}
+.fixed-header {
+	position: fixed !important;
+	width: 100%;
+	background-color: #fff !important;
+	z-index: 10;
+	height: 100px;
+	top: 0 !important;
+	padding: 18px 0 18px 0 !important;
+	border-bottom: 1px solid @base-color;
+	.menu-top .navbar{
+		background-color: transparent !important;
+    	border-color: transparent !important;
+	}
+}
 
+.fixed-header{
+	z-index: 1002;
+}
+.header-absolute{
+	position: absolute;  
+	width: 100%;
+	z-index: 1002;
+}
+.head-block .line-header .navbar-collapse li a{
+	background-color: transparent;
+	&:hover{
+		background-color:transparent;
+		color: @base-color-active;
+	}
+	&:focus{
+		background-color: transparent;
+	}
+	&:active{
+		background-color: transparent;
+	}
+}
+.line-header .navbar-collapse .navbar-nav>li>.dropdown-menu a:after{
+	display: none;
+}
 
+.head-block{
+	width: 100%;
+	background-color: #1d1d1d;
+	.line-header{
+		background-color: #1d1d1d;
+		.menu-top {
+			.navbar{
+				background-color: #1d1d1d;
+				color: #fff;
+				border-color: #1d1d1d;
+			}
+		} 
+		.navbar-collapse {
+			li{
+				a{
+					color: #fff;
+					&:focus{
+						color: @base-color-active;
+					}
+				}
+			}
+		}
+		.shop-i{
+			a{
+				color: #fff;
+			}
+		}
+	}
+}
+
+.breadcrumbs{
+	width: 100%;
+	position: relative;
+	padding-bottom: 230px;
+	display: table;
+	padding-top: 325px;
+	background-color: #1d1d1d;
+}
+.table-cell{
+	position: relative;
+	display: table-cell;
+	text-align: center;
+	h1{
+		font-size: 48px;
+		color: #fff;
+		letter-spacing: 3px;
+		font-weight: 700;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+	a{
+		font-size: 12px;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: all 0.2s ease-in-out;
+		&:hover{
+			color: @base-color-active;
+		}
+	}
+	li{
+		display: inline-block;
+		font-size: 12px;
+		color: #fff;
+		line-height: 60px;
+		text-transform: uppercase;
+		&:nth-child(2){
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
 
 
 .big-img{
@@ -2257,6 +2360,12 @@ footer{
 				color: #fff;
 				text-decoration: none;
 			}
+		}
+		.day{
+			padding-bottom: 0;
+		}
+		.month{
+			padding-bottom: 0;
 		}
 	}
 	.video-post {
