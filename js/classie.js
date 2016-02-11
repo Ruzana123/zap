@@ -98,6 +98,7 @@ if ( typeof define === 'function' && define.amd ) {
     var bodyEl = document.body,
         content = document.querySelector( '.content-wrap' ),
         openbtn = document.getElementById( 'open-button' ),
+        showmenu = document.getElementById( 'show-menu-block' ),
         closebtn = document.getElementById( 'close-button' ),
         isOpen = false;
 
@@ -109,6 +110,9 @@ if ( typeof define === 'function' && define.amd ) {
         openbtn.addEventListener( 'click', toggleMenu );
         if( closebtn ) {
             closebtn.addEventListener( 'click', toggleMenu );
+        }
+        if( showmenu ) {
+            showmenu.addEventListener( 'click', toggleMenu );
         }
     }
 

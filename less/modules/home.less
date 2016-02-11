@@ -13,6 +13,9 @@
 		top: 20px;
 	}
 }
+.show-menu {
+	text-transform: uppercase;
+}
 .head-block .fixed-header{
 	background-color: #fff !important;
 	.navbar-collapse li a{
@@ -687,3 +690,15 @@
 	}
 }
 
+#show-menu-block{
+	display: none;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: 1000;
+}
+.show-menu{
+	#show-menu-block{
+		display: block;
+	}
+}
