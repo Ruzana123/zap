@@ -187,9 +187,6 @@
 			margin-right: 40px;
 		}
 	}
-	.main-blog .link-post .download-link{
-		font-size: 20px;
-	}
 }
 
 
@@ -199,6 +196,9 @@
 
 
 @media only screen and (min-width: 992px) and (max-width: 1200px){
+	.main-blog{
+		width: 750px;
+	}
 	.work{
 		margin: 10px;
 	}
@@ -462,14 +462,12 @@
     	float: none;
     	text-align: left;
 	}
-	.main-blog .link-post .download-link{
-		font-size: 21px;
-		left: 10%;
-	}
 	.work{
 		margin: 8px;
 	}
-	
+	.main-blog .link-post .download-link{
+		font-size: 18px;
+	}
 }
 
 
@@ -866,10 +864,6 @@
 	.works{
 		margin-left: 12px;
 	}
-	.main-blog .link-post .download-link{
-		font-size: 15px;
-		left: 10%;
-	}
 	.show-menu .icon-list {
 		a{
 			font-size: 13px;
@@ -1145,11 +1139,6 @@
 	}
 	.blog-post{
 		width: 100%;
-		.main-blog .link-post .download-link {
-		    font-size: 10px;
-		    left: 10%;
-		    top: 25%;
-		}
 	}
 	.tr img{
 		width: 100%;
@@ -1350,6 +1339,11 @@
 	.widget-photo li:nth-child(3){
 		margin-right: 0;
 	}
+	header{
+		.menu-wrap {
+			width: 200px;
+		}
+	}
 	footer {
 		.alignment4 li{
 			&:nth-child(3){
@@ -1434,9 +1428,10 @@
 	.half{
 		width: 100%;
 	}
-	.show-menu .logo {
-	    margin-bottom: 0;
-	    width: 50%;
+	.menu-wrap {
+		.logo {
+		    margin-bottom: 0;
+		}
 	}
 	.clearfix li a {
 	    padding: 5px 3px;
@@ -1448,6 +1443,15 @@
 		a{
 			font-size: 11px;
 		}
+	}
+	.product-information {
+	    text-align: center;
+	}
+	.main-blog .link-post .download-link {
+	    font-size: 15px;
+	}
+	.show-menu .icon-list a{
+		padding-left: 0;
 	}
 }
 
