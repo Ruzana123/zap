@@ -216,6 +216,12 @@ article iframe {
 .content-blog .blog-post {
   width: 100%;
 }
+.content-blog .comments .by-element h2 {
+  display: inline-block;
+}
+.content-blog .comments .by-element h2:before {
+  left: 13%;
+}
 .content-blog .information-post .h-entry {
   margin-bottom: 10px;
 }
@@ -1450,6 +1456,7 @@ footer li a:hover {
   color: #eeb013;
 }
 footer .alignment4 {
+  margin-left: 15px;
   padding-left: 0;
 }
 footer .alignment4 li {
@@ -1546,6 +1553,9 @@ footer .left-footer span {
 }
 .fixed-header .line-header {
   top: 20px;
+}
+.show-menu {
+  text-transform: uppercase;
 }
 .head-block .fixed-header {
   background-color: #fff !important;
@@ -2171,6 +2181,16 @@ footer .left-footer span {
 .play-button img {
   display: inline-block;
 }
+#show-menu-block {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+}
+.show-menu #show-menu-block {
+  display: block;
+}
 /**** Isotope Filtering ****/
 .isotope-item {
   z-index: 2;
@@ -2235,6 +2255,18 @@ footer .left-footer span {
   outline: none;
   border: none;
 }
+.control-element i {
+  height: 28px;
+  width: 28px;
+  border: 1px solid #eeb013;
+  border-radius: 50px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #fff;
+  margin-top: 20px;
+  background-color: #eeb013;
+  transition: all 0.3s ease-in-out;
+}
 #works,
 .works {
   width: 100%;
@@ -2286,9 +2318,9 @@ footer .left-footer span {
   position: absolute;
   text-align: center;
   top: 10%;
-  left: 7%;
-  width: 300px;
-  height: 250px;
+  left: 10%;
+  width: 80%;
+  height: 80%;
   background-color: #fff;
   opacity: 0;
   transition: all 0.4s ease-in-out;
@@ -2326,10 +2358,13 @@ footer .left-footer span {
 .hover-content a:hover {
   color: #eeb013;
 }
+.fixed-header {
+  z-index: 1002;
+}
 .header-absolute {
   position: absolute;
   width: 100%;
-  z-index: 2;
+  z-index: 1002;
 }
 .head-block {
   width: 100%;
@@ -2609,7 +2644,7 @@ footer .left-footer span {
   background-color: #eeb013;
   width: 10px;
   height: 10px;
-  top: 25px;
+  top: 40%;
   position: absolute;
   transition: all 0.3s ease-in-out;
   bottom: 0;
