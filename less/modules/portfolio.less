@@ -107,6 +107,8 @@
     border-radius: 4px;
     display: inline-block;
     border-radius: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-transform: uppercase;
     box-shadow: none;
     border: 1px solid #ececec;
@@ -125,7 +127,7 @@
     &:hover{
         .hover-content{
             opacity: 1;
-            top: 35%;
+            top: 30%;
         }
         .white-fon{
             opacity: 1;
@@ -135,10 +137,10 @@
 .white-fon{
     position: absolute;
     text-align: center;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 80%;
+    top: 35px;
+    right: 35px;
+    left: 35px;
+    bottom: 35px;
     background-color: #fff;
     opacity: 0;
     transition: all 0.4s ease-in-out;
@@ -180,4 +182,46 @@
             color: @base-color-active;
         }
     }
+}
+
+
+.mfp-move-horizontal {
+  
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.3s;
+    
+    transform: translateX(-50px);
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+    
+  }
+  
 }

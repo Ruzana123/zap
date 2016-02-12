@@ -249,13 +249,18 @@ article{
 			line-height: 29px;
 			margin-bottom: 35px;
 		}
-		.article-information{
-			p:last-child{
-				margin-bottom: 25px;
+		blockquote{
+			border: 1px solid #ececec;
+			margin-bottom: 45px;
+			margin-top: 50px;
+			p{
+				color: #272727;
+				font-family: CrimsonText;
+				font-size: 18px;
+				font-style: italic;
+				line-height: 24px;
+				margin: 58px 65px;
 			}
-		}
-		.base-blockquote{
-			margin-bottom: 55px !important;
 		}
 	}
 	.accordion .sub:last-child{
@@ -307,25 +312,13 @@ article{
 		font-family: CrimsonText;
 		font-size: 24px;
 		font-weight: 400;
+		margin-bottom: 35px;
 	}
 	.big-title-product{
 		font-size: 26px !important;
 	}
 	.first-from-quote{
 		margin-bottom: 20px;
-	}
-	blockquote{
-		border: 1px solid #ececec;
-		margin-bottom: 45px;
-		margin-top: 50px;
-		p{
-			color: #272727;
-			font-family: CrimsonText;
-			font-size: 16px;
-			font-style: italic;
-			line-height: 20px;
-			margin: 50px 45px;
-		}
 	}
 }
 .mini-img-blog{
@@ -342,13 +335,34 @@ article{
 		font-size: 12px;
 		font-weight: 400;
 		text-transform: uppercase;
-		line-height: 25px;
+		line-height: 20px;
 	}
 	a{
 		color: #6f6f6f;
 		font-family: CrimsonText;
 		font-size: 16px;
 		font-style: italic;
+	}
+	.title-writer{
+		color: @base-color;
+		font-size: 12px;
+		font-weight: 400;
+		color: #141414;
+		font-family: Montserrat;
+		font-size: 12px;
+		font-style: normal;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		transition: all 0.2s ease-in-out;
+		&:hover{
+			color: @base-color-active;
+		}
+		&:focus{
+			text-decoration: none;
+		}
+		&:active{
+			text-decoration: none;
+		}
 	}
 }
 .social-networks{
@@ -426,20 +440,11 @@ article{
 		float: none;
 	}
 }
-
 .writer-block{
 	text-align: center;
 	.writer-photo{
 		display: inline-block;
 		margin-bottom: 8px;
-	}
-	.title-writer{
-		color: @base-color;
-		font-size: 12px;
-		font-weight: 400;
-   		font-style: normal;
-		line-height: 60px;
-		text-transform: uppercase;
 	}
 	.category-author{
 		display: inline-block;
@@ -454,12 +459,12 @@ article{
 	}
 	.writer{
 		text-align: center;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 	p{
 		color: #6f6f6f;
 		font-family: CrimsonText;
-		font-size: 16px;
+		font-size: 18px;
 		font-style: italic;
 		line-height: 24px;
 		margin-bottom: 30px;
@@ -469,6 +474,10 @@ article{
 		li{
 			display: inline-block;
 			text-align: center;
+			margin-right: 8px;
+			&:last-child{
+				margin-right: 0;
+			}
 			a{
 				display: inline-block;
 				&:hover{
@@ -636,9 +645,16 @@ article{
 		margin-bottom: 40px;
 		color: @base-color;
 		font-family: CrimsonText;
-		font-size: 12px;
-		font-style: italic;
-		text-transform: uppercase;
+		font-size: 14px;
+		color: #6f6f6f;
+		font-style: normal;
+		 &::-webkit-input-placeholder { 
+		    color: #141414;
+		    font-family: CrimsonText;
+		    font-style: italic;
+		    font-size: 12px;
+		    text-transform: uppercase;
+		}
 	}
 	.form-group{
 		margin-top: 65px;
@@ -656,6 +672,7 @@ article{
 	label{
 		font-family: CrimsonText;
 	    font-size: 12px;
+	    letter-spacing: 1px;
 	    font-style: italic;
 	    text-transform: uppercase;
 	    color: @base-color;
@@ -692,7 +709,7 @@ article{
 		}
 	}
 	.send{
-		padding: 15px 23px;
+		padding: 15px 25px;
 		background-color: @base-color-active;
 		color: #fff;
 		letter-spacing: 1px;
@@ -715,11 +732,13 @@ article{
 	margin-bottom: 40px;
 	h4{
 		font-size: 12px;
-		font-weight: 400;			
+		font-weight: 400;
+		letter-spacing: 1px;			
 	}
 	span{
 		color: #6f6f6f;
 		font-size: 11px;
+		letter-spacing: 0.5px;
 		line-height: 24px;
 	}
 	p{
@@ -744,6 +763,7 @@ article{
 		color: @base-color;
 		font-size: 12px;
 		float: right;
+		letter-spacing: 1px;
 		text-transform: uppercase;
 		&:hover{
 			text-decoration: none;
@@ -770,6 +790,20 @@ article{
 }
 .first-hidden-comment{
 	height: 220px !important;
+}
+.ui-button-text{
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+.ui-button{
+	&:active{
+		outline: none;
+		box-shadow: none;
+	}
+	&:focus{
+		outline: none;
+		box-shadow: none;
+	}
 }
 .table-main{
 	text-transform: uppercase;
@@ -1712,9 +1746,7 @@ footer{
 		}
 	}
 }
-.logo{
-	display: inline-block;
-}
+
 .big-img{
 	padding-top: 218px;
 	position: relative;
@@ -1730,7 +1762,7 @@ footer{
 		top: 20px;
 	}
 }
-.show-menu {
+.icon-list{
 	text-transform: uppercase;
 }
 .menu-wrap{
@@ -1962,7 +1994,6 @@ footer{
 		overflow: hidden;
 	}
 }
-
 
 
 
@@ -2344,7 +2375,7 @@ footer{
 		position: absolute;
 		background-color: @base-color-active;
 		text-align: center;
-		top: -15px;
+		bottom: 0;
 		right: 0;
 		a{
 			color: #fff;
@@ -2535,6 +2566,8 @@ footer{
     border-radius: 4px;
     display: inline-block;
     border-radius: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-transform: uppercase;
     box-shadow: none;
     border: 1px solid #ececec;
@@ -2553,7 +2586,7 @@ footer{
     &:hover{
         .hover-content{
             opacity: 1;
-            top: 35%;
+            top: 30%;
         }
         .white-fon{
             opacity: 1;
@@ -2563,10 +2596,10 @@ footer{
 .white-fon{
     position: absolute;
     text-align: center;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 80%;
+    top: 35px;
+    right: 35px;
+    left: 35px;
+    bottom: 35px;
     background-color: #fff;
     opacity: 0;
     transition: all 0.4s ease-in-out;
@@ -2608,6 +2641,48 @@ footer{
             color: @base-color-active;
         }
     }
+}
+
+
+.mfp-move-horizontal {
+  
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.3s;
+    
+    transform: translateX(-50px);
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+    
+  }
+  
 }
 .fixed-header{
 	z-index: 1002;
@@ -2919,11 +2994,12 @@ footer{
 			background-color: @base-color-active;
 			width: 10px;
 			height: 10px;
-			top: 40%;
+			top: 45%;
 			position: absolute;
 			transition: all 0.3s ease-in-out;
 			bottom: 0;
-			transform: translate(-175%) rotate(45deg);
+			left: 0;
+			transform: rotate(45deg);
 		}
 	}
 	.by-element{
@@ -2993,7 +3069,7 @@ footer{
 		padding: 8px 5px;
 		border: 1px solid #e4e4e4;
 		font-size: 13px;
-		padding: 8px 5px;
+		padding: 8px 8px;
 	    margin: 3px;
 	    display: inline-block;
 	    transition: all 0.2s ease-in-out;
