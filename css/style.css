@@ -155,7 +155,7 @@ span {
   display: inline-block;
 }
 .main-blog .content-blog {
-  margin-bottom: 140px;
+  margin-bottom: 148px;
 }
 .main-blog .content-blog .information-post .blog-product-info {
   margin-bottom: 10px;
@@ -251,6 +251,7 @@ article iframe {
 .content-blog .sidebar .writer-block hr {
   width: 270px;
   border-color: #ececec;
+  margin-bottom: 10px;
 }
 .content-blog .sidebar .writer-block h2 {
   text-align: left;
@@ -303,7 +304,7 @@ article iframe {
 .writer {
   width: 100%;
   text-align: right;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 .writer h3 {
   color: #141414;
@@ -341,6 +342,7 @@ article iframe {
 .social-networks {
   text-align: right;
   margin-bottom: 40px;
+  margin-top: 45px;
 }
 .social-networks a {
   color: #fff;
@@ -534,7 +536,7 @@ article iframe {
   font-style: normal;
   font-family: Montserrat;
   padding: 20px 0;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   border: 1px solid #ececec;
   font-size: 12px;
   position: relative;
@@ -672,7 +674,7 @@ article iframe {
   display: inline-block;
 }
 .comments .send {
-  padding: 15px 25px;
+  padding: 17px 30px;
   background-color: #eeb013;
   color: #fff;
   letter-spacing: 1px;
@@ -2297,7 +2299,7 @@ footer .left-footer span {
   color: #141414;
   text-transform: uppercase;
   border: 2px solid #e4e4e4;
-  padding: 15px 38px;
+  padding: 14px 34px;
   letter-spacing: 1px;
   display: inline-block;
   transition: all 0.2s ease-in-out;
