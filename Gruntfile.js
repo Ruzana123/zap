@@ -36,7 +36,7 @@ module.exports = function(grunt) {
       scripts: { 
         files: ['less/modules/*.less',
                 'less/responsive.less'], 
-          tasks: ['concat','less','cssmin'], 
+          tasks: ['concat','less'], 
           options: { 
             interrupt: true, 
           }, 
