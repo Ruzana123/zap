@@ -21,13 +21,18 @@
 			line-height: 29px;
 			margin-bottom: 35px;
 		}
-		.article-information{
-			p:last-child{
-				margin-bottom: 25px;
+		blockquote{
+			border: 1px solid #ececec;
+			margin-bottom: 45px;
+			margin-top: 50px;
+			p{
+				color: #272727;
+				font-family: CrimsonText;
+				font-size: 18px;
+				font-style: italic;
+				line-height: 24px;
+				margin: 58px 65px;
 			}
-		}
-		.base-blockquote{
-			margin-bottom: 55px !important;
 		}
 	}
 	.accordion .sub:last-child{
@@ -79,25 +84,13 @@
 		font-family: CrimsonText;
 		font-size: 24px;
 		font-weight: 400;
+		margin-bottom: 35px;
 	}
 	.big-title-product{
 		font-size: 26px !important;
 	}
 	.first-from-quote{
 		margin-bottom: 20px;
-	}
-	blockquote{
-		border: 1px solid #ececec;
-		margin-bottom: 45px;
-		margin-top: 50px;
-		p{
-			color: #272727;
-			font-family: CrimsonText;
-			font-size: 16px;
-			font-style: italic;
-			line-height: 20px;
-			margin: 50px 45px;
-		}
 	}
 }
 .mini-img-blog{
@@ -114,13 +107,34 @@
 		font-size: 12px;
 		font-weight: 400;
 		text-transform: uppercase;
-		line-height: 25px;
+		line-height: 20px;
 	}
 	a{
 		color: #6f6f6f;
 		font-family: CrimsonText;
 		font-size: 16px;
 		font-style: italic;
+	}
+	.title-writer{
+		color: @base-color;
+		font-size: 12px;
+		font-weight: 400;
+		color: #141414;
+		font-family: Montserrat;
+		font-size: 12px;
+		font-style: normal;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		transition: all 0.2s ease-in-out;
+		&:hover{
+			color: @base-color-active;
+		}
+		&:focus{
+			text-decoration: none;
+		}
+		&:active{
+			text-decoration: none;
+		}
 	}
 }
 .social-networks{
@@ -198,20 +212,11 @@
 		float: none;
 	}
 }
-
 .writer-block{
 	text-align: center;
 	.writer-photo{
 		display: inline-block;
 		margin-bottom: 8px;
-	}
-	.title-writer{
-		color: @base-color;
-		font-size: 12px;
-		font-weight: 400;
-   		font-style: normal;
-		line-height: 60px;
-		text-transform: uppercase;
 	}
 	.category-author{
 		display: inline-block;
@@ -226,12 +231,12 @@
 	}
 	.writer{
 		text-align: center;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 	p{
 		color: #6f6f6f;
 		font-family: CrimsonText;
-		font-size: 16px;
+		font-size: 18px;
 		font-style: italic;
 		line-height: 24px;
 		margin-bottom: 30px;
@@ -241,6 +246,10 @@
 		li{
 			display: inline-block;
 			text-align: center;
+			margin-right: 8px;
+			&:last-child{
+				margin-right: 0;
+			}
 			a{
 				display: inline-block;
 				&:hover{
@@ -408,9 +417,16 @@
 		margin-bottom: 40px;
 		color: @base-color;
 		font-family: CrimsonText;
-		font-size: 12px;
-		font-style: italic;
-		text-transform: uppercase;
+		font-size: 14px;
+		color: #6f6f6f;
+		font-style: normal;
+		 &::-webkit-input-placeholder { 
+		    color: #141414;
+		    font-family: CrimsonText;
+		    font-style: italic;
+		    font-size: 12px;
+		    text-transform: uppercase;
+		}
 	}
 	.form-group{
 		margin-top: 65px;
@@ -428,6 +444,7 @@
 	label{
 		font-family: CrimsonText;
 	    font-size: 12px;
+	    letter-spacing: 1px;
 	    font-style: italic;
 	    text-transform: uppercase;
 	    color: @base-color;
@@ -464,7 +481,7 @@
 		}
 	}
 	.send{
-		padding: 15px 23px;
+		padding: 15px 25px;
 		background-color: @base-color-active;
 		color: #fff;
 		letter-spacing: 1px;
@@ -487,11 +504,13 @@
 	margin-bottom: 40px;
 	h4{
 		font-size: 12px;
-		font-weight: 400;			
+		font-weight: 400;
+		letter-spacing: 1px;			
 	}
 	span{
 		color: #6f6f6f;
 		font-size: 11px;
+		letter-spacing: 0.5px;
 		line-height: 24px;
 	}
 	p{
@@ -516,6 +535,7 @@
 		color: @base-color;
 		font-size: 12px;
 		float: right;
+		letter-spacing: 1px;
 		text-transform: uppercase;
 		&:hover{
 			text-decoration: none;
@@ -542,4 +562,18 @@
 }
 .first-hidden-comment{
 	height: 220px !important;
+}
+.ui-button-text{
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+.ui-button{
+	&:active{
+		outline: none;
+		box-shadow: none;
+	}
+	&:focus{
+		outline: none;
+		box-shadow: none;
+	}
 }

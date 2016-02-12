@@ -124,7 +124,6 @@ body,
 	background: #fff;
 	padding: 2.5em 1.5em 0;
 	padding-top: 25px;
-	font-size: 1.15em;
 	-webkit-transform: translate3d(-320px,0,0);
 	transform: translate3d(-320px,0,0);
 	-webkit-transition: -webkit-transform 0.4s;
@@ -215,13 +214,14 @@ transition: transform 0.8s;
 	transform: translate3d(0,0,0);
 	-webkit-transition: -webkit-transform 0.8s;
 	transition: transform 0.8s;
-	font-size: 16px;
 	top: 0;
 	height: 100vh;
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
-
+.menu-wrap .icon-list a{
+	font-size: 13px;
+}
 .show-menu .icon-list,
 .show-menu .icon-list a {
 	-webkit-transform: translate3d(0,0,0);

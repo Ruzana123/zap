@@ -180,7 +180,7 @@
     left: 25%;
   }
   .work:hover .hover-content {
-    top: 30%;
+    top: 25%;
   }
   .tag a {
     margin: 0 0 5px 0 ;
@@ -372,6 +372,18 @@
   }
   .main-blog .link-post .download-link {
     font-size: 18px;
+  }
+  .white-fon {
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+  }
+  .hover-content {
+    left: 16%;
+  }
+  .work:hover .hover-content {
+    top: 20%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -845,6 +857,11 @@
   .work:hover .hover-content {
     top: 15%;
   }
+  .control-element i {
+    height: 24px;
+    width: 24px;
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .isotope {
@@ -1168,8 +1185,9 @@
   }
   .hover-content a i {
     margin-top: 5px;
-    height: 23px;
-    width: 23px;
+    height: 21px;
+    width: 21px;
+    font-size: 9px;
     line-height: 20px;
   }
   .work:hover .hover-content {

@@ -232,11 +232,18 @@ article iframe {
   line-height: 29px;
   margin-bottom: 35px;
 }
-.content-blog .information-post .article-information p:last-child {
-  margin-bottom: 25px;
+.content-blog .information-post blockquote {
+  border: 1px solid #ececec;
+  margin-bottom: 45px;
+  margin-top: 50px;
 }
-.content-blog .information-post .base-blockquote {
-  margin-bottom: 55px !important;
+.content-blog .information-post blockquote p {
+  color: #272727;
+  font-family: CrimsonText;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 24px;
+  margin: 58px 65px;
 }
 .content-blog .accordion .sub:last-child {
   margin-bottom: 15px;
@@ -281,25 +288,13 @@ article iframe {
   font-family: CrimsonText;
   font-size: 24px;
   font-weight: 400;
+  margin-bottom: 35px;
 }
 .information-post .big-title-product {
   font-size: 26px !important;
 }
 .information-post .first-from-quote {
   margin-bottom: 20px;
-}
-.information-post blockquote {
-  border: 1px solid #ececec;
-  margin-bottom: 45px;
-  margin-top: 50px;
-}
-.information-post blockquote p {
-  color: #272727;
-  font-family: CrimsonText;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 20px;
-  margin: 50px 45px;
 }
 .mini-img-blog {
   margin-left: 30px;
@@ -316,13 +311,32 @@ article iframe {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
-  line-height: 25px;
+  line-height: 20px;
 }
 .writer a {
   color: #6f6f6f;
   font-family: CrimsonText;
   font-size: 16px;
   font-style: italic;
+}
+.writer .title-writer {
+  font-weight: 400;
+  color: #141414;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+.writer .title-writer:hover {
+  color: #eeb013;
+}
+.writer .title-writer:focus {
+  text-decoration: none;
+}
+.writer .title-writer:active {
+  text-decoration: none;
 }
 .social-networks {
   text-align: right;
@@ -406,14 +420,6 @@ article iframe {
   display: inline-block;
   margin-bottom: 8px;
 }
-.writer-block .title-writer {
-  color: #141414;
-  font-size: 12px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 60px;
-  text-transform: uppercase;
-}
 .writer-block .category-author {
   display: inline-block;
   font-size: 14px;
@@ -427,12 +433,12 @@ article iframe {
 }
 .writer-block .writer {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .writer-block p {
   color: #6f6f6f;
   font-family: CrimsonText;
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
   line-height: 24px;
   margin-bottom: 30px;
@@ -443,6 +449,10 @@ article iframe {
 .writer-block .social-mini li {
   display: inline-block;
   text-align: center;
+  margin-right: 8px;
+}
+.writer-block .social-mini li:last-child {
+  margin-right: 0;
 }
 .writer-block .social-mini li a {
   display: inline-block;
@@ -598,8 +608,15 @@ article iframe {
   margin-bottom: 40px;
   color: #141414;
   font-family: CrimsonText;
-  font-size: 12px;
+  font-size: 14px;
+  color: #6f6f6f;
+  font-style: normal;
+}
+.comments .textarea::-webkit-input-placeholder {
+  color: #141414;
+  font-family: CrimsonText;
   font-style: italic;
+  font-size: 12px;
   text-transform: uppercase;
 }
 .comments .form-group {
@@ -618,6 +635,7 @@ article iframe {
 .comments label {
   font-family: CrimsonText;
   font-size: 12px;
+  letter-spacing: 1px;
   font-style: italic;
   text-transform: uppercase;
   color: #141414;
@@ -654,7 +672,7 @@ article iframe {
   display: inline-block;
 }
 .comments .send {
-  padding: 15px 23px;
+  padding: 15px 25px;
   background-color: #eeb013;
   color: #fff;
   letter-spacing: 1px;
@@ -678,10 +696,12 @@ article iframe {
 .comment-post h4 {
   font-size: 12px;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 .comment-post span {
   color: #6f6f6f;
   font-size: 11px;
+  letter-spacing: 0.5px;
   line-height: 24px;
 }
 .comment-post p {
@@ -706,6 +726,7 @@ article iframe {
   color: #141414;
   font-size: 12px;
   float: right;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 .comment-post .reply:hover {
@@ -731,6 +752,18 @@ article iframe {
 }
 .first-hidden-comment {
   height: 220px !important;
+}
+.ui-button-text {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.ui-button:active {
+  outline: none;
+  box-shadow: none;
+}
+.ui-button:focus {
+  outline: none;
+  box-shadow: none;
 }
 .table-main {
   text-transform: uppercase;
@@ -1637,9 +1670,6 @@ footer .left-footer span {
 .line-header .navbar-collapse li .active {
   color: #eeb013;
 }
-.logo {
-  display: inline-block;
-}
 .big-img {
   padding-top: 218px;
   position: relative;
@@ -1653,7 +1683,7 @@ footer .left-footer span {
 .fixed-header .line-header {
   top: 20px;
 }
-.show-menu {
+.icon-list {
   text-transform: uppercase;
 }
 .menu-wrap {
@@ -2216,7 +2246,7 @@ footer .left-footer span {
   position: absolute;
   background-color: #eeb013;
   text-align: center;
-  top: -15px;
+  bottom: 0;
   right: 0;
 }
 .blog-post .date a {
@@ -2394,6 +2424,8 @@ footer .left-footer span {
   border-radius: 4px;
   display: inline-block;
   border-radius: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-transform: uppercase;
   box-shadow: none;
   border: 1px solid #ececec;
@@ -2411,7 +2443,7 @@ footer .left-footer span {
 }
 .work:hover .hover-content {
   opacity: 1;
-  top: 35%;
+  top: 30%;
 }
 .work:hover .white-fon {
   opacity: 1;
@@ -2419,10 +2451,10 @@ footer .left-footer span {
 .white-fon {
   position: absolute;
   text-align: center;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 80%;
+  top: 35px;
+  right: 35px;
+  left: 35px;
+  bottom: 35px;
   background-color: #fff;
   opacity: 0;
   transition: all 0.4s ease-in-out;
@@ -2459,6 +2491,34 @@ footer .left-footer span {
 }
 .hover-content a:hover {
   color: #eeb013;
+}
+.mfp-move-horizontal {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-move-horizontal .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateX(-50px);
+}
+.mfp-move-horizontal.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s;
+}
+.mfp-move-horizontal.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: translateX(0);
+}
+.mfp-move-horizontal.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-move-horizontal.mfp-removing .mfp-with-anim {
+  transform: translateX(50px);
+  opacity: 0;
+}
+.mfp-move-horizontal.mfp-removing.mfp-bg {
+  opacity: 0;
 }
 .fixed-header {
   z-index: 1002;
@@ -2746,11 +2806,12 @@ footer .left-footer span {
   background-color: #eeb013;
   width: 10px;
   height: 10px;
-  top: 40%;
+  top: 45%;
   position: absolute;
   transition: all 0.3s ease-in-out;
   bottom: 0;
-  transform: translate(-175%) rotate(45deg);
+  left: 0;
+  transform: rotate(45deg);
 }
 .sidebar .by-element {
   position: relative;
@@ -2813,9 +2874,10 @@ footer .left-footer span {
 }
 .tag a {
   color: #6f6f6f;
+  padding: 8px 5px;
   border: 1px solid #e4e4e4;
   font-size: 13px;
-  padding: 8px 5px;
+  padding: 8px 8px;
   margin: 3px;
   display: inline-block;
   transition: all 0.2s ease-in-out;
