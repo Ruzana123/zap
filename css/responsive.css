@@ -153,8 +153,36 @@
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .mega-menu {
+    width: 970px;
+    left: -200px;
+    padding: 53px 10px 65px 45px;
+  }
+  .mega-menu .colum {
+    margin-right: -10px;
+  }
+  .shop-colum-5 {
+    left: -276px;
+  }
   .work {
     margin: 10px;
+  }
+  .line-header .shop-i ul li:first-child {
+    margin-right: 20px;
+  }
+  .line-header .shop-i .shopping-menu {
+    left: 50%;
+  }
+  .line-header .shop-i .shopping:after {
+    top: 65px;
+  }
+  .line-header .shop-i .search:after {
+    top: 65px;
+    right: 90px;
+  }
+  .search-menu {
+    width: 970px;
+    left: 41px;
   }
   .blog-post {
     width: 33.33%;
@@ -184,7 +212,64 @@
   }
 }
 @media only screen and (max-width: 992px) {
+  .menu-button {
+    display: block!important;
+  }
+  .menu-top {
+    display: none;
+  }
+  .menu-wrap {
+    display: block!important;
+    position: fixed;
+  }
+  .line-header {
+    top: 0;
+  }
+  .big-img {
+    padding-top: 90px;
+  }
+  .line-header .shop-i {
+    display: none;
+  }
   /*home*/
+  .navbar-nav li:first-child:hover .mega-menu {
+    display: none;
+    opacity: 0;
+  }
+  .navbar-nav li:nth-child(2):hover .shop-colum-5 {
+    display: none;
+    opacity: 0;
+  }
+  .navbar-nav li:nth-child(2) a:after {
+    display: none;
+  }
+  .navbar-nav li:nth-child(3):hover .colum-menu {
+    display: none;
+    opacity: 0;
+  }
+  .navbar-nav li:nth-child(3) a:after {
+    display: none;
+  }
+  .colum-menu li:nth-child(2):hover .colum-submenu {
+    display: none;
+    opacity: 0;
+  }
+  .colum-menu li:nth-child(2):after {
+    display: none;
+  }
+  .line-header .shop-i .search:after {
+    display: none;
+  }
+  .line-header .shop-i .search:hover .search-menu {
+    display: none;
+    opacity: 0;
+  }
+  .line-header .shop-i .shopping:after {
+    display: none;
+  }
+  .line-header .shop-i .shopping:hover .shopping-menu {
+    display: none;
+  }
   .content-blog .sidebar {
     margin-top: 50px;
   }
@@ -441,13 +526,6 @@
   }
   .line-header {
     top: 0;
-  }
-  .menu-button {
-    display: block!important;
-  }
-  .menu-wrap {
-    display: block!important;
-    position: fixed;
   }
   .head-block .fixed-header .navbar-collapse {
     background-color: #fff!important;

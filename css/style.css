@@ -2421,16 +2421,6 @@ footer .left-footer span {
   opacity: 0;
   left: -520px;
 }
-.shop-colum-5 .colum:nth-child(4) {
-  width: 150px;
-}
-.shop-colum-5 .colum:last-child {
-  width: 240px;
-  text-align: center;
-}
-.shop-colum-5 .colum:nth-child(3) {
-  width: 165px;
-}
 .shop-colum-5 .shop-colum-btn {
   background-color: #eeb013;
   color: #141414 !important;
@@ -2454,18 +2444,9 @@ footer .left-footer span {
   text-decoration: none;
 }
 .colum {
-  width: 195px;
+  min-width: 19%;
   vertical-align: top;
   display: inline-block;
-}
-.colum:last-child {
-  width: 180px;
-}
-.colum:first-child {
-  width: 225px;
-}
-.colum:nth-child(2) {
-  width: 198px;
 }
 .colum h3 {
   color: white;
@@ -2502,6 +2483,16 @@ footer .left-footer span {
   display: block;
   opacity: 1;
 }
+.colum-menu li:nth-child(2):after {
+  width: 80px;
+  height: 100px;
+  top: 0;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 190px;
+  background-color: transparent;
+}
 .colum-submenu {
   display: none;
   position: absolute;
@@ -2513,13 +2504,59 @@ footer .left-footer span {
   line-height: 39px;
   padding: 22px 20px 45px 40px;
 }
-.line-header .shop-i:hover .shopping-menu {
+.line-header .shop-i {
+  display: inline-block;
+}
+.line-header .shop-i ul li:first-child {
+  padding-right: 0;
+}
+.line-header .shop-i i {
+  height: 25px;
+  width: 25px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.line-header .shop-i .search:after {
+  width: 50px;
+  height: 50px;
+  top: 38px;
+  content: '';
+  display: block;
+  position: absolute;
+  right: 100px;
+}
+.line-header .shop-i .search:hover i {
+  color: #fff;
+  background-color: #141414;
+}
+.line-header .shop-i .search:hover .search-menu {
+  display: block;
+  opacity: 1;
+}
+.line-header .shop-i .shopping:after {
+  width: 80px;
+  height: 50px;
+  top: 38px;
+  content: '';
+  display: block;
+  position: absolute;
+  right: 125px;
+}
+.line-header .shop-i .shopping:hover i {
+  color: #fff;
+  background-color: #141414;
+}
+.line-header .shop-i .shopping:hover .shopping-menu {
   display: block;
 }
 .line-header .shop-i .shopping-menu {
   position: absolute;
   left: 835px;
-  top: 80px;
+  top: 105px;
   background-color: #141414;
   display: none;
   width: 360px;
@@ -2597,6 +2634,49 @@ footer .left-footer span {
   background-color: #909090;
 }
 .line-header .shop-i .shopping-menu .subtotal .view-cart-btn:hover {
+  background-color: #eeb013;
+}
+.search-menu {
+  display: none;
+  opacity: 0;
+  left: 90px;
+  border: 2px solid #707070;
+  top: 105px;
+  width: 1170px;
+  position: absolute;
+  padding: 25px;
+  background-color: #2e2e2e;
+}
+.search-menu .input-group {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+.search-menu .input-group input {
+  background-color: transparent;
+  border-color: transparent;
+}
+.search-menu .input-group input::-webkit-input-placeholder {
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+.search-menu .input-group .form-control {
+  width: 85%;
+}
+.search-menu .search-btn {
+  width: 15%;
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  box-shadow: none;
+  margin-top: 5px;
+  text-transform: uppercase;
+  outline: none;
   background-color: #eeb013;
 }
 /**** Isotope Filtering ****/
