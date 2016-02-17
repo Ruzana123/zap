@@ -423,7 +423,7 @@
 	a{
 		transition: all 0.2s ease-in-out;
 		&:hover{
-			color: @base-color-active;
+			color: @base-color-active !important;
 			text-decoration: underline;
 		}
 	}
@@ -589,7 +589,17 @@
 		color: #6f6f6f;
 	}
 }
-.line-header .navbar-collapse li {
+
+.line-header 
+.container .shop-column-btn{ 
+	color: #141414 !important;
+	&:hover{
+		background-color: darken(@base-color-active, 10%) !important;
+		border-color: darken(@base-color-active, 10%);
+		color: #141414 !important;
+	}
+}
+.navbar-collapse li {
 	.mega-menu{
 		.column-title{
 			margin-bottom: 55px;
@@ -615,7 +625,7 @@
 			font-size: 11px;
 			margin-left: 0;
 			&:hover{
-				color: @base-color-active;
+				color: @base-color-active !important;
 			}
 			&:after{
 				display: none;
@@ -630,7 +640,7 @@
 			margin-left: 0;
 			text-transform: uppercase;
 			&:hover{
-				color: @base-color-active;
+				color: @base-color-active !important;
 			}
 			&:after{
 				display: none;
@@ -689,6 +699,7 @@
 		}
 	}
 }
+
 .shop-column-5{
 	transition: all 0.4s ease-in-out;
 	display: none;
@@ -696,7 +707,6 @@
 	left: -520px;
 	.shop-column-btn{
 		background-color: @base-color-active  !important;
-		color: @base-color !important;
 		font-size: 12px;
 		font-weight: 700 !important;
 		position: absolute;
@@ -705,10 +715,6 @@
 		margin: 0 !important;
 		right: 0;
 		transition: all .2s ease-in-out;
-		&:hover{
-			background-color: darken(@base-color-active, 5%);
-			border-color: darken(@base-color-active, 5%);
-		}
 		&:active{
 			text-decoration: none;
 		}
@@ -725,6 +731,7 @@
 		color: white;
 		font-size: 18px;
 		font-weight: 700;
+		text-align: center;
 		letter-spacing: 2px;
 		margin-top: 10px;
 		text-transform: uppercase;
@@ -781,6 +788,14 @@
 	width: 213px;
 	line-height: 39px;
 	padding: 22px 20px 45px 40px;
+	&:before{
+		content: "\f054";
+    position: absolute;
+    right: 18px;
+    font-family: FontAwesome;
+    top: 81px;
+    font-size: 8px;
+	}
 }
 
 
@@ -869,7 +884,7 @@
 				margin-left: 20px;
 				vertical-align: top;
 				a:hover{
-					color: @base-color-active;
+					color: @base-color-active !important;
 				}
 				h4 {
 					margin-bottom: 0;
@@ -888,6 +903,7 @@
 				font-family: 'Montserrat', sans-serif;
 				font-size: 11px;
 				font-weight: 400;
+				font-style: normal;
 				line-height: 35px;
 			}
 			h4 {
@@ -928,8 +944,8 @@
 				width: 310px;
 				background-color: @base-color-active;
 				&:hover{
-					background-color: darken(@base-color-active, 5%);
-					color: darken(#fff, 5%);
+					background-color: darken(@base-color-active, 10%);
+					color: darken(#fff, 10%);
 				}
 			}
 			.view-cart-btn{
@@ -951,6 +967,7 @@
 	border: 1px solid #707070;
 	top:80px;
 	width: 1170px;
+	letter-spacing: 1px;
 	position: absolute;
 	padding: 25px;
 	background-color: #2e2e2e;
@@ -988,7 +1005,7 @@
 		background-color: @base-color-active;
 		transition: all 0.2s ease-in-out;
 		&:hover{
-			background-color: darken(@base-color-active, 5%);
+			background-color: darken(@base-color-active, 10%);
 		}
 	}
 }
