@@ -227,7 +227,7 @@
 									<div class="search-menu">
 										<form>
 								             <div class="input-group">
-								                <input type="text" class="form-control" placeholder="Enter Your Keywords...">
+								                <input type="text" class="form-control" id="va-search" placeholder="Enter Your Keywords...">
 								                <button type="submit" class="search-btn">Search</button>
 								             </div>
 							        	</form>
@@ -1016,6 +1016,9 @@
 		    ],
 
 
+		});
+		$(".search").hover(function(){
+		$("#va-search").focus();
 		});
 		</script>
 
