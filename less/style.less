@@ -106,7 +106,7 @@ q:after {
 
 body{
 	background-color: white;
-	font-family: Montserrat;
+	font-family: 'Montserrat', sans-serif;
 }
 img{
 	max-width: 100%;
@@ -333,7 +333,7 @@ article{
 	margin-bottom: 25px;
 	h3{
 		color: @base-color;
-		font-family: Montserrat;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 12px;
 		font-weight: 400;
 		text-transform: uppercase;
@@ -350,7 +350,7 @@ article{
 		font-size: 12px;
 		font-weight: 400;
 		color: #141414;
-		font-family: Montserrat;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 12px;
 		font-style: normal;
 		letter-spacing: 1px;
@@ -566,7 +566,7 @@ article{
 			color: #141414;
 			width: 100%;
 			font-style: normal;
-			font-family: Montserrat;
+			font-family: 'Montserrat', sans-serif;
 			padding: 20px 0;
 			margin-bottom: 60px;
 			border: 1px solid #ececec;
@@ -596,7 +596,7 @@ article{
 			&:first-child{
 				color: @base-color-active;
 				font-style: normal;
-				font-family: Montserrat;
+				font-family: 'Montserrat', sans-serif;
 			}
 		}
 	.accordion .sub{
@@ -617,7 +617,7 @@ article{
 			color: @base-color;
 			font-size: 12px;
 			font-style: normal;
-			font-family: Montserrat;
+			font-family: 'Montserrat', sans-serif;
 			float: right;
 			text-transform: uppercase;
 			&:hover{
@@ -651,7 +651,7 @@ article{
 		font-size: 14px;
 		color: #6f6f6f;
 		font-style: normal;
-		 &::-webkit-input-placeholder { 
+		&::-webkit-input-placeholder { 
 		    color: #141414;
 		    font-family: CrimsonText;
 		    font-style: italic;
@@ -1301,7 +1301,7 @@ article{
 		color: @base-color;
 		font-size: 10px;
 		font-weight: 400;
-		font-family: Montserrat;
+		font-family: 'Montserrat', sans-serif;
 		font-style: normal;
 	}
 	input[type=checkbox], input[type=radio]{
@@ -1351,7 +1351,7 @@ article{
 			&:last-child{
 				font-style:normal;
 				font-size: 12px;
-				font-family: Montserrat;
+				font-family: 'Montserrat', sans-serif;
 			}
 		}
 	}
@@ -1397,7 +1397,7 @@ article{
 	.checkbox{
 		padding-top: 20px;
 		border-top:1px solid #ebebeb;
-		font-family: Montserrat;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 10px;
 		font-style:normal;
 		padding: 20px 0;
@@ -1795,7 +1795,7 @@ footer{
 	height: 100px;
 	top: 0 !important;
 	padding: 18px 0 18px 0 !important;
-	border-bottom: 1px solid @base-color;
+	border-bottom: 1px solid #e6e6e6;
 	.menu-top .navbar{
 		background-color: transparent !important;
     	border-color: transparent !important;
@@ -2355,6 +2355,9 @@ footer{
 	.link-in-post{
 		display: block;
 	}
+	.video-post img{
+		display: inline-block;
+	}
 }
 
 
@@ -2403,7 +2406,7 @@ footer{
 		}
 	}
 	.video-post {
-	position: relative;
+		position: relative;
 		#open-popup {
 			width: 90px;
 			height: 90px;
@@ -2465,35 +2468,35 @@ footer{
 .mega-menu{
 	background-color: #141414;
 	width: 1170px;
-	top: 80px;
+	top: 77px;
 	display: none;
 	opacity: 0;
 	position: absolute;
 	left: -405px;
 	padding: 53px 50px 65px 100px;
-	.colum{
+	.column{
 		li{
 			margin-bottom: 19px;
 		}
 	}
 }
-
-.line-header .navbar-collapse li {
-	.active{
-		&:after{
-			width: 100px;
-			height: 100px;
-			top: 20px;
-			left: -20px;
-			background-color: transparent;
+.head-block .line-header .navbar-collapse{
+	.mega-menu{
+		a{
+			color: #6f6f6f;
 		}
 	}
+	li .column-menu a{
+		color: #6f6f6f;
+	}
+}
+.line-header .navbar-collapse li {
 	.mega-menu{
-		.colum-title{
+		.column-title{
 			margin-bottom: 55px;
 			position: relative;
 			a{
-				color: white;
+				color: white !important;
 				font-size: 12px;
 				font-weight: 700;
 			}
@@ -2508,7 +2511,7 @@ footer{
 			} 
 		}
 		a{
-			color: #6f6f6f;
+			color: #6f6f6f !important;
 			letter-spacing: 1px;
 			font-size: 11px;
 			margin-left: 0;
@@ -2520,9 +2523,9 @@ footer{
 			}
 		}
 	}
-	.colum-menu{
+	.column-menu{
 		a{
-			color: #6f6f6f;
+			color: #6f6f6f !important;
 			letter-spacing: 1px;
 			font-size: 11px;
 			margin-left: 0;
@@ -2536,8 +2539,8 @@ footer{
 		}
 	}
 }
-.navbar-nav li{
-	&:first-child{
+.navbar-nav {
+	.home-mega-menu{
 		&:hover{
 			.mega-menu{
 				transition: all 0.4s ease-in-out;
@@ -2545,51 +2548,61 @@ footer{
 				opacity: 1;
 			}
 		}
-	}
-	&:nth-child(2){
-		&:hover{
-			.shop-colum-5{
-				display: block;
-				opacity: 1;
-			}
-		}
-		a:after{
+		&:after{
 			width: 100px;
-			height: 100px;
+			height: 27px;
 			top: 20px;
-			left: -20px;
+			display: block;
+			content: '';
 			background-color: transparent;
 		}
 	}
-	&:nth-child(3){
+	.shop-mega-menu{
 		&:hover{
-			.colum-menu{
+			.shop-column-5{
 				display: block;
 				opacity: 1;
 			}
 		}
-		a:after{
+		&:after{
 			width: 100px;
-			height: 100px;
+			height: 27px;
 			top: 20px;
-			left: -20px;
+			display: block;
+			content: '';
+			background-color: transparent;
+		}
+	}
+	.soft-submenu{
+		&:hover{
+			.column-menu{
+				display: block;
+				opacity: 1;
+			}
+		}
+		&:after{
+			width: 100px;
+			height: 27px;
+			display: block;
+			content: '';
+			top: 20px;
 			background-color: transparent;
 		}
 	}
 }
-.shop-colum-5{
+.shop-column-5{
 	transition: all 0.4s ease-in-out;
 	display: none;
 	opacity: 0;
 	left: -520px;
-	.shop-colum-btn{
-		background-color: @base-color-active;
+	.shop-column-btn{
+		background-color: @base-color-active  !important;
 		color: @base-color !important;
 		font-size: 12px;
 		font-weight: 700 !important;
 		position: absolute;
 		padding: 14px 42px !important;
-		top: 80%;
+		bottom: 30px;
 		margin: 0 !important;
 		right: 0;
 		transition: all .2s ease-in-out;
@@ -2605,7 +2618,7 @@ footer{
 		}
 	}
 }
-.colum{
+.column{
 	min-width: 19%;
 	vertical-align: top;
 	display: inline-block;
@@ -2625,13 +2638,13 @@ footer{
 		text-transform: uppercase;
 	}
 }
-.colum-menu{
+.column-menu{
 	position: absolute;
 	display:none;
 	opacity: 0;
 	background-color: #141414;
 	width: 276px;
-	top: 80px;
+	top: 77px;
 	line-height: 39px;
 	padding: 22px 43px 45px 40px;
 	li{
@@ -2641,14 +2654,14 @@ footer{
 		}
 		&:nth-child(2){
 			&:hover{
-				.colum-submenu{
+				.column-submenu{
 					display: block;
 					opacity: 1;
 				}
 			}
 			&:after{
 				width: 80px;
-				height: 100px;
+				height: 50px;
 				top: 0;
 				content: '';
 				display: block;
@@ -2659,7 +2672,7 @@ footer{
 		}
 	}
 }
-.colum-submenu{
+.column-submenu{
 	display: none;
 	position: absolute;
 	left: 122%;
@@ -2689,13 +2702,13 @@ footer{
 	}
 	.search{
 		&:after{
-			width: 50px;
+			width: 40px;
 		    height: 50px;
 		    top: 38px;
 		    content: '';
 		    display: block;
 		    position: absolute;
-		    right: 100px;
+		    right: 105px;
 		} 
 		&:hover{
 			i{
@@ -2710,13 +2723,13 @@ footer{
 	}
 	.shopping{
 		&:after{
-			width: 80px;
+			width: 70px;
 		    height: 50px;
 		    top: 38px;
 		    content: '';
 		    display: block;
 		    position: absolute;
-		    right: 125px;
+		    right: 145px;
 		} 
 		&:hover{
 			i{
@@ -2731,24 +2744,40 @@ footer{
 	.shopping-menu{
 		position: absolute;
 		left: 835px;
-		top: 105px;
+		top: 78px;
 		background-color: @base-color;
 		display: none;
 		width: 360px;
 		letter-spacing: 1px;
 		.shopping-sale{
-			padding: 20px;
+			padding: 30px 30px 20px;
 			text-align: left;
 			display: flex;
 			border-bottom: 1px solid #393939;
 			a{
+				transition: all 0.2s ease-in-out;
 				display: inline-block;
 				float: left;
+				img{
+					transition: all 0.2s ease-in-out;
+					&:hover{
+						opacity: 0.8;
+					}
+				}
 			}
 			.product-information{
 				float: right;
 				margin-left: 20px;
 				vertical-align: top;
+				a:hover{
+					color: @base-color-active;
+				}
+				h4 {
+					margin-bottom: 0;
+					a{
+						float: none;
+					}
+				}
 			}
 			span{
 				width: 100%;
@@ -2757,9 +2786,10 @@ footer{
 			}
 			.qty{
 				color: #6f6f6f;
-				font-family: Montserrat;
+				font-family: 'Montserrat', sans-serif;
 				font-size: 11px;
 				font-weight: 400;
+				line-height: 35px;
 			}
 			h4 {
 				margin-top: 0;
@@ -2767,7 +2797,7 @@ footer{
 					font-size: 11px;
 					font-weight: 400;
 					line-height: 24px;
-					color: #fff;
+					color: #fff !important;
 				}
 			}
 		}
@@ -2775,6 +2805,8 @@ footer{
 			text-align: center;
 			span{
 				color: #fff;
+				text-transform: uppercase;
+				letter-spacing: 2px;
 				font-size: 16px;
 				font-weight: 400;
 			}
@@ -2787,8 +2819,8 @@ footer{
 			}
 			a{
 				color: #fff;
-				padding-top: 20px;
-				padding-bottom: 20px;
+				padding-top: 19px;
+				padding-bottom: 19px;
 				margin: 20px;
 				display: inline-block;
 				text-transform: uppercase;
@@ -2817,8 +2849,8 @@ footer{
 	display: none;
 	opacity: 0;
 	left: 90px;
-	border: 2px solid #707070;
-	top:105px;
+	border: 1px solid #707070;
+	top:80px;
 	width: 1170px;
 	position: absolute;
 	padding: 25px;
@@ -2832,7 +2864,7 @@ footer{
 			border-color: transparent;
 			&::-webkit-input-placeholder{
 				color: white;
-				font-family: Montserrat;
+				font-family: 'Montserrat', sans-serif;
 				font-size: 18px;
 				font-weight: 400;
 				line-height: 30px;
@@ -2850,12 +2882,18 @@ footer{
 		padding: 12px 30px;
 		border: none;
 		box-shadow: none;
+		color: @base-color;
 		margin-top: 5px;
 		text-transform: uppercase;
 		outline: none;
 		background-color: @base-color-active;
+		transition: all 0.2s ease-in-out;
+		&:hover{
+			background-color: darken(@base-color-active, 5%);
+		}
 	}
 }
+
 /**** Isotope Filtering ****/
 .isotope-item {
   z-index: 2;
